@@ -20,8 +20,13 @@ Andrew Vergara
 drewvergara@gmail.com
 
 
-
 -------------------------------------------------------
 05-23-12: Added in a clear() function to remove listener and stop httpUtils
 
 05-04-12: Updated addon to fit most recent version of ofxHttpUtils
+
+
+Changes made for this specific version:
+-------------------------------------------------------
+14-06-12: Cache last search in xml. This would be usefull for offline instalations.
+		  Added POST method. (Safely escape unicode words)	
