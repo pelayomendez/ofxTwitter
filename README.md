@@ -3,30 +3,18 @@ ofxTwitter
 
 OpenFrameworks Addon - ofxTwitter
 Created by Andrew Vergara
+Modified by Pelayo Méndez
+
+Changes in this version:
+
+* Updated for Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
+* Uses Christopher Baker ofxOAuth adddon https://github.com/bakercp/ofxOAuth 
+* Uses ofxJSON for parsing data as XML is not supported anymore https://github.com/jefftimesten/ofxJSON 
 
 The original addon was created by Edric Stanley on 10/12/10 which was adapted from code by Paul Shen.
-I have updated the addon to use the most recent version of ofxHttpUtils addon. https://github.com/arturoc/ofxHttpUtils
+Andrew Vergara https://github.com/drewvergara updated the addon to use the most recent version of ofxHttpUtils 
+https://github.com/arturoc/ofxHttpUtils but with the new version of Twitter API the old addon stopped working 
+so I decided to start working in this version.
 
-This addon is dependent on these other addons:
-- ofxHttpUtils
-- ofxXmlSettings
-- ofxThread (deprecated in 007, you can use ofThread instead)
-
-
-
-Enjoy, and please let me know if you have any feedback!
-
-Andrew Vergara
-drewvergara@gmail.com
-
-
--------------------------------------------------------
-05-23-12: Added in a clear() function to remove listener and stop httpUtils
-
-05-04-12: Updated addon to fit most recent version of ofxHttpUtils
-
-
-Changes made for this specific version:
--------------------------------------------------------
-14-06-12: Cache last search in xml. This would be usefull for offline instalations.
-		  Added POST method. (Safely escape unicode words)	
+Pelayo Méndez
+contact@pelayomendez.com

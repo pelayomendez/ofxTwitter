@@ -11,54 +11,58 @@
  *  Edited by Andrew Vergara on 05/04/12
  *  Updated addon to fit most recent version of ofxHttpUtils addon. https://github.com/arturoc/ofxHttpUtils
  *
- *  Edited vby welovecode 14/06/12
+ *  Edited by welovecode 14/06/12
  *  Added cache support for saving/load xml cache file.
  *  Added POST query method.
- *  
+ * 
+ *  Edited by Pelayo MŽndez on 09/12/13
+ *  Migrate to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
+ *  Using Christopher Baker ofxOAuth adddon https://github.com/bakercp/ofxOAuth
+ *  https://github.com/jefftimesten/ofxJSON ofxJSON for parsing data as XMl is not supported anymore
  */
 
 #pragma once
 
 #include "ofMain.h"
-
-#include "ofxHttpUtils.h"
-#include "ofxXmlSettings.h"
+#include "ofxOAuth.h"
+#include "ofxJSONElement.h"
 
 #include "TwitterDelegate.h"
 #include "Tweet.h"
 
 class ofxTwitter {
-public:
-	
-	void setup(bool _loadCache, bool _saveCache);
-	void setSearchDelegate(TwitterDelegate *_delegate) { delegate = _delegate; }
-	
-	void startQuery(string query);
-	void startTwitterQuery(string keywords, int repliesPerPage=10, int pageIndex=1, int queryIdentifier=0);
-    void startPostQuery(ofxHttpForm form);
-    void startTwitterPostQuery(string keywords, int repliesPerPage=10, int pageIndex=1, int queryIdentifier=0);
-	
-	vector<Tweet> getLatestResponse();
-	void newResponse(ofxHttpResponse &response);
-    void parseXMLResponse();
-    
-    void clear();
 
-	ofxHttpUtils httpUtils;
+    public:
     
-    int tweetQueryIdentifier;
+        ofxTwitter();
+        ~ofxTwitter();
     
-    bool loadCache;
-    bool saveCache;
-    void loadCacheFile();
+        void setup(const string& consumerKey, const string& consumerSecret);
     
+        bool isAuthorized();
+        bool loadCacheIsActive();
+        bool saveCacheIsActive();
+        //void setCacheActive(bool loadChache, bool saveChache);
+        void loadCacheFile();
     
+        void startQuery(string keywords);
+        //void startTwitterQuery(string keywords, int repliesPerPage=10, int pageIndex=1, int queryIdentifier=0);
+        void newResponse(ofEventArgs& args);
+        void parseResponse(ofxJSONElement result);
     
-private:
+        void setSearchDelegate(TwitterDelegate *_delegate) { delegate = _delegate; }
+
+    private:
 	
-	TwitterDelegate *delegate;
-	
-	ofxXmlSettings xml;
-	vector<Tweet> data;
+        ofxOAuth oauth;
+    
+        string dataRequested;
+    
+        bool bloadCacheActive;
+        bool bsaveCacheActive;
+    
+        int tweetQueryIdentifier;
+        TwitterDelegate *delegate;
+        vector<Tweet> data;
 	
 };

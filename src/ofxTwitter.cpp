@@ -1,5 +1,5 @@
 /*
- *  ofxTwitter.cpp
+ *  ofxTwitter.h
  *
  *  Created by Douglas Edric Stanley on 10/12/10
  *  cc-by-sa 2010 www.abstractmachine.net. Some rights reserved.
@@ -11,180 +11,131 @@
  *  Edited by Andrew Vergara on 05/04/12
  *  Updated addon to fit most recent version of ofxHttpUtils addon. https://github.com/arturoc/ofxHttpUtils
  *
- *  Edited vby welovecode 14/06/12
+ *  Edited by welovecode 14/06/12
  *  Added cache support for saving/load xml cache file.
  *  Added POST query method.
- * 
+ *
+ *  Edited by Pelayo MŽndez on 09/12/13
+ *  Migrate to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
+ *  Using Christopher Baker ofxOAuth adddon https://github.com/bakercp/ofxOAuth
+ *  https://github.com/jefftimesten/ofxJSON ofxJSON for parsing data as XMl is not supported anymore
  */
 
 #include "ofxTwitter.h"
 
-void ofxTwitter::setup(bool _loadCache, bool _saveCache) {
+//--------------------------------------------------------------
+ofxTwitter::ofxTwitter():
+bloadCacheActive(false),
+bsaveCacheActive(true)
+{
+
+}
+
+ofxTwitter::~ofxTwitter(){
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::setup(const string& consumerKey, const string& consumerSecret) {
     
-    // cache
-    loadCache = _loadCache;
-    saveCache  = _saveCache;
-	
-	// listen to http events / load cache file
-    if(!loadCache) {
-        ofAddListener(httpUtils.newResponseEvent, this, &ofxTwitter::newResponse);
-        httpUtils.start();
+    if(!bloadCacheActive) {
+        oauth.setup("https://api.twitter.com", consumerKey, consumerSecret);
     } else {
-        loadCacheFile();
+        //loadCacheFile();
     }
-    
-	// use dummy data in case we've lost web connection
-	data.push_back( Tweet("...") );
-	
-	delegate = NULL;    
-	
-}
-//--------------------------------------------------------------
-void ofxTwitter::startTwitterQuery(string keywords, int repliesPerPage, int pageIndex, int queryIdentifier) {
-	
-	string query = "http://search.twitter.com/search.atom?q=";
-	query += keywords;
-	query += "&rpp=" + ofToString(repliesPerPage);
-//	query += "&page=" + ofToString(pageIndex);
-	query += "&result_type=recent";
-    
-    tweetQueryIdentifier = queryIdentifier;
-    
-	startQuery(query);
-    //xml.loadFile("last_bck.xml");
-    //newResponse();
-	
-}
-
-void ofxTwitter::startQuery(string query) {
-	// load data from web
-	httpUtils.addUrl(query);    
-}
-
-//--------------------------------------------------------------
-void ofxTwitter::startTwitterPostQuery(string keywords, int repliesPerPage, int pageIndex, int queryIdentifier) {
-	
-    string query = "http://search.twitter.com/search.atom?a=";
-	query += keywords;
-	query += "&rpp=" + ofToString(repliesPerPage);
-    //	query += "&page=" + ofToString(pageIndex);
-	query += "&result_type=recent";
-    
-    tweetQueryIdentifier = queryIdentifier;
-    
-    ofxHttpForm form;
-	form.action= query;
-	form.method= OFX_HTTP_POST;
-    form.addFormField("q", keywords);
-    //form.addFormField("rpp", ofToString(repliesPerPage));
-    //form.addFormField("page", ofToString(pageIndex));
-    //form.addFormField("result_type", "recent");
-    
-    form.name = form.action;
-    
-	startPostQuery(form);
-  	
-}
-
-void ofxTwitter::startPostQuery(ofxHttpForm form) {
-    
-	// load data from web
-	httpUtils.addForm(form);    
-    
-}
-
-
-//--------------------------------------------------------------
-void ofxTwitter::newResponse(ofxHttpResponse &response) {
-    
-    cout << "ofxTwitter: HTTP RESPONSE RECIVED." << endl;
-    
-    xml.loadFromBuffer(response.responseBody); // parse string
-    xml.pushTag("feed"); // change relative root to <feed>
-    
-    // cache
-    if(saveCache) {
-        xml.saveFile("last.xml");
-    }
-	
-	parseXMLResponse();
 	
 }
 
 void ofxTwitter::loadCacheFile() {
-    
-    cout << "ofxTwitter: LOADING CACHE." << endl;
-    
-    xml.loadFile("last.xml");
-    xml.pushTag("feed"); // change relative root to <feed>
-    
-    parseXMLResponse();
-
+    // TODO.
 }
 
-void ofxTwitter::parseXMLResponse() {
+bool ofxTwitter::isAuthorized() {
+    return oauth.isAuthorized();
+}
+
+bool ofxTwitter::loadCacheIsActive() {
+    return bloadCacheActive;
+}
+
+bool ofxTwitter::saveCacheIsActive() {
+    return bsaveCacheActive;
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::startQuery(string keywords) {
     
-    // get current count of data
-	int xmlDataCount = data.size();
-	
-    int nombreDeTweets = xml.getNumTags("entry");
+    string query = "/1.1/search/tweets.json?count=1?q=";
+    query += keywords;
     
-    // iterate through <entry> tags
-    for (int i = 0; i < nombreDeTweets; i++) {
-		
-		xml.pushTag("entry", i);
-		
-		Tweet tweet;
-		tweet.id = xml.getValue("id", "", 0).c_str();
-		tweet.title = xml.getValue("title", "", 0).c_str();
-		tweet.updated = xml.getValue("updated", "", 0).c_str();
-		tweet.published = xml.getValue("published", "", 0).c_str();
-		tweet.author.uri  = xml.getValue("author:uri", "", 0).c_str();
-		tweet.author.name = xml.getValue("author:name", "", 0).c_str();
-		
-		tweet.language = xml.getValue("twitter:lang", "", 0).c_str();
-		
-		for(int j=0; j<xml.getNumTags("link"); j++) {
-			
-			string type = xml.getAttribute("link", "type", "", j);
-			string rel  = xml.getAttribute("link", "rel", "", j);
-			string href = xml.getAttribute("link", "href", "", j);
-			
-			if (rel == "image")
-				tweet.author.imageUri = href;
-			else if (rel == "alternate")
-				tweet.link = href;
-		}
-		
-		data.push_back( tweet );
-		
-		xml.popTag();
-		
+    if(oauth.isAuthorized()) {
+        dataRequested = "";
+        dataRequested = oauth.get(query);
+        ofAddListener(ofEvents().update,this,&ofxTwitter::newResponse);
     }
-    xml.popTag(); // move out of <feed>
-	
-	// remove previous data
-	for (int i=0; i<xmlDataCount; i++) {
-		data.erase(data.begin());
-	}
-	
-	// ok, send back results
-	if (delegate) {
-		delegate->searchResult(data, tweetQueryIdentifier);
-	}
-
-}
-
-//--------------------------------------------------------------
-vector<Tweet> ofxTwitter::getLatestResponse() {
-	return data;
-}
-
-//--------------------------------------------------------------
-void ofxTwitter::clear() {
-	// listen to http events
-    ofRemoveListener(httpUtils.newResponseEvent, this, &ofxTwitter::newResponse);
-    httpUtils.stop();
     
-//	data.clear();
+    //tweetQueryIdentifier = 0;
+
 }
+
+//--------------------------------------------------------------
+void ofxTwitter::newResponse(ofEventArgs& args) {
+    
+    if(dataRequested != "") {
+    
+        ofxJSONElement result;
+        bool parsingSuccessful = result.parse(dataRequested);
+        if (parsingSuccessful) {
+            if(bsaveCacheActive) result.save("cache.json",true);
+            cout << "ofxTwitter: Tweets parsed OK." << endl;
+            //cout << result.getRawString() << endl;
+            parseResponse(result);
+        } else {
+            cout  << "ofxTwitter: Failed to parse JSON" << endl;
+        }
+        
+        dataRequested = "";
+        ofRemoveListener(ofEvents().update,this,&ofxTwitter::newResponse);
+    
+    }
+	
+}
+
+
+void ofxTwitter::parseResponse(ofxJSONElement result) {
+    
+	data.clear();
+   
+    if(result.isMember("statuses")) {
+        ofxJSONElement trends = result["statuses"];
+        for(int i = 0; i < trends.size(); i++) {
+            
+            Tweet tweet;
+            tweet.id = trends[i]["id_str"].asString();
+            tweet.title = trends[i]["text"].asString();
+            tweet.language = trends[i]["lang"].asString();
+            
+            //tweet.updated = trends[i]["text"].asString();
+            //tweet.published = trends[i]["text"].asString();
+            
+            ofxJSONElement author = trends[i]["user"];
+            
+            tweet.author.name = author["screen_name"].asString();
+            tweet.author.uri  = "https://twitter.com/"+author["screen_name"].asString();
+            tweet.author.imageUri  = author["profile_image_url"].asString();
+            tweet.author.profileimageUri  = author["profile_background_image_url"].asString();
+            
+            data.push_back( tweet );
+            
+            cout << tweet.print();
+        }
+    }
+    
+   
+   
+	// ok, send back results
+	//if (delegate) {
+		//delegate->searchResult(data, tweetQueryIdentifier);
+	//}
+
+}
+
