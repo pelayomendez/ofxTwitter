@@ -14,7 +14,7 @@ Installation
 ------------
 Before using the examples you must create your app and obtain a 'consumer' and a 'secret key' at [https://dev.twitter.com/apps](https://dev.twitter.com/apps)
 
-Don´t forget to provide also a Callback URL like 'http://mydomain.com' on the form (The URL can be anything, its like a boolean saying "my application can use callback-base") That way ofxOAuth can go through the autorization proccess and will create an credentials.xml file on the data folder with your info.
+Don´t forget to provide also a Callback URL like 'http://mydomain.com' on the form (The URL can be anything, its like a boolean saying "my application can use callback-base") That way ofxOAuth can go through the autorization proccess and will create a credentials.xml file on the data folder with your info.
 
 Dependencies
 ------------
