@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
                BuildableName = "example-searchsimple.app"
-               BlueprintName = "example-searchsimple"
-               ReferencedContainer = "container:example-searchsimple.xcodeproj">
+               BlueprintName = "example-query"
+               ReferencedContainer = "container:example-query.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "example-searchsimple.app"
-            BlueprintName = "example-searchsimple"
-            ReferencedContainer = "container:example-searchsimple.xcodeproj">
+            BlueprintName = "example-query"
+            ReferencedContainer = "container:example-query.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "example-searchsimple.app"
-            BlueprintName = "example-searchsimple"
-            ReferencedContainer = "container:example-searchsimple.xcodeproj">
+            BlueprintName = "example-query"
+            ReferencedContainer = "container:example-query.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
             BuildableName = "example-searchsimple.app"
-            BlueprintName = "example-searchsimple"
-            ReferencedContainer = "container:example-searchsimple.xcodeproj">
+            BlueprintName = "example-query"
+            ReferencedContainer = "container:example-query.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

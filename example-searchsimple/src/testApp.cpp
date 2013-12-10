@@ -8,7 +8,7 @@ void testApp::setup(){
     
     // You must create your app and obtain your own keys at https://dev.twitter.com/apps
     // Don«t forget to provide also a Callback URL http://mydomain.com on the form
-    // (can be anything, its like a boolean saying "yes, my application can use callback-base)
+    // (The URL can be anything, its like a boolean saying "yes, my application can use callback-base)
     // ofxOAuth will go through the autorization proccess and will create an credentials.xml file on the data folder with your info
     
     string const CONSUMER_KEY = "VyZSL4qYqiiolN9P6uJgg";
