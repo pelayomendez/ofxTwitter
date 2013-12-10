@@ -127,13 +127,19 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
         
         for(int i = 0; i < trends.size(); i++) {
             
-            Tweet tweet;
+            ofxTwitterTweet tweet;
             
             tweet.id_str = trends[i]["id_str"].asString();
             tweet.created_at = trends[i]["created_at"].asString();
             tweet.language = trends[i]["language"].asString();
             tweet.text = trends[i]["text"].asString();
-            tweet.geo = trends[i]["geo"].asString();
+            
+            if(trends[i]["geo"] != NULL) {
+                tweet.geo = trends[i]["geo"]["type"].asString();
+                tweet.coordinates.x = trends[i]["geo"]["coordinates"][0].asFloat();
+                tweet.coordinates.y = trends[i]["geo"]["coordinates"][1].asFloat();
+            }
+            
             tweet.source = trends[i]["source"].asString();
             tweet.retweet_count = trends[i]["retweet_count"].asInt();
             tweet.truncated = trends[i]["truncated"].asBool();
@@ -163,6 +169,7 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
             tweet.user.profile_use_background_image  = author["profile_use_background_image"].asBool();
             
             data.push_back( tweet );
+            
             //tweet.print();
             
         }
@@ -179,4 +186,13 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
 	//}
 
 }
+
+//--------------------------------------------------------------
+ofxTwitterTweet ofxTwitter::getTweetByIndex(int index) {
+    
+    return data[index];
+    
+}
+
+
 

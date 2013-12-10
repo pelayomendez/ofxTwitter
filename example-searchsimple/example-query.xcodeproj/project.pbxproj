@@ -138,7 +138,7 @@
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
 		F66C082F38A46DC7354B8863 /* ofxTwitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTwitter.cpp; path = ../src/ofxTwitter.cpp; sourceTree = SOURCE_ROOT; };
-		FF8380B29E01E9FD1AF71987 /* Tweet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Tweet.h; path = ../src/Tweet.h; sourceTree = SOURCE_ROOT; };
+		FF8380B29E01E9FD1AF71987 /* ofxTwitterTweet.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTwitterTweet.h; path = ../src/ofxTwitterTweet.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,7 +337,7 @@
 			children = (
 				F66C082F38A46DC7354B8863 /* ofxTwitter.cpp */,
 				59C0386F68D8BD0605ED64E0 /* ofxTwitter.h */,
-				FF8380B29E01E9FD1AF71987 /* Tweet.h */,
+				FF8380B29E01E9FD1AF71987 /* ofxTwitterTweet.h */,
 				B1358B6A03D7CB8ED10FFE72 /* TwitterDelegate.cpp */,
 				E4DF1E79EE4407EA008E298E /* TwitterDelegate.h */,
 			);

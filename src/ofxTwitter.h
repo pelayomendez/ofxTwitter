@@ -28,8 +28,9 @@
 #include "ofxOAuth.h"
 #include "ofxJSONElement.h"
 
+#include "ofxTwitterTweet.h"
 #include "TwitterDelegate.h"
-#include "Tweet.h"
+
 
 class ofxTwitter {
 
@@ -49,6 +50,7 @@ class ofxTwitter {
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
     
+        ofxTwitterTweet getTweetByIndex(int index);
         int getTotalLoadedTweets() { return data.size(); }
     
         void setSearchDelegate(TwitterDelegate *_delegate) { delegate = _delegate; }
@@ -64,6 +66,6 @@ class ofxTwitter {
     
         int tweetQueryIdentifier;
         TwitterDelegate *delegate;
-        vector<Tweet> data;
+        vector<ofxTwitterTweet> data;
 	
 };

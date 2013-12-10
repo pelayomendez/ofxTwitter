@@ -1,5 +1,5 @@
 /*
- *  Tweet.h
+ *  ofxTwitterTweet.h
  *
  *  Created by Douglas Edric Stanley on 10/12/10
  *  cc-by-sa 2010 www.abstractmachine.net. Some rights reserved.
@@ -16,7 +16,7 @@
 
 #include "ofMain.h"
 
-struct TweetAuthor {
+struct ofxTwitterTweetAuthor {
     
     string id_str;
     string uri;
@@ -41,22 +41,23 @@ struct TweetAuthor {
     
 };
 
-struct Tweet {
+struct ofxTwitterTweet {
 
 	string id_str;
     string created_at;
 	string language;
     string text;
     string geo;
+    ofPoint coordinates;
     string source;
     int retweet_count;
     
     bool truncated;
     
-	TweetAuthor user;
+	ofxTwitterTweetAuthor user;
     
-    Tweet() { }
-	Tweet(string defaultString)	: text(defaultString) { }
+    ofxTwitterTweet() { }
+	ofxTwitterTweet(string defaultString)	: text(defaultString) { }
     
 	void print() {
         
@@ -69,6 +70,7 @@ struct Tweet {
         str +=  "\nlanguage: " + language;
 		str +=  "\ntext: " + text;
         str +=  "\ngeo: " + geo;
+        str +=  "\ncoordinates: " + ofToString(coordinates.x) + "/" + ofToString(coordinates.y);
         str +=  "\nsource: " + source;
         str +=  "\nretweet_count: " + ofToString(retweet_count);
         str +=  "\n--- User ---";

@@ -13,9 +13,9 @@
 #pragma once
 
 #include "ofMain.h"
-#include "Tweet.h"
+#include "ofxTwitterTweet.h"
 
 class TwitterDelegate {
 public:
-	virtual void searchResult(vector<Tweet> results, int queryIdentifier) {}
+	virtual void searchResult(vector<ofxTwitterTweet> results, int queryIdentifier) {}
 };

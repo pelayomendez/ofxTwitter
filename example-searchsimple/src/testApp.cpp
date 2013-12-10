@@ -6,37 +6,63 @@ void testApp::setup(){
     ofBackground(255);
     ofSetFrameRate(30);
     
-    // You must create your app and obtain your own keys at https://dev.twitter.com/apps
-    // Don«t forget to provide also a Callback URL http://mydomain.com on the form
-    // (The URL can be anything, its like a boolean saying "yes, my application can use callback-base)
-    // ofxOAuth will go through the autorization proccess and will create an credentials.xml file on the data folder with your info
-    
-    string const CONSUMER_KEY = "VyZSL4qYqiiolN9P6uJgg";
-    string const CONSUMER_SECRET = "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY";
+    string const CONSUMER_KEY = "";
+    string const CONSUMER_SECRET = "";
     
     twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
+    
+    actualTweet = 0;
     
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 
+    
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-
+    
+    // Print tweets:
+    
+    int maxLineSize = 90;
+    
+    if(twitterClient.getTotalLoadedTweets() > 0) {
+        
+        tweet = twitterClient.getTweetByIndex(actualTweet);
+        
+        ofDrawBitmapString("User:", ofPoint(20,90));
+        ofDrawBitmapStringHighlight(tweet.user.screen_name, ofPoint(120,90));
+        
+        ofDrawBitmapString("Location:", ofPoint(20,120));
+        ofDrawBitmapStringHighlight(tweet.user.location, ofPoint(120,120));
+        
+        ofDrawBitmapString("Descript.:", ofPoint(20,150));
+        string desc = tweet.user.description;
+        for(int i=0;i<(desc.length()/maxLineSize)+1;i++) {
+            ofDrawBitmapStringHighlight(desc.substr(i*maxLineSize,maxLineSize), ofPoint(120,150+(30*i)));
+        }
+        
+        ofDrawBitmapString("Text:", ofPoint(20,240));
+        string text = tweet.text;
+        for(int i=0;i<(text.length()/maxLineSize)+1;i++) {
+            ofDrawBitmapStringHighlight(text.substr(i*maxLineSize,maxLineSize), ofPoint(120,240+(30*i)));
+        }
+        
+    }
+    
+    // Aditional info:
     
     string info;
     info += "App Authorized: " + ofToString(twitterClient.isAuthorized());
-    info += "\n\nTweets loaded: " + ofToString(twitterClient.getTotalLoadedTweets());
+    info += "\nTweets loaded: " + ofToString(twitterClient.getTotalLoadedTweets());
+    if(twitterClient.getTotalLoadedTweets() > 0) {
+        info += "\nShowing: " + ofToString(actualTweet+1) + " / "+ofToString(twitterClient.getTotalLoadedTweets());
+    }
     
     ofSetColor(0);
     ofDrawBitmapString(info, ofPoint(20,20));
-    
-    if(twitterClient.getTotalLoadedTweets() > 0) {
-        ofDrawBitmapStringHighlight(info, ofPoint(20,20));
-    }
     
 }
 
@@ -54,6 +80,14 @@ void testApp::keyReleased(int key){
     
     if(key == 'l') {
         twitterClient.loadCacheFile();
+    }
+    
+    if(key == OF_KEY_UP) {
+        if(actualTweet < twitterClient.getTotalLoadedTweets()-1) actualTweet += 1;
+    }
+    
+    if(key == OF_KEY_DOWN) {
+        if(actualTweet > 0) actualTweet -= 1;
     }
     
 }
