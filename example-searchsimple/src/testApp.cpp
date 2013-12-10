@@ -10,8 +10,7 @@ void testApp::setup(){
     // (its like a boolean saying "yes, my application can use callback-base
     // ofxOAuth will go through the autorization proccess and will create an credentials.xml file
     // On the data folder with your info.
-    
-    twitterClient.setup("VyZSL4qYqiiolN9P6uJgg", "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY");
+    twitterClient.authorize("VyZSL4qYqiiolN9P6uJgg", "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY");
     
 }
 
@@ -39,9 +38,14 @@ void testApp::keyPressed(int key){
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
     
-    if(key == 't') {
+    if(key == 'q') {
         twitterClient.startQuery("cat");
     }
+    
+    if(key == 'l') {
+        twitterClient.loadCacheFile();
+    }
+    
 }
 
 //--------------------------------------------------------------

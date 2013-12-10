@@ -25,7 +25,6 @@
 
 //--------------------------------------------------------------
 ofxTwitter::ofxTwitter():
-bloadCacheActive(false),
 bsaveCacheActive(true)
 {
 
@@ -36,50 +35,61 @@ ofxTwitter::~ofxTwitter(){
 }
 
 //--------------------------------------------------------------
-void ofxTwitter::setup(const string& consumerKey, const string& consumerSecret) {
+void ofxTwitter::authorize(const string& consumerKey, const string& consumerSecret) {
     
-    if(!bloadCacheActive) {
-        oauth.setup("https://api.twitter.com", consumerKey, consumerSecret);
-    } else {
-        //loadCacheFile();
-    }
+    ofLogNotice("ofxTwitter::authorize") << "Authorizing app...";
+    oauth.setup("https://api.twitter.com", consumerKey, consumerSecret);
 	
 }
 
 //--------------------------------------------------------------
-void ofxTwitter::loadCacheFile() {
-    // TODO.
-}
-
-//--------------------------------------------------------------
 bool ofxTwitter::isAuthorized() {
+    
     return oauth.isAuthorized();
-}
 
-//--------------------------------------------------------------
-bool ofxTwitter::loadCacheIsActive() {
-    return bloadCacheActive;
-}
-
-//--------------------------------------------------------------
-bool ofxTwitter::saveCacheIsActive() {
-    return bsaveCacheActive;
 }
 
 //--------------------------------------------------------------
 void ofxTwitter::startQuery(string keywords, int count) {
     
-    string query = "/1.1/search/tweets.json?count="+ofToString(count)+"?q=";
-    query += keywords;
-    
     if(oauth.isAuthorized()) {
+        string query = "/1.1/search/tweets.json?count="+ofToString(count)+"?q=";
+        query += keywords;
         dataRequested = "";
         dataRequested = oauth.get(query);
         ofAddListener(ofEvents().update,this,&ofxTwitter::newResponse);
+    } else {
+        ofLogError("ofxTwitter::startQuery") << "Local cache is active.";
     }
     
     //tweetQueryIdentifier = 0;
 
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::loadCacheFile() {
+    
+    ofLogNotice("ofxTwitter::loadCacheFile") << "Loading local file 'cache.json'";
+    ofxJSONElement result;
+    bool parsingSuccessful = result.openLocal("cache.json");
+    if (parsingSuccessful) {
+        parseResponse(result);
+    } else {
+        ofLogError("ofxTwitter::loadCacheFile") << "Failed to load JSON";
+    }
+    
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::setCache(bool newSaveCache) {
+    
+    bsaveCacheActive = newSaveCache;
+    
+}
+
+//--------------------------------------------------------------
+bool ofxTwitter::saveCacheIsActive() {
+    return bsaveCacheActive;
 }
 
 //--------------------------------------------------------------
@@ -91,11 +101,11 @@ void ofxTwitter::newResponse(ofEventArgs& args) {
         bool parsingSuccessful = result.parse(dataRequested);
         if (parsingSuccessful) {
             if(bsaveCacheActive) result.save("cache.json",true);
-            cout << "ofxTwitter: Tweets parsed OK." << endl;
+            ofLogNotice("ofxTwitter::newResponse") << "Tweets JSON parsed.";
             //cout << result.getRawString() << endl;
             parseResponse(result);
         } else {
-            cout  << "ofxTwitter: Failed to parse JSON" << endl;
+            ofLogError("ofxTwitter::newResponse") << "Failed to parse JSON" << endl;
         }
         
         dataRequested = "";
@@ -152,9 +162,11 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
             tweet.user.profile_use_background_image  = author["profile_use_background_image"].asBool();
             
             data.push_back( tweet );
-            tweet.print();
+            //tweet.print();
             
         }
+        
+        ofLogNotice("ofxTwitter::parseResponse") << "(" << data.size() << ") Tweets ready";
         
     }
     
