@@ -29,7 +29,7 @@ void testApp::draw(){
     
     string info;
     info += "App Authorized: " + ofToString(twitterClient.isAuthorized());
-    info += "\nTweets loaded: " + ofToString(twitterClient.getTotalLoadedTweets());
+    info += "\n\nTweets loaded: " + ofToString(twitterClient.getTotalLoadedTweets());
     
     ofSetColor(0);
     ofDrawBitmapString(info, ofPoint(20,20));
