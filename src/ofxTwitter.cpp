@@ -16,9 +16,9 @@
  *  Added POST query method.
  *
  *  Edited by Pelayo MŽndez on 09/12/13
- *  Migrate to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
+ *  Migrated to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
  *  Using Christopher Baker ofxOAuth adddon https://github.com/bakercp/ofxOAuth
- *  https://github.com/jefftimesten/ofxJSON ofxJSON for parsing data as XMl is not supported anymore
+ *  Using  ofxJSON for parsing data as XMl is not supported anymore https://github.com/jefftimesten/ofxJSON
  */
 
 #include "ofxTwitter.h"
@@ -31,6 +31,7 @@ bsaveCacheActive(true)
 
 }
 
+//--------------------------------------------------------------
 ofxTwitter::~ofxTwitter(){
 }
 
@@ -45,26 +46,30 @@ void ofxTwitter::setup(const string& consumerKey, const string& consumerSecret) 
 	
 }
 
+//--------------------------------------------------------------
 void ofxTwitter::loadCacheFile() {
     // TODO.
 }
 
+//--------------------------------------------------------------
 bool ofxTwitter::isAuthorized() {
     return oauth.isAuthorized();
 }
 
+//--------------------------------------------------------------
 bool ofxTwitter::loadCacheIsActive() {
     return bloadCacheActive;
 }
 
+//--------------------------------------------------------------
 bool ofxTwitter::saveCacheIsActive() {
     return bsaveCacheActive;
 }
 
 //--------------------------------------------------------------
-void ofxTwitter::startQuery(string keywords) {
+void ofxTwitter::startQuery(string keywords, int count) {
     
-    string query = "/1.1/search/tweets.json?count=1?q=";
+    string query = "/1.1/search/tweets.json?count="+ofToString(count)+"?q=";
     query += keywords;
     
     if(oauth.isAuthorized()) {
@@ -100,34 +105,57 @@ void ofxTwitter::newResponse(ofEventArgs& args) {
 	
 }
 
-
+//--------------------------------------------------------------
 void ofxTwitter::parseResponse(ofxJSONElement result) {
     
-	data.clear();
-   
     if(result.isMember("statuses")) {
+        
+        data.clear();
+        
         ofxJSONElement trends = result["statuses"];
+        
         for(int i = 0; i < trends.size(); i++) {
             
             Tweet tweet;
-            tweet.id = trends[i]["id_str"].asString();
-            tweet.title = trends[i]["text"].asString();
-            tweet.language = trends[i]["lang"].asString();
             
-            //tweet.updated = trends[i]["text"].asString();
-            //tweet.published = trends[i]["text"].asString();
+            tweet.id_str = trends[i]["id_str"].asString();
+            tweet.created_at = trends[i]["created_at"].asString();
+            tweet.language = trends[i]["language"].asString();
+            tweet.text = trends[i]["text"].asString();
+            tweet.geo = trends[i]["geo"].asString();
+            tweet.source = trends[i]["source"].asString();
+            tweet.retweet_count = trends[i]["retweet_count"].asInt();
+            tweet.truncated = trends[i]["truncated"].asBool();
             
             ofxJSONElement author = trends[i]["user"];
             
-            tweet.author.name = author["screen_name"].asString();
-            tweet.author.uri  = "https://twitter.com/"+author["screen_name"].asString();
-            tweet.author.imageUri  = author["profile_image_url"].asString();
-            tweet.author.profileimageUri  = author["profile_background_image_url"].asString();
+            tweet.user.id_str = author["id_str"].asString();
+            tweet.user.uri = "https://twitter.com/"+author["screen_name"].asString();
+            
+            tweet.user.name = author["name"].asString();
+            tweet.user.screen_name = author["screen_name"].asString();
+            tweet.user.description = author["description"].asString();
+            tweet.user.location = author["location"].asString();
+            tweet.user.lang = author["lang"].asString();
+            tweet.user.url = author["url"].asString();
+            
+            tweet.user.default_profile = author["default_profile"].asBool();
+            tweet.user.default_profile_image = author["default_profile_image"].asBool();
+            tweet.user.geo_enabled = author["geo_enabled"].asBool();
+            
+            tweet.user.profile_image_url = author["profile_image_url"].asString();
+            tweet.user.profile_banner_url = author["profile_banner_url"].asString();
+            tweet.user.profile_background_image_url = author["profile_background_image_url"].asString();
+            tweet.user.profile_background_color = author["profile_background_color"].asString();
+            
+            tweet.user.profile_background_tile  = author["profile_background_tile"].asBool();
+            tweet.user.profile_use_background_image  = author["profile_use_background_image"].asBool();
             
             data.push_back( tweet );
+            tweet.print();
             
-            cout << tweet.print();
         }
+        
     }
     
    

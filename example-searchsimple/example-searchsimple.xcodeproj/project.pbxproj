@@ -18,7 +18,6 @@
 		3E843FCE18563ED5006B4FE1 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E843FC918563ED5006B4FE1 /* ofxXmlSettings.cpp */; };
 		4B56F25DEB202CBB38502A26 /* TwitterDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1358B6A03D7CB8ED10FFE72 /* TwitterDelegate.cpp */; };
 		532A84E38E54C4F6B8634CD6 /* ofxTwitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F66C082F38A46DC7354B8863 /* ofxTwitter.cpp */; };
-		85179A3E0A9A70473CF262A5 /* Tweet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF7AF88B31256F1303F1230 /* Tweet.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -114,7 +113,6 @@
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		BF57A5AD5B18ABAEF1C0DCA6 /* curl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = curl.h; path = ../../ofxOAuth/libs/libcurl/include/curl/curl.h; sourceTree = SOURCE_ROOT; };
 		C9F8CA58B35FC37FA28DCB84 /* ofxOAuthVerifierCallbackServer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOAuthVerifierCallbackServer.h; path = ../../ofxOAuth/src/ofxOAuthVerifierCallbackServer.h; sourceTree = SOURCE_ROOT; };
-		DEF7AF88B31256F1303F1230 /* Tweet.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Tweet.cpp; path = ../src/Tweet.cpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -339,7 +337,6 @@
 			children = (
 				F66C082F38A46DC7354B8863 /* ofxTwitter.cpp */,
 				59C0386F68D8BD0605ED64E0 /* ofxTwitter.h */,
-				DEF7AF88B31256F1303F1230 /* Tweet.cpp */,
 				FF8380B29E01E9FD1AF71987 /* Tweet.h */,
 				B1358B6A03D7CB8ED10FFE72 /* TwitterDelegate.cpp */,
 				E4DF1E79EE4407EA008E298E /* TwitterDelegate.h */,
@@ -563,7 +560,6 @@
 				3E843FCD18563ED5006B4FE1 /* tinyxmlparser.cpp in Sources */,
 				37BE17853C4F3BA04E10C8A8 /* ofxOAuth.cpp in Sources */,
 				532A84E38E54C4F6B8634CD6 /* ofxTwitter.cpp in Sources */,
-				85179A3E0A9A70473CF262A5 /* Tweet.cpp in Sources */,
 				4B56F25DEB202CBB38502A26 /* TwitterDelegate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

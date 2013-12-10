@@ -1,12 +1,12 @@
 {
    "search_metadata" : {
-      "completed_in" : 0.0550,
-      "count" : 1,
-      "max_id" : 410124208816259074,
-      "max_id_str" : "410124208816259074",
-      "next_results" : "?max_id=410124208816259073&q=cat&count=1&include_entities=1",
+      "completed_in" : 0.1930,
+      "count" : 10,
+      "max_id" : 410384700759232512,
+      "max_id_str" : "410384700759232512",
+      "next_results" : "?max_id=410384694157803519&q=cat&count=10&include_entities=1",
       "query" : "cat",
-      "refresh_url" : "?since_id=410124208816259074&q=cat&include_entities=1",
+      "refresh_url" : "?since_id=410384700759232512&q=cat&include_entities=1",
       "since_id" : 0,
       "since_id_str" : "0"
    },
@@ -14,48 +14,296 @@
       {
          "contributors" : null,
          "coordinates" : null,
-         "created_at" : "Mon Dec 09 19:10:05 +0000 2013",
+         "created_at" : "Tue Dec 10 12:25:11 +0000 2013",
          "entities" : {
-            "hashtags" : [],
+            "hashtags" : [
+               {
+                  "indices" : [ 58, 62 ],
+                  "text" : "cat"
+               },
+               {
+                  "indices" : [ 63, 69 ],
+                  "text" : "japan"
+               },
+               {
+                  "indices" : [ 70, 75 ],
+                  "text" : "neko"
+               },
+               {
+                  "indices" : [ 76, 82 ],
+                  "text" : "tokyo"
+               },
+               {
+                  "indices" : [ 83, 86 ],
+                  "text" : "猫部"
+               }
+            ],
             "symbols" : [],
-            "urls" : [],
+            "urls" : [
+               {
+                  "display_url" : "blog.goo.ne.jp/jule2856/e/c25…",
+                  "expanded_url" : "http://blog.goo.ne.jp/jule2856/e/c258a8700ea6878bec9ffe41a0302e48",
+                  "indices" : [ 34, 56 ],
+                  "url" : "http://t.co/ivDBBpLCcV"
+               }
+            ],
             "user_mentions" : [
                {
-                  "id" : 354064678,
-                  "id_str" : "354064678",
-                  "indices" : [ 0, 7 ],
-                  "name" : "VKuru",
-                  "screen_name" : "VKuru1"
+                  "id" : 104136204,
+                  "id_str" : "104136204",
+                  "indices" : [ 3, 12 ],
+                  "name" : "店長リク",
+                  "screen_name" : "fromriku"
                }
             ]
          },
          "favorite_count" : 0,
          "favorited" : false,
          "geo" : null,
-         "id" : 410124208816259074,
-         "id_str" : "410124208816259074",
-         "in_reply_to_screen_name" : "VKuru1",
-         "in_reply_to_status_id" : 410123828212543488,
-         "in_reply_to_status_id_str" : "410123828212543488",
-         "in_reply_to_user_id" : 354064678,
-         "in_reply_to_user_id_str" : "354064678",
-         "lang" : "en",
+         "id" : 410384700759232512,
+         "id_str" : "410384700759232512",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "ja",
          "metadata" : {
-            "iso_language_code" : "en",
+            "iso_language_code" : "ja",
             "result_type" : "recent"
          },
          "place" : null,
-         "retweet_count" : 0,
+         "possibly_sensitive" : false,
+         "retweet_count" : 3,
          "retweeted" : false,
-         "source" : "<a href=\"http://janetter.net/\" rel=\"nofollow\">Janetter</a>",
-         "text" : "@VKuru1 lol its better than being at home with them all day",
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Tue Dec 10 06:46:38 +0000 2013",
+            "entities" : {
+               "hashtags" : [
+                  {
+                     "indices" : [ 44, 48 ],
+                     "text" : "cat"
+                  },
+                  {
+                     "indices" : [ 49, 55 ],
+                     "text" : "japan"
+                  },
+                  {
+                     "indices" : [ 56, 61 ],
+                     "text" : "neko"
+                  },
+                  {
+                     "indices" : [ 62, 68 ],
+                     "text" : "tokyo"
+                  },
+                  {
+                     "indices" : [ 69, 72 ],
+                     "text" : "猫部"
+                  }
+               ],
+               "symbols" : [],
+               "urls" : [
+                  {
+                     "display_url" : "blog.goo.ne.jp/jule2856/e/c25…",
+                     "expanded_url" : "http://blog.goo.ne.jp/jule2856/e/c258a8700ea6878bec9ffe41a0302e48",
+                     "indices" : [ 20, 42 ],
+                     "url" : "http://t.co/ivDBBpLCcV"
+                  }
+               ],
+               "user_mentions" : []
+            },
+            "favorite_count" : 0,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 410299500532494336,
+            "id_str" : "410299500532494336",
+            "in_reply_to_screen_name" : null,
+            "in_reply_to_status_id" : null,
+            "in_reply_to_status_id_str" : null,
+            "in_reply_to_user_id" : null,
+            "in_reply_to_user_id_str" : null,
+            "lang" : "ja",
+            "metadata" : {
+               "iso_language_code" : "ja",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "possibly_sensitive" : false,
+            "retweet_count" : 3,
+            "retweeted" : false,
+            "source" : "<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>",
+            "text" : "東京都動物愛護法のパブコメ募集中。 \n\nhttp://t.co/ivDBBpLCcV \n#cat #japan #neko #tokyo ＃猫部",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Tue Jan 12 11:23:01 +0000 2010",
+               "default_profile" : false,
+               "default_profile_image" : false,
+               "description" : "ようふくやのBlueGarden ★FROM　RIKU　店長のリクです。\r\nhttp://t.co/dYj67jEC\r\nhttp://t.co/PY5EWGv0\r\nhttp://t.co/sBk4upd1",
+               "entities" : {
+                  "description" : {
+                     "urls" : [
+                        {
+                           "display_url" : "bg2000.net",
+                           "expanded_url" : "http://www.bg2000.net/",
+                           "indices" : [ 38, 58 ],
+                           "url" : "http://t.co/dYj67jEC"
+                        },
+                        {
+                           "display_url" : "riku33.seesaa.net",
+                           "expanded_url" : "http://riku33.seesaa.net/",
+                           "indices" : [ 60, 80 ],
+                           "url" : "http://t.co/PY5EWGv0"
+                        },
+                        {
+                           "display_url" : "shop.plaza.rakuten.co.jp/fromriku/",
+                           "expanded_url" : "http://shop.plaza.rakuten.co.jp/fromriku/",
+                           "indices" : [ 82, 102 ],
+                           "url" : "http://t.co/sBk4upd1"
+                        }
+                     ]
+                  },
+                  "url" : {
+                     "urls" : [
+                        {
+                           "display_url" : "rakuten.co.jp/fromriku/",
+                           "expanded_url" : "http://www.rakuten.co.jp/fromriku/",
+                           "indices" : [ 0, 22 ],
+                           "url" : "http://t.co/jGeRxrDtvX"
+                        }
+                     ]
+                  }
+               },
+               "favourites_count" : 318,
+               "follow_request_sent" : false,
+               "followers_count" : 229,
+               "following" : false,
+               "friends_count" : 478,
+               "geo_enabled" : true,
+               "id" : 104136204,
+               "id_str" : "104136204",
+               "is_translator" : false,
+               "lang" : "ja",
+               "listed_count" : 7,
+               "location" : "東京都しぶやく",
+               "name" : "店長リク",
+               "notifications" : false,
+               "profile_background_color" : "ACDED6",
+               "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme18/bg.gif",
+               "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme18/bg.gif",
+               "profile_background_tile" : false,
+               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/104136204/1353752960",
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/626334546/riku_normal.gif",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/626334546/riku_normal.gif",
+               "profile_link_color" : "038543",
+               "profile_sidebar_border_color" : "EEEEEE",
+               "profile_sidebar_fill_color" : "F6F6F6",
+               "profile_text_color" : "333333",
+               "profile_use_background_image" : true,
+               "protected" : false,
+               "screen_name" : "fromriku",
+               "statuses_count" : 8950,
+               "time_zone" : "Hawaii",
+               "url" : "http://t.co/jGeRxrDtvX",
+               "utc_offset" : -36000,
+               "verified" : false
+            }
+         },
+         "source" : "web",
+         "text" : "RT @fromriku: 東京都動物愛護法のパブコメ募集中。 \n\nhttp://t.co/ivDBBpLCcV \n#cat #japan #neko #tokyo ＃猫部",
          "truncated" : false,
          "user" : {
             "contributors_enabled" : false,
-            "created_at" : "Sat Aug 07 01:12:15 +0000 2010",
+            "created_at" : "Sun Mar 27 18:21:27 +0000 2011",
             "default_profile" : false,
             "default_profile_image" : false,
-            "description" : "Hyper-sexual bigendered bishonen princess, Reverse Trap, Lesbian, and gay man. I sing, dance and write poetry. #SWAG  #NSFW #FoolArcana Jailed: @GrimoireKaylyn",
+            "description" : "、弱者に強く、強者に弱い、人間社会の仕組みが大嫌い、２人の娘、古典、自然、動物が大好き、猫や犬に頼まれた訳ではないけど、傷ついたり、病気だったり、するとついつれて帰ってしまう。お腹の大きな猫を見ると、避妊してしまう、自由が良いのかもしれないけど、御免ね。",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 93,
+            "follow_request_sent" : false,
+            "followers_count" : 616,
+            "following" : false,
+            "friends_count" : 603,
+            "geo_enabled" : true,
+            "id" : 273044690,
+            "id_str" : "273044690",
+            "is_translator" : false,
+            "lang" : "ja",
+            "listed_count" : 11,
+            "location" : "",
+            "name" : "　浩代",
+            "notifications" : false,
+            "profile_background_color" : "642D8B",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme10/bg.gif",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme10/bg.gif",
+            "profile_background_tile" : true,
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000385623600/e1123efb701614b73bfb09033227df87_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000385623600/e1123efb701614b73bfb09033227df87_normal.jpeg",
+            "profile_link_color" : "FF0000",
+            "profile_sidebar_border_color" : "65B0DA",
+            "profile_sidebar_fill_color" : "7AC3EE",
+            "profile_text_color" : "3D1957",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "hiroyo314",
+            "statuses_count" : 6972,
+            "time_zone" : "Hawaii",
+            "url" : null,
+            "utc_offset" : -36000,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:11 +0000 2013",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "bit.ly/18z56Zh",
+                  "expanded_url" : "http://bit.ly/18z56Zh",
+                  "indices" : [ 50, 72 ],
+                  "url" : "http://t.co/gAcLJXaqQH"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 1,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384699895603200,
+         "id_str" : "410384699895603200",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "pt",
+         "metadata" : {
+            "iso_language_code" : "pt",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">HootSuite</a>",
+         "text" : "Escola Agrícola de MS entre as melhores do Brasil http://t.co/gAcLJXaqQH",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Wed Jun 10 17:06:35 +0000 2009",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "O Twitter de Notícias de Campo Grande e do Mato Grosso do Sul | Colabore interativo@capitalnews.com.br",
             "entities" : {
                "description" : {
                   "urls" : []
@@ -63,46 +311,987 @@
                "url" : {
                   "urls" : [
                      {
-                        "display_url" : "gunstabwounds.tumblr.com/stabs",
-                        "expanded_url" : "http://gunstabwounds.tumblr.com/stabs",
+                        "display_url" : "capitalnews.com.br",
+                        "expanded_url" : "http://capitalnews.com.br",
                         "indices" : [ 0, 22 ],
-                        "url" : "http://t.co/rwuoy0TDyA"
+                        "url" : "http://t.co/hNdFshKwFG"
                      }
                   ]
                }
             },
-            "favourites_count" : 387,
+            "favourites_count" : 1,
             "follow_request_sent" : false,
-            "followers_count" : 1263,
+            "followers_count" : 2074,
             "following" : false,
-            "friends_count" : 907,
+            "friends_count" : 396,
             "geo_enabled" : true,
-            "id" : 175586738,
-            "id_str" : "175586738",
+            "id" : 46162753,
+            "id_str" : "46162753",
             "is_translator" : false,
-            "lang" : "en",
-            "listed_count" : 38,
-            "location" : "In Shadows Growing Wings",
-            "name" : "Phoebe Kaylliwell",
+            "lang" : "pt",
+            "listed_count" : 47,
+            "location" : "Mato Grosso do Sul - Brasil",
+            "name" : "CapitalNews.com.br",
             "notifications" : false,
-            "profile_background_color" : "800A31",
-            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000139009818/ZZIdGClG.jpeg",
-            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000139009818/ZZIdGClG.jpeg",
+            "profile_background_color" : "FFFFFF",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/312937374/wallpaperCPNews.jpg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/312937374/wallpaperCPNews.jpg",
             "profile_background_tile" : false,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/175586738/1382489675",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000834732904/7f24e7ed16e0c82437c407c33dba48bf_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000834732904/7f24e7ed16e0c82437c407c33dba48bf_normal.jpeg",
-            "profile_link_color" : "800A31",
-            "profile_sidebar_border_color" : "FFFFFF",
-            "profile_sidebar_fill_color" : "FF3D84",
-            "profile_text_color" : "080808",
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/46162753/1355336623",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/1112125837/Capital_News_normal.jpg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/1112125837/Capital_News_normal.jpg",
+            "profile_link_color" : "2028C7",
+            "profile_sidebar_border_color" : "0000CF",
+            "profile_sidebar_fill_color" : "CCCFE0",
+            "profile_text_color" : "000000",
             "profile_use_background_image" : true,
             "protected" : false,
-            "screen_name" : "Kayshire_Cat",
-            "statuses_count" : 279198,
-            "time_zone" : "Central Time (US & Canada)",
-            "url" : "http://t.co/rwuoy0TDyA",
-            "utc_offset" : -21600,
+            "screen_name" : "CapitalNews",
+            "statuses_count" : 25410,
+            "time_zone" : "Atlantic Time (Canada)",
+            "url" : "http://t.co/hNdFshKwFG",
+            "utc_offset" : -14400,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:11 +0000 2013",
+         "entities" : {
+            "hashtags" : [
+               {
+                  "indices" : [ 37, 41 ],
+                  "text" : "cat"
+               },
+               {
+                  "indices" : [ 42, 56 ],
+                  "text" : "blackandwhite"
+               },
+               {
+                  "indices" : [ 57, 64 ],
+                  "text" : "flickr"
+               }
+            ],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "flic.kr/p/ie8MGB",
+                  "expanded_url" : "http://flic.kr/p/ie8MGB",
+                  "indices" : [ 14, 36 ],
+                  "url" : "http://t.co/mD65iiSL1i"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384699878424576,
+         "id_str" : "410384699878424576",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "web",
+         "text" : "black dressed http://t.co/mD65iiSL1i #cat #blackandwhite #flickr",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Sat Dec 08 19:06:48 +0000 2012",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "artist",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "bit.ly/18dU0L9",
+                        "expanded_url" : "http://bit.ly/18dU0L9",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/gqcriNP80o"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 55,
+            "follow_request_sent" : false,
+            "followers_count" : 49,
+            "following" : false,
+            "friends_count" : 100,
+            "geo_enabled" : false,
+            "id" : 997774704,
+            "id_str" : "997774704",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 0,
+            "location" : "istanbul",
+            "name" : "marvinthemartian",
+            "notifications" : false,
+            "profile_background_color" : "4093C7",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000139814550/lf-8ffhu.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000139814550/lf-8ffhu.jpeg",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/997774704/1359819532",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000834138758/e5379ff9bd0f4db551be86c52175658a_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000834138758/e5379ff9bd0f4db551be86c52175658a_normal.jpeg",
+            "profile_link_color" : "2FC2EF",
+            "profile_sidebar_border_color" : "FFFFFF",
+            "profile_sidebar_fill_color" : "252429",
+            "profile_text_color" : "666666",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "photographead",
+            "statuses_count" : 1585,
+            "time_zone" : "Athens",
+            "url" : "http://t.co/gqcriNP80o",
+            "utc_offset" : 7200,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:11 +0000 2013",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "vilaweb.cat/noticia/415987…",
+                  "expanded_url" : "http://www.vilaweb.cat/noticia/4159870/20131210/detectar-logotips-plagiats-denunciar-los.html",
+                  "indices" : [ 56, 78 ],
+                  "url" : "http://t.co/USDeQF9tI5"
+               }
+            ],
+            "user_mentions" : [
+               {
+                  "id" : 151085945,
+                  "id_str" : "151085945",
+                  "indices" : [ 83, 91 ],
+                  "name" : "VilaWeb",
+                  "screen_name" : "VilaWeb"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384698041327616,
+         "id_str" : "410384698041327616",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://twitter.com/tweetbutton\" rel=\"nofollow\">Tweet Button</a>",
+         "text" : "Detectar logotips plagiats... i denunciar-los - VilaWeb http://t.co/USDeQF9tI5 via @vilaweb",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Tue Sep 21 15:57:47 +0000 2010",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "Agència de màrqueting i comunicació | Especialitzats en els mercats professional i institucional",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "comfluencia.com",
+                        "expanded_url" : "http://comfluencia.com",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/VD5JLjy8Y4"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 50,
+            "follow_request_sent" : false,
+            "followers_count" : 362,
+            "following" : false,
+            "friends_count" : 348,
+            "geo_enabled" : true,
+            "id" : 193342830,
+            "id_str" : "193342830",
+            "is_translator" : false,
+            "lang" : "ca",
+            "listed_count" : 14,
+            "location" : "Barcelona",
+            "name" : "Op-team",
+            "notifications" : false,
+            "profile_background_color" : "1A1B1F",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/437018877/Prova_fons_Twitter.jpg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/437018877/Prova_fons_Twitter.jpg",
+            "profile_background_tile" : false,
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/1864796050/Logo9_normal.jpg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/1864796050/Logo9_normal.jpg",
+            "profile_link_color" : "C00000",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "opteam_bcn",
+            "statuses_count" : 1892,
+            "time_zone" : "Madrid",
+            "url" : "http://t.co/VD5JLjy8Y4",
+            "utc_offset" : 3600,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:11 +0000 2013",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "associatedcontent.com/article/247637…",
+                  "expanded_url" : "http://www.associatedcontent.com/article/2476378/how_to_help_a_dog_gain_weight.html?cat=5",
+                  "indices" : [ 0, 22 ],
+                  "url" : "http://t.co/AeZYSJFLwa"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384697693569024,
+         "id_str" : "410384697693569024",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "und",
+         "metadata" : {
+            "iso_language_code" : "und",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://www.socialoomph.com\" rel=\"nofollow\">SocialOomph</a>",
+         "text" : "http://t.co/AeZYSJFLwa",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Thu Oct 07 13:21:16 +0000 2010",
+            "default_profile" : true,
+            "default_profile_image" : true,
+            "description" : "",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 1,
+            "follow_request_sent" : false,
+            "followers_count" : 1381,
+            "following" : false,
+            "friends_count" : 1984,
+            "geo_enabled" : false,
+            "id" : 199669828,
+            "id_str" : "199669828",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 7,
+            "location" : "",
+            "name" : "thomas conroy",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_image_url" : "http://abs.twimg.com/sticky/default_profile_images/default_profile_1_normal.png",
+            "profile_image_url_https" : "https://abs.twimg.com/sticky/default_profile_images/default_profile_1_normal.png",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "goowebcro12",
+            "statuses_count" : 158503,
+            "time_zone" : null,
+            "url" : null,
+            "utc_offset" : null,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:10 +0000 2013",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "asmart.jp/one_ok_rock/",
+                  "expanded_url" : "http://www.asmart.jp/one_ok_rock/",
+                  "indices" : [ 97, 119 ],
+                  "url" : "http://t.co/9IYYCtRedK"
+               }
+            ],
+            "user_mentions" : [
+               {
+                  "id" : 107704535,
+                  "id_str" : "107704535",
+                  "indices" : [ 3, 19 ],
+                  "name" : "ONE OK ROCK_official",
+                  "screen_name" : "ONEOKROCK_japan"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384696514588673,
+         "id_str" : "410384696514588673",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "ja",
+         "metadata" : {
+            "iso_language_code" : "ja",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 2314,
+         "retweeted" : false,
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Mon Dec 09 05:58:28 +0000 2013",
+            "entities" : {
+               "hashtags" : [],
+               "media" : [
+                  {
+                     "display_url" : "pic.twitter.com/n6kTdAcJhr",
+                     "expanded_url" : "http://twitter.com/ONEOKROCK_japan/status/409924988272009216/photo/1",
+                     "id" : 409924988280397824,
+                     "id_str" : "409924988280397824",
+                     "indices" : [ 99, 121 ],
+                     "media_url" : "http://pbs.twimg.com/media/BbBYmt8CYAAKUYz.jpg",
+                     "media_url_https" : "https://pbs.twimg.com/media/BbBYmt8CYAAKUYz.jpg",
+                     "sizes" : {
+                        "large" : {
+                           "h" : 1202,
+                           "resize" : "fit",
+                           "w" : 1024
+                        },
+                        "medium" : {
+                           "h" : 704,
+                           "resize" : "fit",
+                           "w" : 600
+                        },
+                        "small" : {
+                           "h" : 399,
+                           "resize" : "fit",
+                           "w" : 340
+                        },
+                        "thumb" : {
+                           "h" : 150,
+                           "resize" : "crop",
+                           "w" : 150
+                        }
+                     },
+                     "type" : "photo",
+                     "url" : "http://t.co/n6kTdAcJhr"
+                  }
+               ],
+               "symbols" : [],
+               "urls" : [
+                  {
+                     "display_url" : "asmart.jp/one_ok_rock/",
+                     "expanded_url" : "http://www.asmart.jp/one_ok_rock/",
+                     "indices" : [ 76, 98 ],
+                     "url" : "http://t.co/9IYYCtRedK"
+                  }
+               ],
+               "user_mentions" : []
+            },
+            "favorite_count" : 1945,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 409924988272009216,
+            "id_str" : "409924988272009216",
+            "in_reply_to_screen_name" : null,
+            "in_reply_to_status_id" : null,
+            "in_reply_to_status_id_str" : null,
+            "in_reply_to_user_id" : null,
+            "in_reply_to_user_id_str" : null,
+            "lang" : "ja",
+            "metadata" : {
+               "iso_language_code" : "ja",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "possibly_sensitive" : false,
+            "retweet_count" : 2314,
+            "retweeted" : false,
+            "source" : "web",
+            "text" : "ONE OK ROCKが年に1回発行するMEMBERS CARD付属PHOTO BOOK『PRIMAL FOOTMARK 2014』発売開始!\n詳細⇒ http://t.co/9IYYCtRedK http://t.co/n6kTdAcJhr",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Sat Jan 23 12:50:12 +0000 2010",
+               "default_profile" : false,
+               "default_profile_image" : false,
+               "description" : "ONE OK ROCK Band Member & Staff official twitter!\r\nAlbum[Jinsei × Boku =] _Release! \r\nemo/rock/metal\r\nFB ; http://t.co/g73T7IFIdS",
+               "entities" : {
+                  "description" : {
+                     "urls" : [
+                        {
+                           "display_url" : "facebook.com/ONEOKROCK",
+                           "expanded_url" : "http://www.facebook.com/ONEOKROCK",
+                           "indices" : [ 107, 129 ],
+                           "url" : "http://t.co/g73T7IFIdS"
+                        }
+                     ]
+                  },
+                  "url" : {
+                     "urls" : [
+                        {
+                           "display_url" : "oneokrock.com",
+                           "expanded_url" : "http://www.oneokrock.com",
+                           "indices" : [ 0, 22 ],
+                           "url" : "http://t.co/qtrp7FsZO5"
+                        }
+                     ]
+                  }
+               },
+               "favourites_count" : 1,
+               "follow_request_sent" : false,
+               "followers_count" : 325237,
+               "following" : false,
+               "friends_count" : 11,
+               "geo_enabled" : false,
+               "id" : 107704535,
+               "id_str" : "107704535",
+               "is_translator" : false,
+               "lang" : "ja",
+               "listed_count" : 3203,
+               "location" : "",
+               "name" : "ONE OK ROCK_official",
+               "notifications" : false,
+               "profile_background_color" : "FFFFFF",
+               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/731455492/86bd081152001ed3e2323dab3d779afd.jpeg",
+               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/731455492/86bd081152001ed3e2323dab3d779afd.jpeg",
+               "profile_background_tile" : false,
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/3291102959/ee15c195696adcfc9045ef3e7961d396_normal.png",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/3291102959/ee15c195696adcfc9045ef3e7961d396_normal.png",
+               "profile_link_color" : "0084B4",
+               "profile_sidebar_border_color" : "FFFFFF",
+               "profile_sidebar_fill_color" : "DDEEF6",
+               "profile_text_color" : "333333",
+               "profile_use_background_image" : true,
+               "protected" : false,
+               "screen_name" : "ONEOKROCK_japan",
+               "statuses_count" : 627,
+               "time_zone" : "Tokyo",
+               "url" : "http://t.co/qtrp7FsZO5",
+               "utc_offset" : 32400,
+               "verified" : true
+            }
+         },
+         "source" : "<a href=\"http://twtr.jp\" rel=\"nofollow\">Keitai Web</a>",
+         "text" : "RT @ONEOKROCK_japan: ONE OK ROCKが年に1回発行するMEMBERS CARD付属PHOTO BOOK『PRIMAL FOOTMARK 2014』発売開始!\n詳細⇒ http://t.co/9IYYCtRedK http://t.co/n6kTdAc…",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Sat Jul 14 10:09:08 +0000 2012",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "Nゲージと車とバイクが欲しいです！\r\n 趣味は電車全般と車やバイク、アニメ、モデルガン、ベースですw \r\nONE OK ROCKとBUMP OF CHICKENの大ファンです 一応pixivもやってます! \r\n気軽にフォローしてください(｀∇´ゞ",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "pixiv.net/member.php?id=…",
+                        "expanded_url" : "http://www.pixiv.net/member.php?id=4474793",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/OrShRSGipp"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 4,
+            "follow_request_sent" : false,
+            "followers_count" : 53,
+            "following" : false,
+            "friends_count" : 88,
+            "geo_enabled" : false,
+            "id" : 635276887,
+            "id_str" : "635276887",
+            "is_translator" : false,
+            "lang" : "ja",
+            "listed_count" : 1,
+            "location" : "兵庫県",
+            "name" : "デメキン瑛提督＠金剛ちゃんマジ嫁にしたい",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/649222205/w9oh0111sd2cga3hl8po.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/649222205/w9oh0111sd2cga3hl8po.jpeg",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/635276887/1362821938",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000302255987/5422cbc12a0add59f74ba59bc76ff6b6_normal.png",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000302255987/5422cbc12a0add59f74ba59bc76ff6b6_normal.png",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "sh824225kei",
+            "statuses_count" : 6146,
+            "time_zone" : "Irkutsk",
+            "url" : "http://t.co/OrShRSGipp",
+            "utc_offset" : 32400,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:10 +0000 2013",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "ma7room.com/music/download…",
+                  "expanded_url" : "http://www.ma7room.com/music/download.php?id=15899&cat=2",
+                  "indices" : [ 30, 52 ],
+                  "url" : "http://t.co/ldVILOwrRq"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384694526902272,
+         "id_str" : "410384694526902272",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "ar",
+         "metadata" : {
+            "iso_language_code" : "ar",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+         "text" : "_لكل_رجل_لا_يفهم_الأنثى \n     http://t.co/ldVILOwrRq             \nيستحق الاستماع!\n\n'",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Fri Aug 09 14:54:35 +0000 2013",
+            "default_profile" : true,
+            "default_profile_image" : false,
+            "description" : "",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 0,
+            "follow_request_sent" : false,
+            "followers_count" : 373,
+            "following" : false,
+            "friends_count" : 1533,
+            "geo_enabled" : false,
+            "id" : 1657953289,
+            "id_str" : "1657953289",
+            "is_translator" : false,
+            "lang" : "ar",
+            "listed_count" : 0,
+            "location" : "",
+            "name" : "ALI.N.ALNAJEM",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/1657953289/1386675081",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000516508149/e717a50babd44bef4c7d4a436935b759_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000516508149/e717a50babd44bef4c7d4a436935b759_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "bo_nawaf555",
+            "statuses_count" : 205,
+            "time_zone" : null,
+            "url" : null,
+            "utc_offset" : null,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:10 +0000 2013",
+         "entities" : {
+            "hashtags" : [
+               {
+                  "indices" : [ 85, 88 ],
+                  "text" : "猫部"
+               }
+            ],
+            "media" : [
+               {
+                  "display_url" : "pic.twitter.com/lwysSPTQb0",
+                  "expanded_url" : "http://twitter.com/MakiLilmom/status/406433813816803328/photo/1",
+                  "id" : 406433813691002880,
+                  "id_str" : "406433813691002880",
+                  "indices" : [ 115, 137 ],
+                  "media_url" : "http://pbs.twimg.com/media/BaPxZnHCcAAqSP3.jpg",
+                  "media_url_https" : "https://pbs.twimg.com/media/BaPxZnHCcAAqSP3.jpg",
+                  "sizes" : {
+                     "large" : {
+                        "h" : 345,
+                        "resize" : "fit",
+                        "w" : 612
+                     },
+                     "medium" : {
+                        "h" : 338,
+                        "resize" : "fit",
+                        "w" : 600
+                     },
+                     "small" : {
+                        "h" : 192,
+                        "resize" : "fit",
+                        "w" : 340
+                     },
+                     "thumb" : {
+                        "h" : 150,
+                        "resize" : "crop",
+                        "w" : 150
+                     }
+                  },
+                  "source_status_id" : 406433813816803328,
+                  "source_status_id_str" : "406433813816803328",
+                  "type" : "photo",
+                  "url" : "http://t.co/lwysSPTQb0"
+               }
+            ],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "city.yokohama.lg.jp/kenko/hokenjo/…",
+                  "expanded_url" : "http://www.city.yokohama.lg.jp/kenko/hokenjo/genre/douai/joto/jotoinfo-cat.html",
+                  "indices" : [ 92, 114 ],
+                  "url" : "http://t.co/ZMDXga9rMv"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384694190952449,
+         "id_str" : "410384694190952449",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "ja",
+         "metadata" : {
+            "iso_language_code" : "ja",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://tweetli.st/\" rel=\"nofollow\">TweetList!</a>",
+         "text" : "拡散ご協力お願い致します。横浜市動物愛護センターは、月曜日～土曜日　8:45～17:15 譲渡可能の犬猫達に会えます。写真は、新しい家族との出逢いを待っている猫たちです。#猫部 #ネコhttp://t.co/ZMDXga9rMv http://t.co/lwysSPTQb0",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Mon Jan 02 14:48:06 +0000 2012",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "休日はシェルターボランティアしてます。        ₍˄·͈༝·͈˄*₎◞ ̑̑ 犬も猫も大好き ੯ूᵕू ໒꒱♡",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 1005,
+            "follow_request_sent" : false,
+            "followers_count" : 1306,
+            "following" : false,
+            "friends_count" : 874,
+            "geo_enabled" : false,
+            "id" : 453056088,
+            "id_str" : "453056088",
+            "is_translator" : false,
+            "lang" : "ja",
+            "listed_count" : 44,
+            "location" : "横浜⇆川崎・沖縄・JAPAN",
+            "name" : "MSM☻FAMILY",
+            "notifications" : false,
+            "profile_background_color" : "FF6699",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme11/bg.gif",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme11/bg.gif",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/453056088/1348074917",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/2322439267/image_normal.jpg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/2322439267/image_normal.jpg",
+            "profile_link_color" : "B40B43",
+            "profile_sidebar_border_color" : "CC3366",
+            "profile_sidebar_fill_color" : "E5507E",
+            "profile_text_color" : "362720",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "MakiLilmom",
+            "statuses_count" : 32100,
+            "time_zone" : "Hawaii",
+            "url" : null,
+            "utc_offset" : -36000,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:10 +0000 2013",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "mesonet.agron.iastate.edu/onsite/feature…",
+                  "expanded_url" : "http://mesonet.agron.iastate.edu/onsite/features/cat.php?day=2013-12-10",
+                  "indices" : [ 59, 81 ],
+                  "url" : "http://t.co/BMtokLYBFp"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384694166167552,
+         "id_str" : "410384694166167552",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">HootSuite</a>",
+         "text" : "Will this snow stick around and give us a white Christmas? http://t.co/BMtokLYBFp",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Tue Jun 15 00:33:57 +0000 2010",
+            "default_profile" : true,
+            "default_profile_image" : false,
+            "description" : "Meteorologist Jason Parkin's weather forecasts can be found on Twitter at @GreatDayWeather, on KCWI-23HD weekdays 6-9am and at http://t.co/Xe0af1N4x3",
+            "entities" : {
+               "description" : {
+                  "urls" : [
+                     {
+                        "display_url" : "kcwi23.com",
+                        "expanded_url" : "http://kcwi23.com",
+                        "indices" : [ 127, 149 ],
+                        "url" : "http://t.co/Xe0af1N4x3"
+                     }
+                  ]
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "kcwi23.com",
+                        "expanded_url" : "http://www.kcwi23.com",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/ZPm2DIZfOA"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 0,
+            "follow_request_sent" : false,
+            "followers_count" : 1356,
+            "following" : false,
+            "friends_count" : 3,
+            "geo_enabled" : false,
+            "id" : 155751241,
+            "id_str" : "155751241",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 57,
+            "location" : "Des Moines, IA USA",
+            "name" : "Jason Parkin",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/3307131302/4908879b47e3c1e8db27b39be9bc84d9_normal.png",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/3307131302/4908879b47e3c1e8db27b39be9bc84d9_normal.png",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "dsmwx",
+            "statuses_count" : 11253,
+            "time_zone" : null,
+            "url" : "http://t.co/ZPm2DIZfOA",
+            "utc_offset" : null,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Dec 10 12:25:10 +0000 2013",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "mesonet.agron.iastate.edu/onsite/feature…",
+                  "expanded_url" : "http://mesonet.agron.iastate.edu/onsite/features/cat.php?day=2013-12-10",
+                  "indices" : [ 59, 81 ],
+                  "url" : "http://t.co/iT1jtMjxDO"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 410384694157803520,
+         "id_str" : "410384694157803520",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">HootSuite</a>",
+         "text" : "Will this snow stick around and give us a white Christmas? http://t.co/iT1jtMjxDO",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Tue Nov 27 17:18:09 +0000 2012",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "Great Day Weather from Jason Parkin & KCWI 23",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "kcwi23.com",
+                        "expanded_url" : "http://kcwi23.com",
+                        "indices" : [ 0, 20 ],
+                        "url" : "http://t.co/gjQWxJAM"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 0,
+            "follow_request_sent" : false,
+            "followers_count" : 269,
+            "following" : false,
+            "friends_count" : 103,
+            "geo_enabled" : false,
+            "id" : 974291822,
+            "id_str" : "974291822",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 5,
+            "location" : "Des Moines, Iowa",
+            "name" : "Great Day Weather",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/722990382/b016fc24f84b2ffce3cffc090ef66801.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/722990382/b016fc24f84b2ffce3cffc090ef66801.jpeg",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/974291822/1354037694",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/2903170513/4908879b47e3c1e8db27b39be9bc84d9_normal.png",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/2903170513/4908879b47e3c1e8db27b39be9bc84d9_normal.png",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "000000",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "GreatDayWeather",
+            "statuses_count" : 4753,
+            "time_zone" : "Eastern Time (US & Canada)",
+            "url" : "http://t.co/gjQWxJAM",
+            "utc_offset" : -18000,
             "verified" : false
          }
       }

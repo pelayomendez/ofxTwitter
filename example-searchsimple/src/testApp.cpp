@@ -6,8 +6,8 @@ void testApp::setup(){
     ofSetFrameRate(30);
     
     // You must obtain your own keys at https://dev.twitter.com/
-    // You need to provide any also Callback URL http://mydomain.com on the form
-    // its like a boolean saying "yes, my application can use callback-base
+    // You need to provide also a Callback URL http://mydomain.com on the form
+    // (its like a boolean saying "yes, my application can use callback-base
     // ofxOAuth will go through the autorization proccess and will create an credentials.xml file
     // On the data folder with your info.
     

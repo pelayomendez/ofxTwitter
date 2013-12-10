@@ -38,14 +38,14 @@ class ofxTwitter {
         ~ofxTwitter();
     
         void setup(const string& consumerKey, const string& consumerSecret);
-    
         bool isAuthorized();
+    
         bool loadCacheIsActive();
         bool saveCacheIsActive();
         //void setCacheActive(bool loadChache, bool saveChache);
         void loadCacheFile();
     
-        void startQuery(string keywords);
+        void startQuery(string keywords, int count = 10);
         //void startTwitterQuery(string keywords, int repliesPerPage=10, int pageIndex=1, int queryIdentifier=0);
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
