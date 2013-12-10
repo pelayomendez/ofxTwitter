@@ -16,9 +16,10 @@
  *  Added POST query method.
  * 
  *  Edited by Pelayo MŽndez on 09/12/13
- *  Migrate to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
+ *  Migrated to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
  *  Using Christopher Baker ofxOAuth adddon https://github.com/bakercp/ofxOAuth
- *  https://github.com/jefftimesten/ofxJSON ofxJSON for parsing data as XMl is not supported anymore
+ *  Using  ofxJSON for parsing data as XMl is not supported anymore https://github.com/jefftimesten/ofxJSON
+ *
  */
 
 #pragma once
@@ -45,9 +46,10 @@ class ofxTwitter {
         bool saveCacheIsActive();
     
         void startQuery(string keywords, int count = 10);
-        //void startTwitterQuery(string keywords, int repliesPerPage=10, int pageIndex=1, int queryIdentifier=0);
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
+    
+        int getTotalLoadedTweets() { return data.size(); }
     
         void setSearchDelegate(TwitterDelegate *_delegate) { delegate = _delegate; }
 

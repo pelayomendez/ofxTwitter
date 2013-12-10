@@ -19,6 +19,7 @@
  *  Migrated to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
  *  Using Christopher Baker ofxOAuth adddon https://github.com/bakercp/ofxOAuth
  *  Using  ofxJSON for parsing data as XMl is not supported anymore https://github.com/jefftimesten/ofxJSON
+ *
  */
 
 #include "ofxTwitter.h"

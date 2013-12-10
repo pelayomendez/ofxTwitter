@@ -89,3 +89,7 @@ Desktop.ini
 *.log
 *.sql
 *.sqlite
+
+# Specific files
+
+credentials.xml
