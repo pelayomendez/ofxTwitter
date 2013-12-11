@@ -26,13 +26,25 @@
 
 //--------------------------------------------------------------
 ofxTwitter::ofxTwitter():
-bsaveCacheActive(true)
+bDiskCacheActive(false),
+bLoadUserProfileImageOnMemory(false),
+bLoadUserBannerImageOnMemory(false)
 {
 
 }
 
 //--------------------------------------------------------------
 ofxTwitter::~ofxTwitter(){
+    
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::appExits(ofEventArgs& args) {
+    
+    ofLogNotice("ofxTwitter::appExits") << "Clearing Twitter client...";
+    ofUnregisterURLNotification(this);
+    ofRemoveAllURLRequests();
+    
 }
 
 //--------------------------------------------------------------
@@ -40,6 +52,9 @@ void ofxTwitter::authorize(const string& consumerKey, const string& consumerSecr
     
     ofLogNotice("ofxTwitter::authorize") << "Authorizing app...";
     oauth.setup("https://api.twitter.com", consumerKey, consumerSecret);
+    
+    ofRegisterURLNotification(this);
+    ofAddListener(ofEvents().exit,this,&ofxTwitter::appExits);
 	
 }
 
@@ -63,8 +78,6 @@ void ofxTwitter::startQuery(string keywords, int count) {
         ofLogError("ofxTwitter::startQuery") << "Local cache is active.";
     }
     
-    //tweetQueryIdentifier = 0;
-
 }
 
 //--------------------------------------------------------------
@@ -82,15 +95,17 @@ void ofxTwitter::loadCacheFile() {
 }
 
 //--------------------------------------------------------------
-void ofxTwitter::setCache(bool newSaveCache) {
+void ofxTwitter::setDiskCache(bool newSaveCache) {
     
-    bsaveCacheActive = newSaveCache;
+    bDiskCacheActive = newSaveCache;
     
 }
 
 //--------------------------------------------------------------
-bool ofxTwitter::saveCacheIsActive() {
-    return bsaveCacheActive;
+bool ofxTwitter::diskCacheIsActive() {
+    
+    return bDiskCacheActive;
+
 }
 
 //--------------------------------------------------------------
@@ -101,7 +116,7 @@ void ofxTwitter::newResponse(ofEventArgs& args) {
         ofxJSONElement result;
         bool parsingSuccessful = result.parse(dataRequested);
         if (parsingSuccessful) {
-            if(bsaveCacheActive) result.save("cache.json",true);
+            if(bDiskCacheActive) result.save("cache.json",true);
             ofLogNotice("ofxTwitter::newResponse") << "Tweets JSON parsed.";
             //cout << result.getRawString() << endl;
             parseResponse(result);
@@ -152,7 +167,9 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
             tweet.user.name = author["name"].asString();
             tweet.user.screen_name = author["screen_name"].asString();
             tweet.user.description = author["description"].asString();
-            tweet.user.location = author["location"].asString();
+            if(author["location"].asString() != " ") {
+                tweet.user.location = author["location"].asString();
+            }
             tweet.user.lang = author["lang"].asString();
             tweet.user.url = author["url"].asString();
             
@@ -161,7 +178,15 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
             tweet.user.geo_enabled = author["geo_enabled"].asBool();
             
             tweet.user.profile_image_url = author["profile_image_url"].asString();
+            if(author["profile_image_url"] != NULL && bLoadUserProfileImageOnMemory) {
+                ofLoadURLAsync(tweet.user.profile_image_url, "profile_"+tweet.user.id_str);
+            }
+            
             tweet.user.profile_banner_url = author["profile_banner_url"].asString();
+            if(author["profile_banner_url"] != NULL && bLoadUserBannerImageOnMemory) {
+                ofLoadURLAsync(tweet.user.profile_banner_url, "banner_"+tweet.user.id_str);
+            }
+            
             tweet.user.profile_background_image_url = author["profile_background_image_url"].asString();
             tweet.user.profile_background_color = author["profile_background_color"].asString();
             
@@ -169,7 +194,6 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
             tweet.user.profile_use_background_image  = author["profile_use_background_image"].asBool();
             
             data.push_back( tweet );
-            
             //tweet.print();
             
         }
@@ -177,20 +201,65 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
         ofLogNotice("ofxTwitter::parseResponse") << "(" << data.size() << ") Tweets ready";
         
     }
-    
-   
-   
-	// ok, send back results
-	//if (delegate) {
-		//delegate->searchResult(data, tweetQueryIdentifier);
-	//}
 
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::setAutoLoadImages(bool newLoadUserProfileImageOnMemory, bool newLoadUserProfileBannerOnMemory) {
+    
+    bLoadUserProfileImageOnMemory = newLoadUserProfileImageOnMemory;
+    bLoadUserBannerImageOnMemory = newLoadUserProfileBannerOnMemory;
+    
 }
 
 //--------------------------------------------------------------
 ofxTwitterTweet ofxTwitter::getTweetByIndex(int index) {
     
     return data[index];
+    
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::urlResponse(ofHttpResponse & response){
+    
+        if(response.status==200){
+            ofLogNotice("ofxTwitter::urlResponse") << response.request.name << " loaded ok.";
+            for(int i = 0; i < data.size(); i++) {
+                
+                vector<string> request_info = ofSplitString(response.request.name, "_");
+                if(data[i].user.id_str == request_info[1]) {
+                    if(request_info[0] == "profile") {
+                        data[i].user.profile_image.loadImage(response.data);
+                        data[i].user.profile_image_url_loaded = true;
+                    }
+                    if(request_info[0] == "banner") {
+                        data[i].user.profile_banner.loadImage(response.data);
+                        data[i].user.profile_banner_url_loaded = true;
+                    }
+                }
+                
+            }
+        }else{
+            ofLogError("ofxTwitter::urlResponse") << response.status << " " << response.error;
+            if(response.status == -1 || response.status == 404) ofRemoveURLRequest(response.request.getID());
+        }
+    
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::printDebugInfo() {
+
+    string info;
+    info += "ofxTwitter . ";
+    info += "App Authorized: " + ofToString(isAuthorized());
+    info += " . Tweets loaded: " + ofToString(getTotalLoadedTweets());
+    
+    ofPushStyle();
+        ofSetColor(0);
+        ofDrawBitmapString(info, ofPoint(20,ofGetHeight()-15));
+        ofSetColor(125,125,125,125);
+        ofRect(0, ofGetHeight()-40, ofGetWidth(), ofGetHeight());
+    ofPopStyle();
     
 }
 

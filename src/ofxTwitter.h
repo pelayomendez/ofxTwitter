@@ -29,8 +29,6 @@
 #include "ofxJSONElement.h"
 
 #include "ofxTwitterTweet.h"
-#include "TwitterDelegate.h"
-
 
 class ofxTwitter {
 
@@ -43,29 +41,32 @@ class ofxTwitter {
         bool isAuthorized();
     
         void loadCacheFile();
-        void setCache(bool newSaveCache);
-        bool saveCacheIsActive();
+        void setDiskCache(bool newSaveCache);
+        bool diskCacheIsActive();
     
         void startQuery(string keywords, int count = 10);
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
     
+        void setAutoLoadImages(bool newLoadUserProfileImageUrl, bool newLoadUserProfileBannerUrl);
+        void urlResponse(ofHttpResponse & response);
+        void appExits(ofEventArgs& args);
+    
         ofxTwitterTweet getTweetByIndex(int index);
         int getTotalLoadedTweets() { return data.size(); }
     
-        void setSearchDelegate(TwitterDelegate *_delegate) { delegate = _delegate; }
+        void printDebugInfo();
 
     private:
 	
         ofxOAuth oauth;
     
         string dataRequested;
+
+        bool bDiskCacheActive;
+        bool bLoadUserProfileImageOnMemory;
+        bool bLoadUserBannerImageOnMemory;
     
-        bool bloadCacheActive;
-        bool bsaveCacheActive;
-    
-        int tweetQueryIdentifier;
-        TwitterDelegate *delegate;
         vector<ofxTwitterTweet> data;
 	
 };

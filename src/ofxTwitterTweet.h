@@ -33,12 +33,18 @@ struct ofxTwitterTweetAuthor {
     bool geo_enabled;
     
 	string profile_image_url;
+    ofImage profile_image;
+    bool profile_image_url_loaded = false;
+    
     string profile_banner_url;
+    ofImage profile_banner;
+    bool profile_banner_url_loaded = false;
+    
     string profile_background_image_url;
     string profile_background_color;
     bool profile_background_tile;
     bool profile_use_background_image;
-    
+     
 };
 
 struct ofxTwitterTweet {
@@ -86,5 +92,21 @@ struct ofxTwitterTweet {
 		cout << str;
 
 	}
+    
+    bool isProfileImageLoaded() {
+        if (user.profile_image.isAllocated() && user.profile_image_url_loaded) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    bool isBannerImageLoaded() {
+        if (user.profile_banner.isAllocated() && user.profile_banner_url_loaded) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 	
 };
