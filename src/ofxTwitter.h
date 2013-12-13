@@ -25,10 +25,12 @@
 #pragma once
 
 #include "ofMain.h"
+// addons
 #include "ofxOAuth.h"
 #include "ofxJSONElement.h"
-
+// ofxTwitter
 #include "ofxTwitterTweet.h"
+#include "ofxTwitterSearch.h"
 
 class ofxTwitter {
 
@@ -44,7 +46,8 @@ class ofxTwitter {
         void setDiskCache(bool newSaveCache);
         bool diskCacheIsActive();
     
-        void startQuery(string keywords, int count = 10);
+        void startQuery(string keywords, int count = 15);
+        void startSearch(ofxTwitterSearch search);
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
     
