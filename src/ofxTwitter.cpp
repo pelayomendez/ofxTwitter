@@ -48,10 +48,13 @@ void ofxTwitter::appExits(ofEventArgs& args) {
 }
 
 //--------------------------------------------------------------
-void ofxTwitter::authorize(const string& consumerKey, const string& consumerSecret) {
+void ofxTwitter::authorize(const string& consumerKey, const string& consumerSecret, const string& accessToken, const string& accessTokenSecret) {
     
     ofLogNotice("ofxTwitter::authorize") << "Authorizing app...";
+    oauth.setAccessToken(accessToken);
+    oauth.setAccessTokenSecret(accessTokenSecret);
     oauth.setup("https://api.twitter.com", consumerKey, consumerSecret);
+    
     
     ofRegisterURLNotification(this);
     ofAddListener(ofEvents().exit,this,&ofxTwitter::appExits);
@@ -116,6 +119,48 @@ void ofxTwitter::startSearch(ofxTwitterSearch search) {
         ofLogError("ofxTwitter::startQuery") << "App not authorized.";
     }
     
+}
+
+//--------------------------------------------------------------
+void ofxTwitter::postStatus(string msg) {
+    
+    // Post status API info.
+    // https://dev.twitter.com/docs/api/1.1/post/statuses/update
+    // https://dev.twitter.com/docs/api/1.1/post/statuses/update_with_media
+    
+    if(oauth.isAuthorized()) {
+        string query = "/1.1/statuses/update.json?status="+ofToString(msg);
+        dataRequested = "";
+        dataRequested = oauth.post(query);
+        ofAddListener(ofEvents().update,this,&ofxTwitter::newStatusResponse);
+    } else {
+        ofLogError("ofxTwitter::postStatus") << "App not authorized.";
+    }
+    
+}
+
+void ofxTwitter::newStatusResponse(ofEventArgs& args) {
+    
+    
+    if(dataRequested != "") {
+        
+        ofxJSONElement result;
+        bool parsingSuccessful = result.parse(dataRequested);
+        
+        if (parsingSuccessful) {
+            //if(bDiskCacheActive) result.save("cache.json",true);
+            ofLogNotice("ofxTwitter::newStatusResponse") << "Status published.";
+            cout << result.getRawString() << endl;
+            //parseResponse(result);
+        } else {
+            ofLogError("ofxTwitter::newResponse") << "Failed to publish new status." << endl;
+        }
+        
+        dataRequested = "";
+        ofRemoveListener(ofEvents().update,this,&ofxTwitter::newStatusResponse);
+        
+    }
+	
 }
 
 

@@ -11,8 +11,10 @@ void testApp::setup(){
     
     string const CONSUMER_KEY = "";
     string const CONSUMER_SECRET = "";
+    string const ACCESS_TOKEN = "";
+    string const ACCESS_SECRET = "";
     
-    twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
+    twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET,ACCESS_TOKEN,ACCESS_SECRET);
 
     actualTweet = 0;
     

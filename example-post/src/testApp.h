@@ -27,6 +27,5 @@ class testApp : public ofBaseApp{
         bool reloadTweet;
     
         ofImage userImage;
-        
     
 };

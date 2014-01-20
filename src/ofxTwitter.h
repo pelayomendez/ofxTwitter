@@ -39,7 +39,7 @@ class ofxTwitter {
         ofxTwitter();
         ~ofxTwitter();
     
-        void authorize(const string& consumerKey, const string& consumerSecret);
+        void authorize(const string& consumerKey, const string& consumerSecret, const string& accessToken, const string& accessTokenSecret);
         bool isAuthorized();
     
         void loadCacheFile();
@@ -50,6 +50,9 @@ class ofxTwitter {
         void startSearch(ofxTwitterSearch search);
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
+    
+        void postStatus(string msg);
+        void newStatusResponse(ofEventArgs& args);
     
         void setAutoLoadImages(bool newLoadUserProfileImageUrl, bool newLoadUserProfileBannerUrl);
         void urlResponse(ofHttpResponse & response);

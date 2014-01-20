@@ -12,9 +12,7 @@ With the new [Twitter API 1.1](https://dev.twitter.com/docs/api/1.1/overview) th
 
 Installation
 ------------
-Before using the examples you must create your app and obtain a 'consumer' and a 'secret key' at [https://dev.twitter.com/apps](https://dev.twitter.com/apps)
-
-Don´t forget to provide also a Callback URL like 'http://mydomain.com' on the form (The URL can be anything, its like a boolean saying "my application can use callback-base") That way ofxOAuth can go through the autorization proccess and will create a credentials.xml file on the data folder with your info.
+Before using the examples you must create your app and obtain your "CONSUMER_KEY", "CONSUMER_SECRET", "ACCESS_TOKEN", "ACCESS_SECRET" at [https://dev.twitter.com/apps](https://dev.twitter.com/apps) Afterwards edit testApp.cpp on the example you want to test adding that information on the setup().
 
 Dependencies
 ------------
@@ -38,7 +36,7 @@ Licence
 -------
 The code in this repository is available under the [MIT License](https://secure.wikimedia.org/wikipedia/en/wiki/Mit_license).
 
-Copyright (c) 2013 Pelayo Méndez
+Copyright (c) 2013 OpenFrameworks Community & Pelayo Méndez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
