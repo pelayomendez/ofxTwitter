@@ -39,7 +39,7 @@ class ofxTwitter {
         ofxTwitter();
         ~ofxTwitter();
     
-        void authorize(const string& consumerKey, const string& consumerSecret, const string& accessToken, const string& accessTokenSecret);
+        void authorize(const string& consumerKey, const string& consumerSecret);
         bool isAuthorized();
     
         void loadCacheFile();

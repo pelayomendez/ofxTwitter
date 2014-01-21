@@ -5,13 +5,12 @@ void testApp::setup(){
     
     ofBackground(255);
     ofSetFrameRate(30);
+    ofSetLogLevel(OF_LOG_VERBOSE);
     
-    string const CONSUMER_KEY = "";
-    string const CONSUMER_SECRET = "";
-    string const ACCESS_TOKEN = "";
-    string const ACCESS_SECRET = "";
+    string const CONSUMER_KEY = "VyZSL4qYqiiolN9P6uJgg";
+    string const CONSUMER_SECRET = "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY";
     
-    twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET,ACCESS_TOKEN,ACCESS_SECRET);
+    twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
 
     actualTweet = 0;
     

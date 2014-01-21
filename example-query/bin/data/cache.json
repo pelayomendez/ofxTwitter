@@ -1,12 +1,12 @@
 {
    "search_metadata" : {
-      "completed_in" : 0.0450,
-      "count" : 10,
-      "max_id" : 410831773132947459,
-      "max_id_str" : "410831773132947459",
-      "next_results" : "?max_id=410831769261596671&q=cat&count=10&include_entities=1",
+      "completed_in" : 0.0960,
+      "count" : 15,
+      "max_id" : 425709168348364801,
+      "max_id_str" : "425709168348364801",
+      "next_results" : "?max_id=425709155262148607&q=cat&include_entities=1",
       "query" : "cat",
-      "refresh_url" : "?since_id=410831773132947459&q=cat&include_entities=1",
+      "refresh_url" : "?since_id=425709168348364801&q=cat&include_entities=1",
       "since_id" : 0,
       "since_id_str" : "0"
    },
@@ -14,33 +14,697 @@
       {
          "contributors" : null,
          "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:42 +0000 2013",
+         "created_at" : "Tue Jan 21 19:19:09 +0000 2014",
          "entities" : {
             "hashtags" : [],
             "symbols" : [],
-            "urls" : [
-               {
-                  "display_url" : "twitpic.com/dns6xy",
-                  "expanded_url" : "http://twitpic.com/dns6xy",
-                  "indices" : [ 86, 108 ],
-                  "url" : "http://t.co/BKsjYjyhDW"
-               }
-            ],
+            "urls" : [],
             "user_mentions" : [
                {
-                  "id" : 32175999,
-                  "id_str" : "32175999",
-                  "indices" : [ 3, 16 ],
-                  "name" : "Jessica B",
-                  "screen_name" : "CAdreamin158"
+                  "id" : 1729824186,
+                  "id_str" : "1729824186",
+                  "indices" : [ 3, 11 ],
+                  "name" : "Thai ",
+                  "screen_name" : "li4rgmz"
                }
             ]
          },
          "favorite_count" : 0,
          "favorited" : false,
          "geo" : null,
-         "id" : 410831773132947459,
-         "id_str" : "410831773132947459",
+         "id" : 425709168348364801,
+         "id_str" : "425709168348364801",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "pt",
+         "metadata" : {
+            "iso_language_code" : "pt",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 10,
+         "retweeted" : false,
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Tue Jan 21 18:49:16 +0000 2014",
+            "entities" : {
+               "hashtags" : [],
+               "symbols" : [],
+               "urls" : [],
+               "user_mentions" : []
+            },
+            "favorite_count" : 2,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 425701646165762048,
+            "id_str" : "425701646165762048",
+            "in_reply_to_screen_name" : null,
+            "in_reply_to_status_id" : null,
+            "in_reply_to_status_id_str" : null,
+            "in_reply_to_user_id" : null,
+            "in_reply_to_user_id_str" : null,
+            "lang" : "pt",
+            "metadata" : {
+               "iso_language_code" : "pt",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "retweet_count" : 10,
+            "retweeted" : false,
+            "source" : "web",
+            "text" : "Seja fofo como a Cat\nforte como a Jade\ntímido como o Beck\ncriativo como o André\nEstranho como o Robbie\nAlegre como Trina\nBrilhe como a Tori",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Wed Sep 04 20:42:48 +0000 2013",
+               "default_profile" : false,
+               "default_profile_image" : false,
+               "description" : "será que se eu fazer minhas macumbonnies nunca mais haverá hiatus?",
+               "entities" : {
+                  "description" : {
+                     "urls" : []
+                  }
+               },
+               "favourites_count" : 606,
+               "follow_request_sent" : false,
+               "followers_count" : 2552,
+               "following" : false,
+               "friends_count" : 2003,
+               "geo_enabled" : false,
+               "id" : 1729824186,
+               "id_str" : "1729824186",
+               "is_translator" : false,
+               "lang" : "pt",
+               "listed_count" : 1,
+               "location" : "Mystic Falls",
+               "name" : "Thai ",
+               "notifications" : false,
+               "profile_background_color" : "FAFAFA",
+               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000169908625/M3gjD_cF.png",
+               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000169908625/M3gjD_cF.png",
+               "profile_background_tile" : false,
+               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/1729824186/1390331875",
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/425709030648983552/opBvqY1P_normal.png",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/425709030648983552/opBvqY1P_normal.png",
+               "profile_link_color" : "FF007B",
+               "profile_sidebar_border_color" : "000000",
+               "profile_sidebar_fill_color" : "EFEFEF",
+               "profile_text_color" : "333333",
+               "profile_use_background_image" : false,
+               "protected" : false,
+               "screen_name" : "li4rgmz",
+               "statuses_count" : 4486,
+               "time_zone" : "Mid-Atlantic",
+               "url" : null,
+               "utc_offset" : -7200,
+               "verified" : false
+            }
+         },
+         "source" : "web",
+         "text" : "RT @li4rgmz: Seja fofo como a Cat\nforte como a Jade\ntímido como o Beck\ncriativo como o André\nEstranho como o Robbie\nAlegre como Trina\nBrilh…",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Tue Jan 22 17:34:42 +0000 2013",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "Say somethin' I'm giving up on u                                                                                                               * camren shipper*",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 1971,
+            "follow_request_sent" : false,
+            "followers_count" : 726,
+            "following" : false,
+            "friends_count" : 1933,
+            "geo_enabled" : true,
+            "id" : 1112150473,
+            "id_str" : "1112150473",
+            "is_translator" : false,
+            "lang" : "pt",
+            "listed_count" : 0,
+            "location" : "pll ddl 5H",
+            "name" : "Ana",
+            "notifications" : false,
+            "profile_background_color" : "5BB7F0",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000149803979/-_qCSsJD.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000149803979/-_qCSsJD.jpeg",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/1112150473/1390163636",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/425438435021574145/Pok5u7uK_normal.png",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/425438435021574145/Pok5u7uK_normal.png",
+            "profile_link_color" : "121111",
+            "profile_sidebar_border_color" : "000000",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "demiscupcakees",
+            "statuses_count" : 7865,
+            "time_zone" : "Brasilia",
+            "url" : null,
+            "utc_offset" : -7200,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:09 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "324.cat",
+                  "expanded_url" : "http://www.324.cat/",
+                  "indices" : [ 139, 140 ],
+                  "url" : "http://t.co/VaiXITS056"
+               }
+            ],
+            "user_mentions" : [
+               {
+                  "id" : 8330472,
+                  "id_str" : "8330472",
+                  "indices" : [ 3, 10 ],
+                  "name" : "324.cat",
+                  "screen_name" : "324cat"
+               },
+               {
+                  "id" : 7679392,
+                  "id_str" : "7679392",
+                  "indices" : [ 70, 85 ],
+                  "name" : "CatalunyaRadio",
+                  "screen_name" : "CatalunyaRadio"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709166423207936,
+         "id_str" : "425709166423207936",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "es",
+         "metadata" : {
+            "iso_language_code" : "es",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 92,
+         "retweeted" : false,
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Tue Jan 21 19:02:19 +0000 2014",
+            "entities" : {
+               "hashtags" : [],
+               "symbols" : [],
+               "urls" : [
+                  {
+                     "display_url" : "324.cat",
+                     "expanded_url" : "http://www.324.cat/",
+                     "indices" : [ 114, 136 ],
+                     "url" : "http://t.co/VaiXITS056"
+                  }
+               ],
+               "user_mentions" : [
+                  {
+                     "id" : 7679392,
+                     "id_str" : "7679392",
+                     "indices" : [ 58, 73 ],
+                     "name" : "CatalunyaRadio",
+                     "screen_name" : "CatalunyaRadio"
+                  }
+               ]
+            },
+            "favorite_count" : 10,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 425704930197135360,
+            "id_str" : "425704930197135360",
+            "in_reply_to_screen_name" : null,
+            "in_reply_to_status_id" : null,
+            "in_reply_to_status_id_str" : null,
+            "in_reply_to_user_id" : null,
+            "in_reply_to_user_id_str" : null,
+            "lang" : "es",
+            "metadata" : {
+               "iso_language_code" : "es",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "possibly_sensitive" : true,
+            "retweet_count" : 92,
+            "retweeted" : false,
+            "source" : "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+            "text" : "“Gràcies i fins sempre a tota la gent del País Valencià”. @CatalunyaRadio s’acomiada per força del País Valencià  http://t.co/VaiXITS056",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Tue Aug 21 14:03:19 +0000 2007",
+               "default_profile" : false,
+               "default_profile_image" : false,
+               "description" : "La manera més ràpida de connectar amb l'actualitat al portal informatiu de Televisió de Catalunya i Catalunya Ràdio",
+               "entities" : {
+                  "description" : {
+                     "urls" : []
+                  },
+                  "url" : {
+                     "urls" : [
+                        {
+                           "display_url" : "324.cat",
+                           "expanded_url" : "http://www.324.cat",
+                           "indices" : [ 0, 22 ],
+                           "url" : "http://t.co/kTY2sxof6c"
+                        }
+                     ]
+                  }
+               },
+               "favourites_count" : 2,
+               "follow_request_sent" : false,
+               "followers_count" : 107737,
+               "following" : false,
+               "friends_count" : 67,
+               "geo_enabled" : true,
+               "id" : 8330472,
+               "id_str" : "8330472",
+               "is_translator" : false,
+               "lang" : "ca",
+               "listed_count" : 2993,
+               "location" : "Barcelona",
+               "name" : "324.cat",
+               "notifications" : false,
+               "profile_background_color" : "AEC3C4",
+               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000171529012/4XLMmDuQ.jpeg",
+               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000171529012/4XLMmDuQ.jpeg",
+               "profile_background_tile" : false,
+               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/8330472/1390227385",
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/425270518418137088/K5TJ3nau_normal.jpeg",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/425270518418137088/K5TJ3nau_normal.jpeg",
+               "profile_link_color" : "FB4E23",
+               "profile_sidebar_border_color" : "FFFFFF",
+               "profile_sidebar_fill_color" : "FFE2A8",
+               "profile_text_color" : "000000",
+               "profile_use_background_image" : true,
+               "protected" : false,
+               "screen_name" : "324cat",
+               "statuses_count" : 78419,
+               "time_zone" : "Madrid",
+               "url" : "http://t.co/kTY2sxof6c",
+               "utc_offset" : 3600,
+               "verified" : false
+            }
+         },
+         "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+         "text" : "RT @324cat: “Gràcies i fins sempre a tota la gent del País Valencià”. @CatalunyaRadio s’acomiada per força del País Valencià  http://t.co/V…",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Thu Aug 16 09:31:51 +0000 2012",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "En constant evolució. Aprenent i fent-me cada dia... en fase beta.",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "siscogarcia.wordpress.com",
+                        "expanded_url" : "http://siscogarcia.wordpress.com/",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/E6vHxvR2gk"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 125,
+            "follow_request_sent" : false,
+            "followers_count" : 180,
+            "following" : false,
+            "friends_count" : 244,
+            "geo_enabled" : false,
+            "id" : 761216160,
+            "id_str" : "761216160",
+            "is_translator" : false,
+            "lang" : "ca",
+            "listed_count" : 6,
+            "location" : "",
+            "name" : "Sisco Garcia",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/635027235/6i4dwkzz5jviak8trgug.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/635027235/6i4dwkzz5jviak8trgug.jpeg",
+            "profile_background_tile" : false,
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/2510548307/xkzyw6hznwyowt93rz7l_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/2510548307/xkzyw6hznwyowt93rz7l_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "sisco_garcia",
+            "statuses_count" : 6646,
+            "time_zone" : "Athens",
+            "url" : "http://t.co/E6vHxvR2gk",
+            "utc_offset" : 7200,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:09 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "catradio.cat/reproductor/78…",
+                  "expanded_url" : "http://www.catradio.cat/reproductor/786359",
+                  "indices" : [ 139, 140 ],
+                  "url" : "http://t.co/9QNQDHirDj"
+               }
+            ],
+            "user_mentions" : [
+               {
+                  "id" : 8330472,
+                  "id_str" : "8330472",
+                  "indices" : [ 3, 10 ],
+                  "name" : "324.cat",
+                  "screen_name" : "324cat"
+               },
+               {
+                  "id" : 7679392,
+                  "id_str" : "7679392",
+                  "indices" : [ 37, 52 ],
+                  "name" : "CatalunyaRadio",
+                  "screen_name" : "CatalunyaRadio"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709165852786688,
+         "id_str" : "425709165852786688",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "es",
+         "metadata" : {
+            "iso_language_code" : "es",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 16,
+         "retweeted" : false,
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Tue Jan 21 19:04:42 +0000 2014",
+            "entities" : {
+               "hashtags" : [],
+               "symbols" : [],
+               "urls" : [
+                  {
+                     "display_url" : "catradio.cat/reproductor/78…",
+                     "expanded_url" : "http://www.catradio.cat/reproductor/786359",
+                     "indices" : [ 109, 131 ],
+                     "url" : "http://t.co/9QNQDHirDj"
+                  }
+               ],
+               "user_mentions" : [
+                  {
+                     "id" : 7679392,
+                     "id_str" : "7679392",
+                     "indices" : [ 25, 40 ],
+                     "name" : "CatalunyaRadio",
+                     "screen_name" : "CatalunyaRadio"
+                  }
+               ]
+            },
+            "favorite_count" : 4,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 425705531400269824,
+            "id_str" : "425705531400269824",
+            "in_reply_to_screen_name" : null,
+            "in_reply_to_status_id" : null,
+            "in_reply_to_status_id_str" : null,
+            "in_reply_to_user_id" : null,
+            "in_reply_to_user_id_str" : null,
+            "lang" : "es",
+            "metadata" : {
+               "iso_language_code" : "es",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "possibly_sensitive" : true,
+            "retweet_count" : 16,
+            "retweeted" : false,
+            "source" : "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+            "text" : "Fèlix Riera, director de @CatalunyaRadio: “No poder arribar als valencians és una paradoxa en ple segle XXI” http://t.co/9QNQDHirDj",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Tue Aug 21 14:03:19 +0000 2007",
+               "default_profile" : false,
+               "default_profile_image" : false,
+               "description" : "La manera més ràpida de connectar amb l'actualitat al portal informatiu de Televisió de Catalunya i Catalunya Ràdio",
+               "entities" : {
+                  "description" : {
+                     "urls" : []
+                  },
+                  "url" : {
+                     "urls" : [
+                        {
+                           "display_url" : "324.cat",
+                           "expanded_url" : "http://www.324.cat",
+                           "indices" : [ 0, 22 ],
+                           "url" : "http://t.co/kTY2sxof6c"
+                        }
+                     ]
+                  }
+               },
+               "favourites_count" : 2,
+               "follow_request_sent" : false,
+               "followers_count" : 107737,
+               "following" : false,
+               "friends_count" : 67,
+               "geo_enabled" : true,
+               "id" : 8330472,
+               "id_str" : "8330472",
+               "is_translator" : false,
+               "lang" : "ca",
+               "listed_count" : 2993,
+               "location" : "Barcelona",
+               "name" : "324.cat",
+               "notifications" : false,
+               "profile_background_color" : "AEC3C4",
+               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000171529012/4XLMmDuQ.jpeg",
+               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000171529012/4XLMmDuQ.jpeg",
+               "profile_background_tile" : false,
+               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/8330472/1390227385",
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/425270518418137088/K5TJ3nau_normal.jpeg",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/425270518418137088/K5TJ3nau_normal.jpeg",
+               "profile_link_color" : "FB4E23",
+               "profile_sidebar_border_color" : "FFFFFF",
+               "profile_sidebar_fill_color" : "FFE2A8",
+               "profile_text_color" : "000000",
+               "profile_use_background_image" : true,
+               "protected" : false,
+               "screen_name" : "324cat",
+               "statuses_count" : 78419,
+               "time_zone" : "Madrid",
+               "url" : "http://t.co/kTY2sxof6c",
+               "utc_offset" : 3600,
+               "verified" : false
+            }
+         },
+         "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+         "text" : "RT @324cat: Fèlix Riera, director de @CatalunyaRadio: “No poder arribar als valencians és una paradoxa en ple segle XXI” http://t.co/9QNQDH…",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Thu Mar 31 11:17:31 +0000 2011",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "1974 - Bombers, pàtria i Barça! - Llicenciat en Història -",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "socbombervoluntari.blogspot.com",
+                        "expanded_url" : "http://socbombervoluntari.blogspot.com",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/j0hIBQWY82"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 6,
+            "follow_request_sent" : false,
+            "followers_count" : 2920,
+            "following" : false,
+            "friends_count" : 1887,
+            "geo_enabled" : true,
+            "id" : 274967686,
+            "id_str" : "274967686",
+            "is_translator" : false,
+            "lang" : "ca",
+            "listed_count" : 69,
+            "location" : "#Terrassa",
+            "name" : "Marc Ferrer #SISI",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/242078319/DSC_0438_.jpg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/242078319/DSC_0438_.jpg",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/274967686/1364470678",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000516389327/9dbbb626666118215254206524441b0a_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000516389327/9dbbb626666118215254206524441b0a_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "ferrer_marc",
+            "statuses_count" : 16784,
+            "time_zone" : "Rome",
+            "url" : "http://t.co/j0hIBQWY82",
+            "utc_offset" : 3600,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:08 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : [
+               {
+                  "id" : 45494617,
+                  "id_str" : "45494617",
+                  "indices" : [ 0, 12 ],
+                  "name" : "Trevor Moran",
+                  "screen_name" : "TrevorMoran"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709163742654464,
+         "id_str" : "425709163742654464",
+         "in_reply_to_screen_name" : "TrevorMoran",
+         "in_reply_to_status_id" : 425696592906047488,
+         "in_reply_to_status_id_str" : "425696592906047488",
+         "in_reply_to_user_id" : 45494617,
+         "in_reply_to_user_id_str" : "45494617",
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+         "text" : "@TrevorMoran why is your cat prettier than I am",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Fri Mar 22 02:03:19 +0000 2013",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "| this is Jackson Rod Stewart hopping his way to History |",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 1735,
+            "follow_request_sent" : false,
+            "followers_count" : 957,
+            "following" : false,
+            "friends_count" : 855,
+            "geo_enabled" : false,
+            "id" : 1287491839,
+            "id_str" : "1287491839",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 26,
+            "location" : "|0/4| |3/5| |0/5| |1/6|",
+            "name" : "{was @ejaiculatte}",
+            "notifications" : false,
+            "profile_background_color" : "FA9BC1",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000164486452/zj4iooJo.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000164486452/zj4iooJo.jpeg",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/1287491839/1390155864",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/424970339081527297/O3gbcnBD_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/424970339081527297/O3gbcnBD_normal.jpeg",
+            "profile_link_color" : "7CC9FC",
+            "profile_sidebar_border_color" : "000000",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : false,
+            "protected" : false,
+            "screen_name" : "fxckkaitlyn",
+            "statuses_count" : 6649,
+            "time_zone" : "Eastern Time (US & Canada)",
+            "url" : null,
+            "utc_offset" : -18000,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:08 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "24.media.tumblr.com/ae94885cf07709…",
+                  "expanded_url" : "https://24.media.tumblr.com/ae94885cf077099cfb970a505182b6cd/tumblr_mzoey1b4aj1qdlh1io1_400.gif",
+                  "indices" : [ 0, 23 ],
+                  "url" : "https://t.co/kzSkJ0iTxM"
+               }
+            ],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709163658743808,
+         "id_str" : "425709163658743808",
          "in_reply_to_screen_name" : null,
          "in_reply_to_status_id" : null,
          "in_reply_to_status_id_str" : null,
@@ -53,496 +717,61 @@
          },
          "place" : null,
          "possibly_sensitive" : false,
-         "retweet_count" : 1,
+         "retweet_count" : 0,
          "retweeted" : false,
-         "retweeted_status" : {
-            "contributors" : null,
-            "coordinates" : null,
-            "created_at" : "Fri Dec 06 16:11:04 +0000 2013",
-            "entities" : {
-               "hashtags" : [],
-               "symbols" : [],
-               "urls" : [
-                  {
-                     "display_url" : "twitpic.com/dns6xy",
-                     "expanded_url" : "http://twitpic.com/dns6xy",
-                     "indices" : [ 68, 90 ],
-                     "url" : "http://t.co/BKsjYjyhDW"
-                  }
-               ],
-               "user_mentions" : []
-            },
-            "favorite_count" : 1,
-            "favorited" : false,
-            "geo" : null,
-            "id" : 408991992484343809,
-            "id_str" : "408991992484343809",
-            "in_reply_to_screen_name" : null,
-            "in_reply_to_status_id" : null,
-            "in_reply_to_status_id_str" : null,
-            "in_reply_to_user_id" : null,
-            "in_reply_to_user_id_str" : null,
-            "lang" : "en",
-            "metadata" : {
-               "iso_language_code" : "en",
-               "result_type" : "recent"
-            },
-            "place" : null,
-            "possibly_sensitive" : false,
-            "retweet_count" : 1,
-            "retweeted" : false,
-            "source" : "<a href=\"https://twitter.com/#!/joenrv\" rel=\"nofollow\">Falcon for Android</a>",
-            "text" : "Take a picture of your cat with flash and you'll never sleep again. http://t.co/BKsjYjyhDW",
-            "truncated" : false,
-            "user" : {
-               "contributors_enabled" : false,
-               "created_at" : "Thu Apr 16 22:11:30 +0000 2009",
-               "default_profile" : false,
-               "default_profile_image" : false,
-               "description" : "Artist | Bookworm | LDS | Whovian | Merlinian | #DA2014 | I am & always will be the optimist- the hoper of far-flung hopes, the dreamer of improbable dreams.",
-               "entities" : {
-                  "description" : {
-                     "urls" : []
-                  },
-                  "url" : {
-                     "urls" : [
-                        {
-                           "display_url" : "pinterest.com/jmae158/boards/",
-                           "expanded_url" : "http://pinterest.com/jmae158/boards/",
-                           "indices" : [ 0, 22 ],
-                           "url" : "http://t.co/dHQ77vgNW6"
-                        }
-                     ]
-                  }
-               },
-               "favourites_count" : 433,
-               "follow_request_sent" : false,
-               "followers_count" : 351,
-               "following" : false,
-               "friends_count" : 531,
-               "geo_enabled" : false,
-               "id" : 32175999,
-               "id_str" : "32175999",
-               "is_translator" : false,
-               "lang" : "en",
-               "listed_count" : 11,
-               "location" : "Utah",
-               "name" : "Jessica B",
-               "notifications" : false,
-               "profile_background_color" : "000000",
-               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000071705818/1685ab372c0deaf0ccb1ed97cd50dece.jpeg",
-               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000071705818/1685ab372c0deaf0ccb1ed97cd50dece.jpeg",
-               "profile_background_tile" : true,
-               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/32175999/1368044652",
-               "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000719300596/3c4f782174af8fee65f54a70bb4fa50f_normal.jpeg",
-               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000719300596/3c4f782174af8fee65f54a70bb4fa50f_normal.jpeg",
-               "profile_link_color" : "1BDB11",
-               "profile_sidebar_border_color" : "FFFFFF",
-               "profile_sidebar_fill_color" : "000000",
-               "profile_text_color" : "2080C9",
-               "profile_use_background_image" : true,
-               "protected" : false,
-               "screen_name" : "CAdreamin158",
-               "statuses_count" : 6311,
-               "time_zone" : "Pacific Time (US & Canada)",
-               "url" : "http://t.co/dHQ77vgNW6",
-               "utc_offset" : -28800,
-               "verified" : false
-            }
-         },
-         "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-         "text" : "RT @CAdreamin158: Take a picture of your cat with flash and you'll never sleep again. http://t.co/BKsjYjyhDW",
+         "source" : "web",
+         "text" : "https://t.co/kzSkJ0iTxM i'm like that cat",
          "truncated" : false,
          "user" : {
             "contributors_enabled" : false,
-            "created_at" : "Tue Jul 17 05:28:59 +0000 2012",
+            "created_at" : "Mon Jun 06 18:01:02 +0000 2011",
             "default_profile" : false,
             "default_profile_image" : false,
-            "description" : "Doctor Who, Supernatural, Classic Rock #illhuemanati",
+            "description" : "Frankie Cocozza, Luke Friend, Vince Kidd, Mcfly, pop punk bands. #CS5",
             "entities" : {
                "description" : {
                   "urls" : []
                }
             },
-            "favourites_count" : 1711,
+            "favourites_count" : 6575,
             "follow_request_sent" : false,
-            "followers_count" : 157,
+            "followers_count" : 1079,
             "following" : false,
-            "friends_count" : 163,
-            "geo_enabled" : true,
-            "id" : 700431872,
-            "id_str" : "700431872",
+            "friends_count" : 1306,
+            "geo_enabled" : false,
+            "id" : 312171009,
+            "id_str" : "312171009",
             "is_translator" : false,
             "lang" : "en",
-            "listed_count" : 1,
-            "location" : "FVHS",
-            "name" : "Dallie ॐ",
+            "listed_count" : 0,
+            "location" : "♡with chanel the nincompoop♡",
+            "name" : "lois_cocozza",
             "notifications" : false,
             "profile_background_color" : "C0DEED",
-            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000078215993/e1b322967b36991647c4fade12bbf6d1.jpeg",
-            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000078215993/e1b322967b36991647c4fade12bbf6d1.jpeg",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000170285050/RqKl7B_H.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000170285050/RqKl7B_H.jpeg",
             "profile_background_tile" : true,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/700431872/1386093087",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000852460306/84df397e6200817b9874f263ef7ddb2d_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000852460306/84df397e6200817b9874f263ef7ddb2d_normal.jpeg",
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/312171009/1389902329",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/424502585140060161/GcibzyTP_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/424502585140060161/GcibzyTP_normal.jpeg",
             "profile_link_color" : "0084B4",
             "profile_sidebar_border_color" : "FFFFFF",
-            "profile_sidebar_fill_color" : "DDEEF6",
-            "profile_text_color" : "333333",
+            "profile_sidebar_fill_color" : "99CC33",
+            "profile_text_color" : "3E4415",
             "profile_use_background_image" : true,
             "protected" : false,
-            "screen_name" : "Dalliellama",
-            "statuses_count" : 4060,
-            "time_zone" : "Eastern Time (US & Canada)",
+            "screen_name" : "Lois145",
+            "statuses_count" : 51167,
+            "time_zone" : null,
             "url" : null,
-            "utc_offset" : -18000,
+            "utc_offset" : null,
             "verified" : false
          }
       },
       {
          "contributors" : null,
          "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:42 +0000 2013",
-         "entities" : {
-            "hashtags" : [],
-            "symbols" : [],
-            "urls" : [],
-            "user_mentions" : [
-               {
-                  "id" : 115791939,
-                  "id_str" : "115791939",
-                  "indices" : [ 3, 19 ],
-                  "name" : "DLT ||\\★/||",
-                  "screen_name" : "defensemlaterra"
-               }
-            ]
-         },
-         "favorite_count" : 0,
-         "favorited" : false,
-         "geo" : null,
-         "id" : 410831772986138625,
-         "id_str" : "410831772986138625",
-         "in_reply_to_screen_name" : null,
-         "in_reply_to_status_id" : null,
-         "in_reply_to_status_id_str" : null,
-         "in_reply_to_user_id" : null,
-         "in_reply_to_user_id_str" : null,
-         "lang" : "fr",
-         "metadata" : {
-            "iso_language_code" : "fr",
-            "result_type" : "recent"
-         },
-         "place" : null,
-         "retweet_count" : 4,
-         "retweeted" : false,
-         "retweeted_status" : {
-            "contributors" : null,
-            "coordinates" : null,
-            "created_at" : "Wed Dec 11 16:17:22 +0000 2013",
-            "entities" : {
-               "hashtags" : [],
-               "symbols" : [],
-               "urls" : [
-                  {
-                     "display_url" : "m.ara.cat/politica/duran…",
-                     "expanded_url" : "http://m.ara.cat/politica/duran-pregunta-mas-junqueras_0_1045695558.html#.UqiPini9LCR",
-                     "indices" : [ 109, 131 ],
-                     "url" : "http://t.co/mDEzVfiND5"
-                  }
-               ],
-               "user_mentions" : []
-            },
-            "favorite_count" : 1,
-            "favorited" : false,
-            "geo" : null,
-            "id" : 410805519608471553,
-            "id_str" : "410805519608471553",
-            "in_reply_to_screen_name" : null,
-            "in_reply_to_status_id" : null,
-            "in_reply_to_status_id_str" : null,
-            "in_reply_to_user_id" : null,
-            "in_reply_to_user_id_str" : null,
-            "lang" : "fr",
-            "metadata" : {
-               "iso_language_code" : "fr",
-               "result_type" : "recent"
-            },
-            "place" : null,
-            "possibly_sensitive" : false,
-            "retweet_count" : 4,
-            "retweeted" : false,
-            "source" : "<a href=\"http://www.apple.com\" rel=\"nofollow\">iOS</a>",
-            "text" : "Pero a veure en Duran quin poder té?quants diputats té?I quants vots té?Si no es ningú! I sense Antich menys http://t.co/mDEzVfiND5",
-            "truncated" : false,
-            "user" : {
-               "contributors_enabled" : false,
-               "created_at" : "Sat Feb 20 00:00:16 +0000 2010",
-               "default_profile" : false,
-               "default_profile_image" : false,
-               "description" : "Catalans!!  #Tram 322-401-421-425-436 #DUI",
-               "entities" : {
-                  "description" : {
-                     "urls" : []
-                  },
-                  "url" : {
-                     "urls" : [
-                        {
-                           "display_url" : "defensemlaterra.com",
-                           "expanded_url" : "http://www.defensemlaterra.com",
-                           "indices" : [ 0, 22 ],
-                           "url" : "http://t.co/8P4W2KzXLC"
-                        }
-                     ]
-                  }
-               },
-               "favourites_count" : 5430,
-               "follow_request_sent" : false,
-               "followers_count" : 1869,
-               "following" : false,
-               "friends_count" : 1660,
-               "geo_enabled" : false,
-               "id" : 115791939,
-               "id_str" : "115791939",
-               "is_translator" : false,
-               "lang" : "en",
-               "listed_count" : 29,
-               "location" : "Catalunya",
-               "name" : "DLT ||\\★/||",
-               "notifications" : false,
-               "profile_background_color" : "251810",
-               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/344511763024909399/1ee172be29a361a988f8e23c5f2ca192.jpeg",
-               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/344511763024909399/1ee172be29a361a988f8e23c5f2ca192.jpeg",
-               "profile_background_tile" : false,
-               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/115791939/1377264399",
-               "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000670783240/dc4a5bf8708d12338dac734e1c7f298e_normal.jpeg",
-               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000670783240/dc4a5bf8708d12338dac734e1c7f298e_normal.jpeg",
-               "profile_link_color" : "A98E6F",
-               "profile_sidebar_border_color" : "94A4AE",
-               "profile_sidebar_fill_color" : "1D110A",
-               "profile_text_color" : "94A4AE",
-               "profile_use_background_image" : true,
-               "protected" : false,
-               "screen_name" : "defensemlaterra",
-               "statuses_count" : 15085,
-               "time_zone" : "Paris",
-               "url" : "http://t.co/8P4W2KzXLC",
-               "utc_offset" : 3600,
-               "verified" : false
-            }
-         },
-         "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-         "text" : "RT @defensemlaterra: Pero a veure en Duran quin poder té?quants diputats té?I quants vots té?Si no es ningú! I sense Antich menys http://t.…",
-         "truncated" : false,
-         "user" : {
-            "contributors_enabled" : false,
-            "created_at" : "Fri Nov 26 09:50:38 +0000 2010",
-            "default_profile" : false,
-            "default_profile_image" : false,
-            "description" : "nat al clot del dimoni (Pla d'Urgell)",
-            "entities" : {
-               "description" : {
-                  "urls" : []
-               }
-            },
-            "favourites_count" : 14,
-            "follow_request_sent" : false,
-            "followers_count" : 314,
-            "following" : false,
-            "friends_count" : 539,
-            "geo_enabled" : true,
-            "id" : 219941971,
-            "id_str" : "219941971",
-            "is_translator" : false,
-            "lang" : "ca",
-            "listed_count" : 6,
-            "location" : "Catalunya ",
-            "name" : "lomiquel 14-9-14",
-            "notifications" : false,
-            "profile_background_color" : "C6E2EE",
-            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile" : false,
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000433253976/46910ec04bbfd6f42fc9380cee216a8c_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000433253976/46910ec04bbfd6f42fc9380cee216a8c_normal.jpeg",
-            "profile_link_color" : "17B2EB",
-            "profile_sidebar_border_color" : "C6E2EE",
-            "profile_sidebar_fill_color" : "DAECF4",
-            "profile_text_color" : "663B12",
-            "profile_use_background_image" : true,
-            "protected" : false,
-            "screen_name" : "lomkl",
-            "statuses_count" : 6844,
-            "time_zone" : "Athens",
-            "url" : null,
-            "utc_offset" : 7200,
-            "verified" : false
-         }
-      },
-      {
-         "contributors" : null,
-         "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:42 +0000 2013",
-         "entities" : {
-            "hashtags" : [],
-            "symbols" : [],
-            "urls" : [],
-            "user_mentions" : [
-               {
-                  "id" : 390860562,
-                  "id_str" : "390860562",
-                  "indices" : [ 3, 16 ],
-                  "name" : "Awkward Posts",
-                  "screen_name" : "awkwardposts"
-               }
-            ]
-         },
-         "favorite_count" : 0,
-         "favorited" : false,
-         "geo" : null,
-         "id" : 410831772868308992,
-         "id_str" : "410831772868308992",
-         "in_reply_to_screen_name" : null,
-         "in_reply_to_status_id" : null,
-         "in_reply_to_status_id_str" : null,
-         "in_reply_to_user_id" : null,
-         "in_reply_to_user_id_str" : null,
-         "lang" : "en",
-         "metadata" : {
-            "iso_language_code" : "en",
-            "result_type" : "recent"
-         },
-         "place" : null,
-         "retweet_count" : 380,
-         "retweeted" : false,
-         "retweeted_status" : {
-            "contributors" : null,
-            "coordinates" : null,
-            "created_at" : "Wed Dec 11 01:35:04 +0000 2013",
-            "entities" : {
-               "hashtags" : [],
-               "symbols" : [],
-               "urls" : [],
-               "user_mentions" : []
-            },
-            "favorite_count" : 283,
-            "favorited" : false,
-            "geo" : null,
-            "id" : 410583478250790912,
-            "id_str" : "410583478250790912",
-            "in_reply_to_screen_name" : null,
-            "in_reply_to_status_id" : null,
-            "in_reply_to_status_id_str" : null,
-            "in_reply_to_user_id" : null,
-            "in_reply_to_user_id_str" : null,
-            "lang" : "en",
-            "metadata" : {
-               "iso_language_code" : "en",
-               "result_type" : "recent"
-            },
-            "place" : null,
-            "retweet_count" : 380,
-            "retweeted" : false,
-            "source" : "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
-            "text" : "I wish I was a cat because the fatter you are the more people like you",
-            "truncated" : false,
-            "user" : {
-               "contributors_enabled" : false,
-               "created_at" : "Fri Oct 14 17:25:55 +0000 2011",
-               "default_profile" : false,
-               "default_profile_image" : false,
-               "description" : "The awkward moment when you are not following us... contact.awkwardposts@gmail.com",
-               "entities" : {
-                  "description" : {
-                     "urls" : []
-                  }
-               },
-               "favourites_count" : 224,
-               "follow_request_sent" : false,
-               "followers_count" : 1439802,
-               "following" : false,
-               "friends_count" : 163,
-               "geo_enabled" : true,
-               "id" : 390860562,
-               "id_str" : "390860562",
-               "is_translator" : false,
-               "lang" : "en",
-               "listed_count" : 2318,
-               "location" : "Mumbai, India",
-               "name" : "Awkward Posts",
-               "notifications" : false,
-               "profile_background_color" : "D4D4D4",
-               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/514198311/t_bg.jpg",
-               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/514198311/t_bg.jpg",
-               "profile_background_tile" : false,
-               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/390860562/1364300489",
-               "profile_image_url" : "http://pbs.twimg.com/profile_images/3432914707/3b745e6f1a69b6b0769279b3773237f1_normal.jpeg",
-               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/3432914707/3b745e6f1a69b6b0769279b3773237f1_normal.jpeg",
-               "profile_link_color" : "990000",
-               "profile_sidebar_border_color" : "FFFFFF",
-               "profile_sidebar_fill_color" : "C9FFD0",
-               "profile_text_color" : "333333",
-               "profile_use_background_image" : false,
-               "protected" : false,
-               "screen_name" : "awkwardposts",
-               "statuses_count" : 41607,
-               "time_zone" : "Mumbai",
-               "url" : null,
-               "utc_offset" : 19800,
-               "verified" : false
-            }
-         },
-         "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-         "text" : "RT @awkwardposts: I wish I was a cat because the fatter you are the more people like you",
-         "truncated" : false,
-         "user" : {
-            "contributors_enabled" : false,
-            "created_at" : "Mon Oct 03 09:55:52 +0000 2011",
-            "default_profile" : true,
-            "default_profile_image" : false,
-            "description" : "Srilankan girl, i love reading, eating and making friends!",
-            "entities" : {
-               "description" : {
-                  "urls" : []
-               }
-            },
-            "favourites_count" : 16,
-            "follow_request_sent" : false,
-            "followers_count" : 374,
-            "following" : false,
-            "friends_count" : 1093,
-            "geo_enabled" : false,
-            "id" : 384236194,
-            "id_str" : "384236194",
-            "is_translator" : false,
-            "lang" : "en",
-            "listed_count" : 1,
-            "location" : "Sri Lanka",
-            "name" : "Tina",
-            "notifications" : false,
-            "profile_background_color" : "C0DEED",
-            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile" : false,
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/2235002737/etTso0Xy_normal",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/2235002737/etTso0Xy_normal",
-            "profile_link_color" : "0084B4",
-            "profile_sidebar_border_color" : "C0DEED",
-            "profile_sidebar_fill_color" : "DDEEF6",
-            "profile_text_color" : "333333",
-            "profile_use_background_image" : true,
-            "protected" : false,
-            "screen_name" : "jmjmiranda",
-            "statuses_count" : 4977,
-            "time_zone" : "Sri Jayawardenepura",
-            "url" : null,
-            "utc_offset" : 19800,
-            "verified" : false
-         }
-      },
-      {
-         "contributors" : null,
-         "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:41 +0000 2013",
+         "created_at" : "Tue Jan 21 19:19:08 +0000 2014",
          "entities" : {
             "hashtags" : [],
             "symbols" : [],
@@ -552,8 +781,8 @@
          "favorite_count" : 0,
          "favorited" : false,
          "geo" : null,
-         "id" : 410831771920392192,
-         "id_str" : "410831771920392192",
+         "id" : 425709161884565504,
+         "id_str" : "425709161884565504",
          "in_reply_to_screen_name" : null,
          "in_reply_to_status_id" : null,
          "in_reply_to_status_id_str" : null,
@@ -568,14 +797,295 @@
          "retweet_count" : 0,
          "retweeted" : false,
          "source" : "web",
-         "text" : "Wonsuk awwwww he really loves his cat!! x3",
+         "text" : "Looking at fluffy cat paws just makes me die inside.....",
          "truncated" : false,
          "user" : {
             "contributors_enabled" : false,
-            "created_at" : "Thu Apr 28 17:18:47 +0000 2011",
+            "created_at" : "Mon Nov 12 10:55:59 +0000 2012",
             "default_profile" : false,
             "default_profile_image" : false,
-            "description" : "Culinary student, asocial, 60% negative, melomaniac, coffeeholic. I ♥ Rainy days, my bed, 넬, Coldplay. No followback.",
+            "description" : "Beginner blogger, who wants to travel the world...i can dream right http://t.co/CnIXxieIzK",
+            "entities" : {
+               "description" : {
+                  "urls" : [
+                     {
+                        "display_url" : "clairelouisy.blogspot.co.uk",
+                        "expanded_url" : "http://clairelouisy.blogspot.co.uk",
+                        "indices" : [ 68, 90 ],
+                        "url" : "http://t.co/CnIXxieIzK"
+                     }
+                  ]
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "clairelouisethorn.tumblr.com",
+                        "expanded_url" : "http://clairelouisethorn.tumblr.com/",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/4XsKed7dLa"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 171,
+            "follow_request_sent" : false,
+            "followers_count" : 147,
+            "following" : false,
+            "friends_count" : 254,
+            "geo_enabled" : false,
+            "id" : 943276580,
+            "id_str" : "943276580",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 1,
+            "location" : "",
+            "name" : "Claire Louise",
+            "notifications" : false,
+            "profile_background_color" : "ACDED6",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000109858443/d01faf622251a49c700158d12cd034e7.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000109858443/d01faf622251a49c700158d12cd034e7.jpeg",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/943276580/1382047574",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000698936091/458ae5c860794ea4e157c2be9fedd695_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000698936091/458ae5c860794ea4e157c2be9fedd695_normal.jpeg",
+            "profile_link_color" : "038543",
+            "profile_sidebar_border_color" : "FFFFFF",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "ThornClaire",
+            "statuses_count" : 613,
+            "time_zone" : null,
+            "url" : "http://t.co/4XsKed7dLa",
+            "utc_offset" : null,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:08 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : [
+               {
+                  "id" : 1488867631,
+                  "id_str" : "1488867631",
+                  "indices" : [ 0, 12 ],
+                  "name" : "Harrison Edwards",
+                  "screen_name" : "Jungle__Cat"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709161763315712,
+         "id_str" : "425709161763315712",
+         "in_reply_to_screen_name" : "Jungle__Cat",
+         "in_reply_to_status_id" : 425708834657554432,
+         "in_reply_to_status_id_str" : "425708834657554432",
+         "in_reply_to_user_id" : 1488867631,
+         "in_reply_to_user_id_str" : "1488867631",
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+         "text" : "@Jungle__Cat only applies to girls 😒",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Tue Jan 21 16:49:44 +0000 2014",
+            "default_profile" : true,
+            "default_profile_image" : false,
+            "description" : "& drink a beer.",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 34,
+            "follow_request_sent" : false,
+            "followers_count" : 29,
+            "following" : false,
+            "friends_count" : 124,
+            "geo_enabled" : false,
+            "id" : 2303380454,
+            "id_str" : "2303380454",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 0,
+            "location" : "Hanover",
+            "name" : "Samantha Whitlock",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2303380454/1390326831",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/425698712611221504/H9UOAXR5_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/425698712611221504/H9UOAXR5_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "swhiitt",
+            "statuses_count" : 28,
+            "time_zone" : null,
+            "url" : null,
+            "utc_offset" : null,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:08 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : [
+               {
+                  "id" : 24281272,
+                  "id_str" : "24281272",
+                  "indices" : [ 3, 14 ],
+                  "name" : "Joshua Fox",
+                  "screen_name" : "joshua_fox"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709161582985216,
+         "id_str" : "425709161582985216",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 7,
+         "retweeted" : false,
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Tue Jan 21 19:17:40 +0000 2014",
+            "entities" : {
+               "hashtags" : [],
+               "symbols" : [],
+               "urls" : [],
+               "user_mentions" : []
+            },
+            "favorite_count" : 13,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 425708796212957184,
+            "id_str" : "425708796212957184",
+            "in_reply_to_screen_name" : null,
+            "in_reply_to_status_id" : null,
+            "in_reply_to_status_id_str" : null,
+            "in_reply_to_user_id" : null,
+            "in_reply_to_user_id_str" : null,
+            "lang" : "en",
+            "metadata" : {
+               "iso_language_code" : "en",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "retweet_count" : 7,
+            "retweeted" : false,
+            "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "text" : "..carriage was empty. He sat opposite me whilst uncomfortably talking to himself &amp; staring. I stood up to move. He grabbed my dick. Lovely.",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Fri Mar 13 23:30:18 +0000 2009",
+               "default_profile" : true,
+               "default_profile_image" : false,
+               "description" : "I make YouTube videos, write things, interview people and pretty much just love pop music. I also have a couple of books out: http://t.co/zzc00Pl62X :)",
+               "entities" : {
+                  "description" : {
+                     "urls" : [
+                        {
+                           "display_url" : "joshuafox.co.uk",
+                           "expanded_url" : "http://www.joshuafox.co.uk",
+                           "indices" : [ 126, 148 ],
+                           "url" : "http://t.co/zzc00Pl62X"
+                        }
+                     ]
+                  },
+                  "url" : {
+                     "urls" : [
+                        {
+                           "display_url" : "youtube.com/subscription_c…",
+                           "expanded_url" : "http://www.youtube.com/subscription_center?add_user=joshuafoxphoto",
+                           "indices" : [ 0, 22 ],
+                           "url" : "http://t.co/e8RudtZQPl"
+                        }
+                     ]
+                  }
+               },
+               "favourites_count" : 906,
+               "follow_request_sent" : false,
+               "followers_count" : 13933,
+               "following" : false,
+               "friends_count" : 511,
+               "geo_enabled" : true,
+               "id" : 24281272,
+               "id_str" : "24281272",
+               "is_translator" : false,
+               "lang" : "en",
+               "listed_count" : 80,
+               "location" : "manchester, uk",
+               "name" : "Joshua Fox",
+               "notifications" : false,
+               "profile_background_color" : "C0DEED",
+               "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+               "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+               "profile_background_tile" : false,
+               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/24281272/1372614936",
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/424988384734371841/IiHhB87o_normal.jpeg",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/424988384734371841/IiHhB87o_normal.jpeg",
+               "profile_link_color" : "0084B4",
+               "profile_sidebar_border_color" : "C0DEED",
+               "profile_sidebar_fill_color" : "DDEEF6",
+               "profile_text_color" : "333333",
+               "profile_use_background_image" : true,
+               "protected" : false,
+               "screen_name" : "joshua_fox",
+               "statuses_count" : 9016,
+               "time_zone" : "Hawaii",
+               "url" : "http://t.co/e8RudtZQPl",
+               "utc_offset" : -36000,
+               "verified" : false
+            }
+         },
+         "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+         "text" : "RT @joshua_fox: ..carriage was empty. He sat opposite me whilst uncomfortably talking to himself &amp; staring. I stood up to move. He grabbed …",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Sun Dec 18 11:35:25 +0000 2011",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "One Direction , 5 Seconds Of Summer , Janoskians , The Vamps (bandacc/4) , Sam Pepper, Marcus Butler & @koala_cowsx. Ma Bitches ❤️",
             "entities" : {
                "description" : {
                   "urls" : []
@@ -583,45 +1093,208 @@
                "url" : {
                   "urls" : [
                      {
-                        "display_url" : "archienancy.tumblr.com",
-                        "expanded_url" : "http://archienancy.tumblr.com",
-                        "indices" : [ 0, 22 ],
-                        "url" : "http://t.co/O6FhnwAv7w"
+                        "display_url" : "24.media.tumblr.com/a4fed02743d4ae…",
+                        "expanded_url" : "https://24.media.tumblr.com/a4fed02743d4aec8258d262f8a7a6b64/tumblr_myi035LH1x1qashr9o2_500.gif",
+                        "indices" : [ 0, 23 ],
+                        "url" : "https://t.co/JbrhFaYxjB"
                      }
                   ]
                }
             },
-            "favourites_count" : 191,
+            "favourites_count" : 1789,
             "follow_request_sent" : false,
-            "followers_count" : 234,
+            "followers_count" : 414,
             "following" : false,
-            "friends_count" : 388,
-            "geo_enabled" : false,
-            "id" : 289444623,
-            "id_str" : "289444623",
+            "friends_count" : 749,
+            "geo_enabled" : true,
+            "id" : 439951123,
+            "id_str" : "439951123",
             "is_translator" : false,
-            "lang" : "es",
-            "listed_count" : 7,
-            "location" : "Mexico",
-            "name" : "Nancy",
+            "lang" : "en",
+            "listed_count" : 0,
+            "location" : "Ill Do What I Want Im PunkRock",
+            "name" : "Brooks Brothers ❤️",
             "notifications" : false,
-            "profile_background_color" : "F5EDEE",
-            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000106220546/c76841d847698ed4903ff3a3b7c32ed1.jpeg",
-            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000106220546/c76841d847698ed4903ff3a3b7c32ed1.jpeg",
-            "profile_background_tile" : true,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/289444623/1385835807",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000859283350/yyJUn6UG_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000859283350/yyJUn6UG_normal.jpeg",
-            "profile_link_color" : "F50C20",
+            "profile_background_color" : "FFFFFF",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000147902986/yLdGRwZp.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000147902986/yLdGRwZp.jpeg",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/439951123/1389746242",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/423775575405518848/DtnwvZgx_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/423775575405518848/DtnwvZgx_normal.jpeg",
+            "profile_link_color" : "5C60B8",
             "profile_sidebar_border_color" : "000000",
-            "profile_sidebar_fill_color" : "EB8173",
-            "profile_text_color" : "2B050E",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
             "profile_use_background_image" : true,
             "protected" : false,
-            "screen_name" : "ArchiNancy",
-            "statuses_count" : 47376,
-            "time_zone" : "Mexico City",
-            "url" : "http://t.co/O6FhnwAv7w",
+            "screen_name" : "Cat_thefanx",
+            "statuses_count" : 8508,
+            "time_zone" : "Amsterdam",
+            "url" : "https://t.co/JbrhFaYxjB",
+            "utc_offset" : 3600,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:08 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709161461346304,
+         "id_str" : "425709161461346304",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Mobile Web (M2)</a>",
+         "text" : "Itz only outside nigeria u r safe 2 keep a cat I ur house awy frm witch craft",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Tue Aug 21 18:31:10 +0000 2012",
+            "default_profile" : true,
+            "default_profile_image" : false,
+            "description" : "I'm not normal ,am original! Lol#TeamFollowBack#NO NEW FWENDS#holly boy is the name .lol things $#auto follow back#facebook:olaoluwa onifade!",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "hk.world.Tins.com",
+                        "expanded_url" : "http://hk.world.Tins.com",
+                        "indices" : [ 0, 22 ],
+                        "url" : "http://t.co/NBUM2FWNE4"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 1,
+            "follow_request_sent" : false,
+            "followers_count" : 163,
+            "following" : false,
+            "friends_count" : 273,
+            "geo_enabled" : false,
+            "id" : 772019245,
+            "id_str" : "772019245",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 0,
+            "location" : "Somewhere in this planet",
+            "name" : "FREESTAR",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/772019245/1389206514",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000269492435/944ec96e14a094d0290decd64ed28521_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000269492435/944ec96e14a094d0290decd64ed28521_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "iamfreestar_ola",
+            "statuses_count" : 902,
+            "time_zone" : "Casablanca",
+            "url" : "http://t.co/NBUM2FWNE4",
+            "utc_offset" : 0,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:07 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709159707705344,
+         "id_str" : "425709159707705344",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+         "text" : "my father in law called his cat a \"pussy faggot\" yesterday because he moves his tail from side to side when he walks",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Fri Jun 05 15:30:13 +0000 2009",
+            "default_profile" : true,
+            "default_profile_image" : false,
+            "description" : "",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 8096,
+            "follow_request_sent" : false,
+            "followers_count" : 108,
+            "following" : false,
+            "friends_count" : 387,
+            "geo_enabled" : false,
+            "id" : 44916694,
+            "id_str" : "44916694",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 2,
+            "location" : "",
+            "name" : "gfunk",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/3647439062/0be68ff8fc7313914de3a55d7c5253c3_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/3647439062/0be68ff8fc7313914de3a55d7c5253c3_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "gfunksupreme",
+            "statuses_count" : 4511,
+            "time_zone" : "Central Time (US & Canada)",
+            "url" : null,
             "utc_offset" : -21600,
             "verified" : false
          }
@@ -629,36 +1302,31 @@
       {
          "contributors" : null,
          "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:41 +0000 2013",
+         "created_at" : "Tue Jan 21 19:19:07 +0000 2014",
          "entities" : {
-            "hashtags" : [
-               {
-                  "indices" : [ 17, 21 ],
-                  "text" : "WCW"
-               }
-            ],
+            "hashtags" : [],
             "media" : [
                {
-                  "display_url" : "pic.twitter.com/9EcaRXdtiT",
-                  "expanded_url" : "http://twitter.com/_rLoEsAeHn_/status/410831327173152768/photo/1",
-                  "id" : 410831327038935040,
-                  "id_str" : "410831327038935040",
-                  "indices" : [ 74, 96 ],
-                  "media_url" : "http://pbs.twimg.com/media/BbOQ6k7CEAANC6p.jpg",
-                  "media_url_https" : "https://pbs.twimg.com/media/BbOQ6k7CEAANC6p.jpg",
+                  "display_url" : "pic.twitter.com/qiEuV9WIiq",
+                  "expanded_url" : "http://twitter.com/UberFacts/status/422220666646310912/photo/1",
+                  "id" : 422220666512101376,
+                  "id_str" : "422220666512101376",
+                  "indices" : [ 113, 135 ],
+                  "media_url" : "http://pbs.twimg.com/media/BdwHdYxIUAAUN_O.jpg",
+                  "media_url_https" : "https://pbs.twimg.com/media/BdwHdYxIUAAUN_O.jpg",
                   "sizes" : {
                      "large" : {
-                        "h" : 1136,
+                        "h" : 890,
                         "resize" : "fit",
-                        "w" : 852
+                        "w" : 1000
                      },
                      "medium" : {
-                        "h" : 800,
+                        "h" : 534,
                         "resize" : "fit",
                         "w" : 600
                      },
                      "small" : {
-                        "h" : 453,
+                        "h" : 303,
                         "resize" : "fit",
                         "w" : 340
                      },
@@ -668,36 +1336,36 @@
                         "w" : 150
                      }
                   },
-                  "source_status_id" : 410831327173152768,
-                  "source_status_id_str" : "410831327173152768",
+                  "source_status_id" : 422220666646310912,
+                  "source_status_id_str" : "422220666646310912",
                   "type" : "photo",
-                  "url" : "http://t.co/9EcaRXdtiT"
+                  "url" : "http://t.co/qiEuV9WIiq"
                }
             ],
             "symbols" : [],
             "urls" : [],
             "user_mentions" : [
                {
-                  "id" : 412742411,
-                  "id_str" : "412742411",
+                  "id" : 117260344,
+                  "id_str" : "117260344",
                   "indices" : [ 3, 15 ],
-                  "name" : "Leah Rosen",
-                  "screen_name" : "_rLoEsAeHn_"
+                  "name" : "Nikita Fox",
+                  "screen_name" : "BadKidBanks"
                },
                {
-                  "id" : 847802911,
-                  "id_str" : "847802911",
-                  "indices" : [ 63, 73 ],
-                  "name" : "Mary Kinney ",
-                  "screen_name" : "mkinney44"
+                  "id" : 95023423,
+                  "id_str" : "95023423",
+                  "indices" : [ 18, 28 ],
+                  "name" : "UberFacts",
+                  "screen_name" : "UberFacts"
                }
             ]
          },
          "favorite_count" : 0,
          "favorited" : false,
          "geo" : null,
-         "id" : 410831771559673856,
-         "id_str" : "410831771559673856",
+         "id" : 425709159393550336,
+         "id_str" : "425709159393550336",
          "in_reply_to_screen_name" : null,
          "in_reply_to_status_id" : null,
          "in_reply_to_status_id_str" : null,
@@ -715,36 +1383,674 @@
          "retweeted_status" : {
             "contributors" : null,
             "coordinates" : null,
-            "created_at" : "Wed Dec 11 17:59:55 +0000 2013",
+            "created_at" : "Tue Jan 21 19:18:36 +0000 2014",
             "entities" : {
-               "hashtags" : [
-                  {
-                     "indices" : [ 0, 4 ],
-                     "text" : "WCW"
-                  }
-               ],
+               "hashtags" : [],
                "media" : [
                   {
-                     "display_url" : "pic.twitter.com/9EcaRXdtiT",
-                     "expanded_url" : "http://twitter.com/_rLoEsAeHn_/status/410831327173152768/photo/1",
-                     "id" : 410831327038935040,
-                     "id_str" : "410831327038935040",
-                     "indices" : [ 57, 79 ],
-                     "media_url" : "http://pbs.twimg.com/media/BbOQ6k7CEAANC6p.jpg",
-                     "media_url_https" : "https://pbs.twimg.com/media/BbOQ6k7CEAANC6p.jpg",
+                     "display_url" : "pic.twitter.com/qiEuV9WIiq",
+                     "expanded_url" : "http://twitter.com/UberFacts/status/422220666646310912/photo/1",
+                     "id" : 422220666512101376,
+                     "id_str" : "422220666512101376",
+                     "indices" : [ 96, 118 ],
+                     "media_url" : "http://pbs.twimg.com/media/BdwHdYxIUAAUN_O.jpg",
+                     "media_url_https" : "https://pbs.twimg.com/media/BdwHdYxIUAAUN_O.jpg",
                      "sizes" : {
                         "large" : {
-                           "h" : 1136,
+                           "h" : 890,
                            "resize" : "fit",
-                           "w" : 852
+                           "w" : 1000
                         },
                         "medium" : {
-                           "h" : 800,
+                           "h" : 534,
                            "resize" : "fit",
                            "w" : 600
                         },
                         "small" : {
-                           "h" : 453,
+                           "h" : 303,
+                           "resize" : "fit",
+                           "w" : 340
+                        },
+                        "thumb" : {
+                           "h" : 150,
+                           "resize" : "crop",
+                           "w" : 150
+                        }
+                     },
+                     "source_status_id" : 422220666646310912,
+                     "source_status_id_str" : "422220666646310912",
+                     "type" : "photo",
+                     "url" : "http://t.co/qiEuV9WIiq"
+                  }
+               ],
+               "symbols" : [],
+               "urls" : [],
+               "user_mentions" : [
+                  {
+                     "id" : 95023423,
+                     "id_str" : "95023423",
+                     "indices" : [ 1, 11 ],
+                     "name" : "UberFacts",
+                     "screen_name" : "UberFacts"
+                  }
+               ]
+            },
+            "favorite_count" : 0,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 425709029554679809,
+            "id_str" : "425709029554679809",
+            "in_reply_to_screen_name" : "UberFacts",
+            "in_reply_to_status_id" : 422220666646310912,
+            "in_reply_to_status_id_str" : "422220666646310912",
+            "in_reply_to_user_id" : 95023423,
+            "in_reply_to_user_id_str" : "95023423",
+            "lang" : "en",
+            "metadata" : {
+               "iso_language_code" : "en",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "possibly_sensitive" : false,
+            "retweet_count" : 1,
+            "retweeted" : false,
+            "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "text" : "“@UberFacts: Meet the world's smallest cat ever! His name is Tinker Toy and he's 2 inches tall. http://t.co/qiEuV9WIiq” I WANT IT",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Thu Feb 25 01:49:20 +0000 2010",
+               "default_profile" : false,
+               "default_profile_image" : false,
+               "description" : "16 year old guy from canada, followed by @AZEALIABANKS, @IGGYAZALEA, @ArianaGrande, @NataliaKills and more. Profesional Cat Petter, Bacon Lover",
+               "entities" : {
+                  "description" : {
+                     "urls" : []
+                  },
+                  "url" : {
+                     "urls" : [
+                        {
+                           "display_url" : "i-love-pancakes-and-gaga.tumblr.com",
+                           "expanded_url" : "http://i-love-pancakes-and-gaga.tumblr.com",
+                           "indices" : [ 0, 22 ],
+                           "url" : "http://t.co/wEhoVLmKhm"
+                        }
+                     ]
+                  }
+               },
+               "favourites_count" : 6909,
+               "follow_request_sent" : false,
+               "followers_count" : 3137,
+               "following" : false,
+               "friends_count" : 2402,
+               "geo_enabled" : false,
+               "id" : 117260344,
+               "id_str" : "117260344",
+               "is_translator" : false,
+               "lang" : "en",
+               "listed_count" : 20,
+               "location" : "THE ARTPOP BALL 07/09/14",
+               "name" : "Nikita Fox",
+               "notifications" : false,
+               "profile_background_color" : "131516",
+               "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme14/bg.gif",
+               "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme14/bg.gif",
+               "profile_background_tile" : true,
+               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/117260344/1389983341",
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/423901122534060032/55OT6joa_normal.jpeg",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/423901122534060032/55OT6joa_normal.jpeg",
+               "profile_link_color" : "009999",
+               "profile_sidebar_border_color" : "EEEEEE",
+               "profile_sidebar_fill_color" : "EFEFEF",
+               "profile_text_color" : "333333",
+               "profile_use_background_image" : true,
+               "protected" : false,
+               "screen_name" : "BadKidBanks",
+               "statuses_count" : 35154,
+               "time_zone" : "Eastern Time (US & Canada)",
+               "url" : "http://t.co/wEhoVLmKhm",
+               "utc_offset" : -18000,
+               "verified" : false
+            }
+         },
+         "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+         "text" : "RT @BadKidBanks: “@UberFacts: Meet the world's smallest cat ever! His name is Tinker Toy and he's 2 inches tall. http://t.co/qiEuV9WIiq” I …",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Thu Feb 10 01:55:17 +0000 2011",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "Happy lil mons†er! Cuteness lover! \r\nMy dream is to fly over the rainbow so high!",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               },
+               "url" : {
+                  "urls" : [
+                     {
+                        "display_url" : "littlemonsters.com/joxxx",
+                        "expanded_url" : "https://littlemonsters.com/joxxx",
+                        "indices" : [ 0, 23 ],
+                        "url" : "https://t.co/LF2V42GIIm"
+                     }
+                  ]
+               }
+            },
+            "favourites_count" : 11,
+            "follow_request_sent" : false,
+            "followers_count" : 425,
+            "following" : false,
+            "friends_count" : 496,
+            "geo_enabled" : true,
+            "id" : 249922991,
+            "id_str" : "249922991",
+            "is_translator" : false,
+            "lang" : "es",
+            "listed_count" : 1,
+            "location" : "Highway Unicorn",
+            "name" : "Chepelyn",
+            "notifications" : false,
+            "profile_background_color" : "C08AE6",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/812122789/292dcd1eb9830ed3ee7d4cc226bd37d2.png",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/812122789/292dcd1eb9830ed3ee7d4cc226bd37d2.png",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/249922991/1387986660",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/424692865294286848/BT88qmOt_normal.png",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/424692865294286848/BT88qmOt_normal.png",
+            "profile_link_color" : "E01BB9",
+            "profile_sidebar_border_color" : "FFFFFF",
+            "profile_sidebar_fill_color" : "7AC3EE",
+            "profile_text_color" : "3D1957",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "joxxx555",
+            "statuses_count" : 10439,
+            "time_zone" : "Madrid",
+            "url" : "https://t.co/LF2V42GIIm",
+            "utc_offset" : 3600,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:07 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : [
+               {
+                  "id" : 180708486,
+                  "id_str" : "180708486",
+                  "indices" : [ 30, 43 ],
+                  "name" : "Icatd Estilo Beach",
+                  "screen_name" : "Risyad_mahdi"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709159225372672,
+         "id_str" : "425709159225372672",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "in",
+         "metadata" : {
+            "iso_language_code" : "in",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://blackberry.com/twitter\" rel=\"nofollow\">Twitter for BlackBerry®</a>",
+         "text" : "Rumah lo dong cat, wkwkkwk RT @Risyad_mahdi: Air kiriman bogor , dikirim bukan ke jakarta lagi . Langsung kerumah cabe-cabean\"",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Tue Jan 05 16:12:39 +0000 2010",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "PSJS Jakarta Selatan~ Out Of School Education at State University of Jakarta'12 (2695ECE9) GAMER's",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 4,
+            "follow_request_sent" : false,
+            "followers_count" : 159,
+            "following" : false,
+            "friends_count" : 256,
+            "geo_enabled" : false,
+            "id" : 102097929,
+            "id_str" : "102097929",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 0,
+            "location" : "Tangerang | Indonesia",
+            "name" : "Reja Deanda Fatha",
+            "notifications" : false,
+            "profile_background_color" : "022330",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/788841002/884b5be5a7507c971f2ae1e4901db089.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/788841002/884b5be5a7507c971f2ae1e4901db089.jpeg",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/102097929/1374071581",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/421386068613541888/bnjm63tr_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/421386068613541888/bnjm63tr_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "FFFFFF",
+            "profile_sidebar_fill_color" : "C0DFEC",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "rejadeanda",
+            "statuses_count" : 1502,
+            "time_zone" : "Pacific Time (US & Canada)",
+            "url" : null,
+            "utc_offset" : -28800,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:07 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : []
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709159095762945,
+         "id_str" : "425709159095762945",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "retweet_count" : 0,
+         "retweeted" : false,
+         "source" : "<a href=\"http://www.apple.com\" rel=\"nofollow\">iOS</a>",
+         "text" : "My cat purs soooo loud.",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Mon Jan 28 01:11:28 +0000 2013",
+            "default_profile" : false,
+            "default_profile_image" : false,
+            "description" : "Life's a journey, travel it strong.",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 2155,
+            "follow_request_sent" : false,
+            "followers_count" : 121,
+            "following" : false,
+            "friends_count" : 124,
+            "geo_enabled" : false,
+            "id" : 1126670378,
+            "id_str" : "1126670378",
+            "is_translator" : false,
+            "lang" : "en",
+            "listed_count" : 0,
+            "location" : "",
+            "name" : "Sam O'Donoghue",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000111768506/cabdb3db027fabb7f89572cef4201276.jpeg",
+            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000111768506/cabdb3db027fabb7f89572cef4201276.jpeg",
+            "profile_background_tile" : true,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/1126670378/1390144436",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/416083268300443648/eHwTdJPS_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/416083268300443648/eHwTdJPS_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "FFFFFF",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "Saaammk",
+            "statuses_count" : 7354,
+            "time_zone" : null,
+            "url" : null,
+            "utc_offset" : null,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:07 +0000 2014",
+         "entities" : {
+            "hashtags" : [
+               {
+                  "indices" : [ 22, 35 ],
+                  "text" : "PaísValencià"
+               }
+            ],
+            "symbols" : [],
+            "urls" : [
+               {
+                  "display_url" : "catradio.cat",
+                  "expanded_url" : "http://catradio.cat",
+                  "indices" : [ 95, 117 ],
+                  "url" : "http://t.co/NDWDQwOwDx"
+               }
+            ],
+            "user_mentions" : [
+               {
+                  "id" : 262606630,
+                  "id_str" : "262606630",
+                  "indices" : [ 3, 17 ],
+                  "name" : "Catalunya Informació",
+                  "screen_name" : "Catinformacio"
+               },
+               {
+                  "id" : 7679392,
+                  "id_str" : "7679392",
+                  "indices" : [ 60, 75 ],
+                  "name" : "CatalunyaRadio",
+                  "screen_name" : "CatalunyaRadio"
+               },
+               {
+                  "id" : 262606630,
+                  "id_str" : "262606630",
+                  "indices" : [ 78, 92 ],
+                  "name" : "Catalunya Informació",
+                  "screen_name" : "Catinformacio"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709157766144000,
+         "id_str" : "425709157766144000",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "es",
+         "metadata" : {
+            "iso_language_code" : "es",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 4,
+         "retweeted" : false,
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Tue Jan 21 19:17:16 +0000 2014",
+            "entities" : {
+               "hashtags" : [
+                  {
+                     "indices" : [ 3, 16 ],
+                     "text" : "PaísValencià"
+                  }
+               ],
+               "symbols" : [],
+               "urls" : [
+                  {
+                     "display_url" : "catradio.cat",
+                     "expanded_url" : "http://catradio.cat",
+                     "indices" : [ 76, 98 ],
+                     "url" : "http://t.co/NDWDQwOwDx"
+                  }
+               ],
+               "user_mentions" : [
+                  {
+                     "id" : 7679392,
+                     "id_str" : "7679392",
+                     "indices" : [ 41, 56 ],
+                     "name" : "CatalunyaRadio",
+                     "screen_name" : "CatalunyaRadio"
+                  },
+                  {
+                     "id" : 262606630,
+                     "id_str" : "262606630",
+                     "indices" : [ 59, 73 ],
+                     "name" : "Catalunya Informació",
+                     "screen_name" : "Catinformacio"
+                  }
+               ]
+            },
+            "favorite_count" : 0,
+            "favorited" : false,
+            "geo" : null,
+            "id" : 425708693653450752,
+            "id_str" : "425708693653450752",
+            "in_reply_to_screen_name" : null,
+            "in_reply_to_status_id" : null,
+            "in_reply_to_status_id_str" : null,
+            "in_reply_to_user_id" : null,
+            "in_reply_to_user_id_str" : null,
+            "lang" : "es",
+            "metadata" : {
+               "iso_language_code" : "es",
+               "result_type" : "recent"
+            },
+            "place" : null,
+            "possibly_sensitive" : false,
+            "retweet_count" : 4,
+            "retweeted" : false,
+            "source" : "web",
+            "text" : "Al #PaísValencià a partir d'ara trobareu @CatalunyaRadio i @catinformacio a http://t.co/NDWDQwOwDx i a les nostres apps",
+            "truncated" : false,
+            "user" : {
+               "contributors_enabled" : false,
+               "created_at" : "Tue Mar 08 11:24:31 +0000 2011",
+               "default_profile" : false,
+               "default_profile_image" : false,
+               "description" : "Compte oficial de Twitter de Catalunya Informació.",
+               "entities" : {
+                  "description" : {
+                     "urls" : []
+                  }
+               },
+               "favourites_count" : 24,
+               "follow_request_sent" : false,
+               "followers_count" : 37126,
+               "following" : false,
+               "friends_count" : 53,
+               "geo_enabled" : false,
+               "id" : 262606630,
+               "id_str" : "262606630",
+               "is_translator" : false,
+               "lang" : "ca",
+               "listed_count" : 882,
+               "location" : "",
+               "name" : "Catalunya Informació",
+               "notifications" : false,
+               "profile_background_color" : "C0DEED",
+               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/794251869/6bb22e0a351645b20f90fe2efec7b5b7.jpeg",
+               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/794251869/6bb22e0a351645b20f90fe2efec7b5b7.jpeg",
+               "profile_background_tile" : false,
+               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/262606630/1351175814",
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/3278256674/2337d3fa2f8958067e0b7f90895b598e_normal.jpeg",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/3278256674/2337d3fa2f8958067e0b7f90895b598e_normal.jpeg",
+               "profile_link_color" : "0084B4",
+               "profile_sidebar_border_color" : "FFFFFF",
+               "profile_sidebar_fill_color" : "DDEEF6",
+               "profile_text_color" : "333333",
+               "profile_use_background_image" : true,
+               "protected" : false,
+               "screen_name" : "Catinformacio",
+               "statuses_count" : 46892,
+               "time_zone" : "Madrid",
+               "url" : null,
+               "utc_offset" : 3600,
+               "verified" : false
+            }
+         },
+         "source" : "<a href=\"http://www.twitter.com\" rel=\"nofollow\">Twitter for Windows Phone</a>",
+         "text" : "RT @Catinformacio: Al #PaísValencià a partir d'ara trobareu @CatalunyaRadio i @catinformacio a http://t.co/NDWDQwOwDx i a les nostres apps",
+         "truncated" : false,
+         "user" : {
+            "contributors_enabled" : false,
+            "created_at" : "Sat May 28 12:39:53 +0000 2011",
+            "default_profile" : true,
+            "default_profile_image" : false,
+            "description" : "Membra de la Penya Sport Palamós cf.. Palamós CF degà del fútbol Catalá.",
+            "entities" : {
+               "description" : {
+                  "urls" : []
+               }
+            },
+            "favourites_count" : 14,
+            "follow_request_sent" : false,
+            "followers_count" : 45,
+            "following" : false,
+            "friends_count" : 119,
+            "geo_enabled" : false,
+            "id" : 306777517,
+            "id_str" : "306777517",
+            "is_translator" : false,
+            "lang" : "es",
+            "listed_count" : 1,
+            "location" : "Penya Sport Palamós CF",
+            "name" : "Albert Sotillos",
+            "notifications" : false,
+            "profile_background_color" : "C0DEED",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile" : false,
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/306777517/1390063088",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/424253112342548480/1FhbS_7x_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/424253112342548480/1FhbS_7x_normal.jpeg",
+            "profile_link_color" : "0084B4",
+            "profile_sidebar_border_color" : "C0DEED",
+            "profile_sidebar_fill_color" : "DDEEF6",
+            "profile_text_color" : "333333",
+            "profile_use_background_image" : true,
+            "protected" : false,
+            "screen_name" : "AlbertSoti",
+            "statuses_count" : 502,
+            "time_zone" : "Hawaii",
+            "url" : null,
+            "utc_offset" : -36000,
+            "verified" : false
+         }
+      },
+      {
+         "contributors" : null,
+         "coordinates" : null,
+         "created_at" : "Tue Jan 21 19:19:06 +0000 2014",
+         "entities" : {
+            "hashtags" : [],
+            "media" : [
+               {
+                  "display_url" : "pic.twitter.com/a4D2BRqJEI",
+                  "expanded_url" : "http://twitter.com/MariaPulk/status/425708490225483776/photo/1",
+                  "id" : 425708490061926400,
+                  "id_str" : "425708490061926400",
+                  "indices" : [ 50, 72 ],
+                  "media_url" : "http://pbs.twimg.com/media/BehrncACUAAGm0m.jpg",
+                  "media_url_https" : "https://pbs.twimg.com/media/BehrncACUAAGm0m.jpg",
+                  "sizes" : {
+                     "large" : {
+                        "h" : 540,
+                        "resize" : "fit",
+                        "w" : 720
+                     },
+                     "medium" : {
+                        "h" : 450,
+                        "resize" : "fit",
+                        "w" : 600
+                     },
+                     "small" : {
+                        "h" : 255,
+                        "resize" : "fit",
+                        "w" : 340
+                     },
+                     "thumb" : {
+                        "h" : 150,
+                        "resize" : "crop",
+                        "w" : 150
+                     }
+                  },
+                  "type" : "photo",
+                  "url" : "http://t.co/a4D2BRqJEI"
+               }
+            ],
+            "symbols" : [],
+            "urls" : [],
+            "user_mentions" : [
+               {
+                  "id" : 92708612,
+                  "id_str" : "92708612",
+                  "indices" : [ 3, 13 ],
+                  "name" : "Maria",
+                  "screen_name" : "MariaPulk"
+               }
+            ]
+         },
+         "favorite_count" : 0,
+         "favorited" : false,
+         "geo" : null,
+         "id" : 425709155262148608,
+         "id_str" : "425709155262148608",
+         "in_reply_to_screen_name" : null,
+         "in_reply_to_status_id" : null,
+         "in_reply_to_status_id_str" : null,
+         "in_reply_to_user_id" : null,
+         "in_reply_to_user_id_str" : null,
+         "lang" : "en",
+         "metadata" : {
+            "iso_language_code" : "en",
+            "result_type" : "recent"
+         },
+         "place" : null,
+         "possibly_sensitive" : false,
+         "retweet_count" : 1,
+         "retweeted" : false,
+         "retweeted_status" : {
+            "contributors" : null,
+            "coordinates" : null,
+            "created_at" : "Tue Jan 21 19:16:28 +0000 2014",
+            "entities" : {
+               "hashtags" : [],
+               "media" : [
+                  {
+                     "display_url" : "pic.twitter.com/a4D2BRqJEI",
+                     "expanded_url" : "http://twitter.com/MariaPulk/status/425708490225483776/photo/1",
+                     "id" : 425708490061926400,
+                     "id_str" : "425708490061926400",
+                     "indices" : [ 35, 57 ],
+                     "media_url" : "http://pbs.twimg.com/media/BehrncACUAAGm0m.jpg",
+                     "media_url_https" : "https://pbs.twimg.com/media/BehrncACUAAGm0m.jpg",
+                     "sizes" : {
+                        "large" : {
+                           "h" : 540,
+                           "resize" : "fit",
+                           "w" : 720
+                        },
+                        "medium" : {
+                           "h" : 450,
+                           "resize" : "fit",
+                           "w" : 600
+                        },
+                        "small" : {
+                           "h" : 255,
                            "resize" : "fit",
                            "w" : 340
                         },
@@ -755,26 +2061,18 @@
                         }
                      },
                      "type" : "photo",
-                     "url" : "http://t.co/9EcaRXdtiT"
+                     "url" : "http://t.co/a4D2BRqJEI"
                   }
                ],
                "symbols" : [],
                "urls" : [],
-               "user_mentions" : [
-                  {
-                     "id" : 847802911,
-                     "id_str" : "847802911",
-                     "indices" : [ 46, 56 ],
-                     "name" : "Mary Kinney ",
-                     "screen_name" : "mkinney44"
-                  }
-               ]
+               "user_mentions" : []
             },
-            "favorite_count" : 1,
+            "favorite_count" : 0,
             "favorited" : false,
             "geo" : null,
-            "id" : 410831327173152768,
-            "id_str" : "410831327173152768",
+            "id" : 425708490225483776,
+            "id_str" : "425708490225483776",
             "in_reply_to_screen_name" : null,
             "in_reply_to_status_id" : null,
             "in_reply_to_status_id_str" : null,
@@ -789,649 +2087,100 @@
             "possibly_sensitive" : false,
             "retweet_count" : 1,
             "retweeted" : false,
-            "source" : "<a href=\"http://www.apple.com\" rel=\"nofollow\">iOS</a>",
-            "text" : "#WCW to the prettiest cat lady in the world 😻 @mkinney44 http://t.co/9EcaRXdtiT",
+            "source" : "<a href=\"https://twitter.com/download/android\" rel=\"nofollow\">Twitter for  Android</a>",
+            "text" : "Duck and cat take a walk together! http://t.co/a4D2BRqJEI",
             "truncated" : false,
             "user" : {
                "contributors_enabled" : false,
-               "created_at" : "Tue Nov 15 02:44:28 +0000 2011",
-               "default_profile" : false,
+               "created_at" : "Thu Nov 26 07:44:48 +0000 2009",
+               "default_profile" : true,
                "default_profile_image" : false,
-               "description" : "503-303 ✝                                               awap",
+               "description" : "Mother to two rescue cats, love animals especially cats, Stephen King books, sci-fi and politics, hate animal cruelty",
                "entities" : {
                   "description" : {
                      "urls" : []
                   }
                },
-               "favourites_count" : 2746,
+               "favourites_count" : 9927,
                "follow_request_sent" : false,
-               "followers_count" : 420,
+               "followers_count" : 733,
                "following" : false,
-               "friends_count" : 335,
-               "geo_enabled" : false,
-               "id" : 412742411,
-               "id_str" : "412742411",
+               "friends_count" : 914,
+               "geo_enabled" : true,
+               "id" : 92708612,
+               "id_str" : "92708612",
                "is_translator" : false,
                "lang" : "en",
-               "listed_count" : 0,
+               "listed_count" : 6,
                "location" : "",
-               "name" : "Leah Rosen",
+               "name" : "Maria",
                "notifications" : false,
                "profile_background_color" : "C0DEED",
-               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/374824980/Picture_111.png",
-               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/374824980/Picture_111.png",
-               "profile_background_tile" : true,
-               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/412742411/1386113947",
-               "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000010071594/1a518d70d2ff9e0186178ed980e0f4e6_normal.jpeg",
-               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000010071594/1a518d70d2ff9e0186178ed980e0f4e6_normal.jpeg",
-               "profile_link_color" : "540591",
+               "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+               "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+               "profile_background_tile" : false,
+               "profile_image_url" : "http://pbs.twimg.com/profile_images/3737204734/e40b98c25103c9c97d8c80fb28519519_normal.jpeg",
+               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/3737204734/e40b98c25103c9c97d8c80fb28519519_normal.jpeg",
+               "profile_link_color" : "0084B4",
                "profile_sidebar_border_color" : "C0DEED",
                "profile_sidebar_fill_color" : "DDEEF6",
-               "profile_text_color" : "960B96",
+               "profile_text_color" : "333333",
                "profile_use_background_image" : true,
                "protected" : false,
-               "screen_name" : "_rLoEsAeHn_",
-               "statuses_count" : 4315,
-               "time_zone" : null,
+               "screen_name" : "MariaPulk",
+               "statuses_count" : 7119,
+               "time_zone" : "Adelaide",
                "url" : null,
-               "utc_offset" : null,
+               "utc_offset" : 37800,
                "verified" : false
             }
          },
-         "source" : "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-         "text" : "RT @_rLoEsAeHn_: #WCW to the prettiest cat lady in the world 😻 @mkinney44 http://t.co/9EcaRXdtiT",
+         "source" : "web",
+         "text" : "RT @MariaPulk: Duck and cat take a walk together! http://t.co/a4D2BRqJEI",
          "truncated" : false,
          "user" : {
             "contributors_enabled" : false,
-            "created_at" : "Sun Dec 07 01:56:54 +0000 2008",
-            "default_profile" : true,
-            "default_profile_image" : false,
-            "description" : "",
-            "entities" : {
-               "description" : {
-                  "urls" : []
-               }
-            },
-            "favourites_count" : 279,
-            "follow_request_sent" : false,
-            "followers_count" : 109,
-            "following" : false,
-            "friends_count" : 108,
-            "geo_enabled" : false,
-            "id" : 17933600,
-            "id_str" : "17933600",
-            "is_translator" : false,
-            "lang" : "en",
-            "listed_count" : 0,
-            "location" : "",
-            "name" : "Jen Rank",
-            "notifications" : false,
-            "profile_background_color" : "C0DEED",
-            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile" : false,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/17933600/1358393001",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000238288852/d4fc39bd38feb996df0fc86421ced03a_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000238288852/d4fc39bd38feb996df0fc86421ced03a_normal.jpeg",
-            "profile_link_color" : "0084B4",
-            "profile_sidebar_border_color" : "C0DEED",
-            "profile_sidebar_fill_color" : "DDEEF6",
-            "profile_text_color" : "333333",
-            "profile_use_background_image" : true,
-            "protected" : false,
-            "screen_name" : "jensorank",
-            "statuses_count" : 207,
-            "time_zone" : "Arizona",
-            "url" : null,
-            "utc_offset" : -25200,
-            "verified" : false
-         }
-      },
-      {
-         "contributors" : null,
-         "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:41 +0000 2013",
-         "entities" : {
-            "hashtags" : [
-               {
-                  "indices" : [ 0, 13 ],
-                  "text" : "ohmygoodness"
-               }
-            ],
-            "symbols" : [],
-            "urls" : [],
-            "user_mentions" : []
-         },
-         "favorite_count" : 0,
-         "favorited" : false,
-         "geo" : null,
-         "id" : 410831771312603136,
-         "id_str" : "410831771312603136",
-         "in_reply_to_screen_name" : null,
-         "in_reply_to_status_id" : null,
-         "in_reply_to_status_id_str" : null,
-         "in_reply_to_user_id" : null,
-         "in_reply_to_user_id_str" : null,
-         "lang" : "en",
-         "metadata" : {
-            "iso_language_code" : "en",
-            "result_type" : "recent"
-         },
-         "place" : null,
-         "retweet_count" : 0,
-         "retweeted" : false,
-         "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-         "text" : "#ohmygoodness I shushed my cat and she actually started meowing quieter",
-         "truncated" : false,
-         "user" : {
-            "contributors_enabled" : false,
-            "created_at" : "Mon Jul 22 23:12:46 +0000 2013",
-            "default_profile" : true,
-            "default_profile_image" : false,
-            "description" : "LC",
-            "entities" : {
-               "description" : {
-                  "urls" : []
-               }
-            },
-            "favourites_count" : 124,
-            "follow_request_sent" : false,
-            "followers_count" : 47,
-            "following" : false,
-            "friends_count" : 77,
-            "geo_enabled" : true,
-            "id" : 1613863652,
-            "id_str" : "1613863652",
-            "is_translator" : false,
-            "lang" : "en",
-            "listed_count" : 0,
-            "location" : "",
-            "name" : "Joey Stockman",
-            "notifications" : false,
-            "profile_background_color" : "C0DEED",
-            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile" : false,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/1613863652/1374536267",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000808650414/5d738948f63887b3748d6151ba891f8b_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000808650414/5d738948f63887b3748d6151ba891f8b_normal.jpeg",
-            "profile_link_color" : "0084B4",
-            "profile_sidebar_border_color" : "C0DEED",
-            "profile_sidebar_fill_color" : "DDEEF6",
-            "profile_text_color" : "333333",
-            "profile_use_background_image" : true,
-            "protected" : false,
-            "screen_name" : "JoeTheMick",
-            "statuses_count" : 587,
-            "time_zone" : null,
-            "url" : null,
-            "utc_offset" : null,
-            "verified" : false
-         }
-      },
-      {
-         "contributors" : null,
-         "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:41 +0000 2013",
-         "entities" : {
-            "hashtags" : [],
-            "symbols" : [],
-            "urls" : [
-               {
-                  "display_url" : "youtu.be/c938jaRSlFo?a",
-                  "expanded_url" : "http://youtu.be/c938jaRSlFo?a",
-                  "indices" : [ 46, 68 ],
-                  "url" : "http://t.co/M9r8wUXDYa"
-               }
-            ],
-            "user_mentions" : [
-               {
-                  "id" : 10228272,
-                  "id_str" : "10228272",
-                  "indices" : [ 10, 18 ],
-                  "name" : "YouTube",
-                  "screen_name" : "YouTube"
-               },
-               {
-                  "id" : 341276543,
-                  "id_str" : "341276543",
-                  "indices" : [ 30, 45 ],
-                  "name" : "TheCampingRusher",
-                  "screen_name" : "TheCampingRush"
-               }
-            ]
-         },
-         "favorite_count" : 0,
-         "favorited" : false,
-         "geo" : null,
-         "id" : 410831771119661056,
-         "id_str" : "410831771119661056",
-         "in_reply_to_screen_name" : null,
-         "in_reply_to_status_id" : null,
-         "in_reply_to_status_id_str" : null,
-         "in_reply_to_user_id" : null,
-         "in_reply_to_user_id_str" : null,
-         "lang" : "en",
-         "metadata" : {
-            "iso_language_code" : "en",
-            "result_type" : "recent"
-         },
-         "place" : null,
-         "possibly_sensitive" : false,
-         "retweet_count" : 0,
-         "retweeted" : false,
-         "source" : "<a href=\"http://www.google.com/\" rel=\"nofollow\">Google</a>",
-         "text" : "I liked a @YouTube video from @thecampingrush http://t.co/M9r8wUXDYa Minecraft \"SUICIDE CAT!\" CRANKED Server Minigame",
-         "truncated" : false,
-         "user" : {
-            "contributors_enabled" : false,
-            "created_at" : "Thu Jun 10 02:58:19 +0000 2010",
+            "created_at" : "Mon Jun 06 19:07:31 +0000 2011",
             "default_profile" : false,
             "default_profile_image" : false,
-            "description" : "Gamer, lover of cats, camping, Minecraft, and practically just wanna be friends with people (:\n http://t.co/hTiYlPEWTe",
+            "description" : "I have a curious mind.",
             "entities" : {
                "description" : {
-                  "urls" : [
-                     {
-                        "display_url" : "youtube.com/innocient",
-                        "expanded_url" : "http://www.youtube.com/innocient",
-                        "indices" : [ 96, 118 ],
-                        "url" : "http://t.co/hTiYlPEWTe"
-                     }
-                  ]
+                  "urls" : []
                }
             },
-            "favourites_count" : 605,
+            "favourites_count" : 12,
             "follow_request_sent" : false,
-            "followers_count" : 33,
+            "followers_count" : 858,
             "following" : false,
-            "friends_count" : 148,
+            "friends_count" : 807,
             "geo_enabled" : false,
-            "id" : 153995109,
-            "id_str" : "153995109",
+            "id" : 312206504,
+            "id_str" : "312206504",
             "is_translator" : false,
             "lang" : "en",
-            "listed_count" : 0,
-            "location" : "United States",
-            "name" : "Makayla Chrisley",
+            "listed_count" : 10,
+            "location" : "Oulu, Finland",
+            "name" : "Saara ",
             "notifications" : false,
-            "profile_background_color" : "1A1B1F",
-            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme9/bg.gif",
-            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme9/bg.gif",
+            "profile_background_color" : "0099B9",
+            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme4/bg.gif",
+            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme4/bg.gif",
             "profile_background_tile" : false,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/153995109/1378663923",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000705479270/41e5943140759fc09d1c56e1834b10af_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000705479270/41e5943140759fc09d1c56e1834b10af_normal.jpeg",
-            "profile_link_color" : "2FC2EF",
-            "profile_sidebar_border_color" : "181A1E",
-            "profile_sidebar_fill_color" : "252429",
-            "profile_text_color" : "666666",
+            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/312206504/1381936894",
+            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000162555903/43937fa79bdd531f758d5a1432b64e0b_normal.jpeg",
+            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000162555903/43937fa79bdd531f758d5a1432b64e0b_normal.jpeg",
+            "profile_link_color" : "0099B9",
+            "profile_sidebar_border_color" : "5ED4DC",
+            "profile_sidebar_fill_color" : "95E8EC",
+            "profile_text_color" : "3C3940",
             "profile_use_background_image" : true,
             "protected" : false,
-            "screen_name" : "innocient313",
-            "statuses_count" : 1520,
-            "time_zone" : "Eastern Time (US & Canada)",
+            "screen_name" : "SaaraOho",
+            "statuses_count" : 7337,
+            "time_zone" : "Hawaii",
             "url" : null,
-            "utc_offset" : -18000,
-            "verified" : false
-         }
-      },
-      {
-         "contributors" : null,
-         "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:41 +0000 2013",
-         "entities" : {
-            "hashtags" : [],
-            "symbols" : [],
-            "urls" : [],
-            "user_mentions" : []
-         },
-         "favorite_count" : 0,
-         "favorited" : false,
-         "geo" : null,
-         "id" : 410831771106701312,
-         "id_str" : "410831771106701312",
-         "in_reply_to_screen_name" : null,
-         "in_reply_to_status_id" : null,
-         "in_reply_to_status_id_str" : null,
-         "in_reply_to_user_id" : null,
-         "in_reply_to_user_id_str" : null,
-         "lang" : "en",
-         "metadata" : {
-            "iso_language_code" : "en",
-            "result_type" : "recent"
-         },
-         "place" : null,
-         "retweet_count" : 0,
-         "retweeted" : false,
-         "source" : "<a href=\"http://blackberry.com/twitter\" rel=\"nofollow\">Twitter for BlackBerry®</a>",
-         "text" : "I'm going to name the next cat I get Lipstick.",
-         "truncated" : false,
-         "user" : {
-            "contributors_enabled" : false,
-            "created_at" : "Mon Jun 22 23:08:17 +0000 2009",
-            "default_profile" : false,
-            "default_profile_image" : false,
-            "description" : "Falling through the clouds",
-            "entities" : {
-               "description" : {
-                  "urls" : []
-               }
-            },
-            "favourites_count" : 22,
-            "follow_request_sent" : false,
-            "followers_count" : 70,
-            "following" : false,
-            "friends_count" : 102,
-            "geo_enabled" : false,
-            "id" : 49802172,
-            "id_str" : "49802172",
-            "is_translator" : false,
-            "lang" : "en",
-            "listed_count" : 2,
-            "location" : "",
-            "name" : "Austein McLoughlin",
-            "notifications" : false,
-            "profile_background_color" : "050505",
-            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000145300317/Ztp44AR9.jpeg",
-            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000145300317/Ztp44AR9.jpeg",
-            "profile_background_tile" : false,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/49802172/1386545739",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000847864847/5cf0a787a343b427520ef1dec36c3a8a_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000847864847/5cf0a787a343b427520ef1dec36c3a8a_normal.jpeg",
-            "profile_link_color" : "0033FF",
-            "profile_sidebar_border_color" : "000000",
-            "profile_sidebar_fill_color" : "454A4D",
-            "profile_text_color" : "E6DF0C",
-            "profile_use_background_image" : true,
-            "protected" : false,
-            "screen_name" : "Audstein",
-            "statuses_count" : 2234,
-            "time_zone" : "Pacific Time (US & Canada)",
-            "url" : null,
-            "utc_offset" : -28800,
-            "verified" : false
-         }
-      },
-      {
-         "contributors" : null,
-         "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:41 +0000 2013",
-         "entities" : {
-            "hashtags" : [],
-            "symbols" : [],
-            "urls" : [],
-            "user_mentions" : [
-               {
-                  "id" : 14727959,
-                  "id_str" : "14727959",
-                  "indices" : [ 3, 19 ],
-                  "name" : "FC Barcelona",
-                  "screen_name" : "FCBarcelona_cat"
-               }
-            ]
-         },
-         "favorite_count" : 0,
-         "favorited" : false,
-         "geo" : null,
-         "id" : 410831769819041792,
-         "id_str" : "410831769819041792",
-         "in_reply_to_screen_name" : null,
-         "in_reply_to_status_id" : null,
-         "in_reply_to_status_id_str" : null,
-         "in_reply_to_user_id" : null,
-         "in_reply_to_user_id_str" : null,
-         "lang" : "es",
-         "metadata" : {
-            "iso_language_code" : "es",
-            "result_type" : "recent"
-         },
-         "place" : null,
-         "retweet_count" : 21,
-         "retweeted" : false,
-         "retweeted_status" : {
-            "contributors" : null,
-            "coordinates" : null,
-            "created_at" : "Wed Dec 11 17:41:43 +0000 2013",
-            "entities" : {
-               "hashtags" : [],
-               "symbols" : [],
-               "urls" : [
-                  {
-                     "display_url" : "ow.ly/rFKWU",
-                     "expanded_url" : "http://ow.ly/rFKWU",
-                     "indices" : [ 111, 133 ],
-                     "url" : "http://t.co/CeTgi2MgW4"
-                  }
-               ],
-               "user_mentions" : []
-            },
-            "favorite_count" : 6,
-            "favorited" : false,
-            "geo" : null,
-            "id" : 410826744082751488,
-            "id_str" : "410826744082751488",
-            "in_reply_to_screen_name" : null,
-            "in_reply_to_status_id" : null,
-            "in_reply_to_status_id_str" : null,
-            "in_reply_to_user_id" : null,
-            "in_reply_to_user_id_str" : null,
-            "lang" : "es",
-            "metadata" : {
-               "iso_language_code" : "es",
-               "result_type" : "recent"
-            },
-            "place" : null,
-            "possibly_sensitive" : false,
-            "retweet_count" : 21,
-            "retweeted" : false,
-            "source" : "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">HootSuite</a>",
-            "text" : "Aquest és el vídeo que Leo Messi ha publicat a les xarxes socials en què se’l veu fent exercicis amb la pilota http://t.co/CeTgi2MgW4",
-            "truncated" : false,
-            "user" : {
-               "contributors_enabled" : false,
-               "created_at" : "Sat May 10 21:12:04 +0000 2008",
-               "default_profile" : false,
-               "default_profile_image" : false,
-               "description" : "Tota l'actualitat i la informació del FC Barcelona, Més que un club. Twitter oficial del FC Barcelona en català.",
-               "entities" : {
-                  "description" : {
-                     "urls" : []
-                  },
-                  "url" : {
-                     "urls" : [
-                        {
-                           "display_url" : "fcbarcelona.cat",
-                           "expanded_url" : "http://www.fcbarcelona.cat",
-                           "indices" : [ 0, 22 ],
-                           "url" : "http://t.co/pnAovIkWRB"
-                        }
-                     ]
-                  }
-               },
-               "favourites_count" : 1,
-               "follow_request_sent" : false,
-               "followers_count" : 4035718,
-               "following" : false,
-               "friends_count" : 46,
-               "geo_enabled" : false,
-               "id" : 14727959,
-               "id_str" : "14727959",
-               "is_translator" : false,
-               "lang" : "ca",
-               "listed_count" : 10115,
-               "location" : "Barcelona",
-               "name" : "FC Barcelona",
-               "notifications" : false,
-               "profile_background_color" : "000000",
-               "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/378800000030300822/2df839537a680b52842b28c225f37c37.jpeg",
-               "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/378800000030300822/2df839537a680b52842b28c225f37c37.jpeg",
-               "profile_background_tile" : false,
-               "profile_banner_url" : "https://pbs.twimg.com/profile_banners/14727959/1347979502",
-               "profile_image_url" : "http://pbs.twimg.com/profile_images/1129466536/fcb_normal.png",
-               "profile_image_url_https" : "https://pbs.twimg.com/profile_images/1129466536/fcb_normal.png",
-               "profile_link_color" : "9B0003",
-               "profile_sidebar_border_color" : "FFFFFF",
-               "profile_sidebar_fill_color" : "CBC9C4",
-               "profile_text_color" : "464646",
-               "profile_use_background_image" : true,
-               "protected" : false,
-               "screen_name" : "FCBarcelona_cat",
-               "statuses_count" : 34797,
-               "time_zone" : "Madrid",
-               "url" : "http://t.co/pnAovIkWRB",
-               "utc_offset" : 3600,
-               "verified" : true
-            }
-         },
-         "source" : "<a href=\"http://blackberry.com/twitter\" rel=\"nofollow\">Twitter for BlackBerry®</a>",
-         "text" : "RT @FCBarcelona_cat: Aquest és el vídeo que Leo Messi ha publicat a les xarxes socials en què se’l veu fent exercicis amb la pilota http://…",
-         "truncated" : false,
-         "user" : {
-            "contributors_enabled" : false,
-            "created_at" : "Wed May 09 21:36:24 +0000 2012",
-            "default_profile" : false,
-            "default_profile_image" : false,
-            "description" : "Comunicaciones ! Mas que Un equipO Una Pasion ! Yo soi albo de ♥ i que ?? #VltraSvr #VamosPorLa27 pin:29E3E909",
-            "entities" : {
-               "description" : {
-                  "urls" : []
-               }
-            },
-            "favourites_count" : 50,
-            "follow_request_sent" : false,
-            "followers_count" : 153,
-            "following" : false,
-            "friends_count" : 195,
-            "geo_enabled" : true,
-            "id" : 575693453,
-            "id_str" : "575693453",
-            "is_translator" : false,
-            "lang" : "es",
-            "listed_count" : 1,
-            "location" : "",
-            "name" : "VltraSvr'♥",
-            "notifications" : false,
-            "profile_background_color" : "C0DEED",
-            "profile_background_image_url" : "http://a0.twimg.com/profile_background_images/881049947/a91a95ce3f6789c2075a49c3499da0bd.jpeg",
-            "profile_background_image_url_https" : "https://si0.twimg.com/profile_background_images/881049947/a91a95ce3f6789c2075a49c3499da0bd.jpeg",
-            "profile_background_tile" : true,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/575693453/1376930618",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000839608669/aab40ff6aa6ba0a1ef4e7c9a90551c83_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000839608669/aab40ff6aa6ba0a1ef4e7c9a90551c83_normal.jpeg",
-            "profile_link_color" : "0084B4",
-            "profile_sidebar_border_color" : "FFFFFF",
-            "profile_sidebar_fill_color" : "DDEEF6",
-            "profile_text_color" : "333333",
-            "profile_use_background_image" : true,
-            "protected" : false,
-            "screen_name" : "Jet_aime99",
-            "statuses_count" : 3989,
-            "time_zone" : "Central Time (US & Canada)",
-            "url" : null,
-            "utc_offset" : -21600,
-            "verified" : false
-         }
-      },
-      {
-         "contributors" : null,
-         "coordinates" : null,
-         "created_at" : "Wed Dec 11 18:01:41 +0000 2013",
-         "entities" : {
-            "hashtags" : [],
-            "symbols" : [],
-            "urls" : [],
-            "user_mentions" : [
-               {
-                  "id" : 35585695,
-                  "id_str" : "35585695",
-                  "indices" : [ 0, 13 ],
-                  "name" : "Tom Delargy ",
-                  "screen_name" : "derekrootboy"
-               },
-               {
-                  "id" : 374175668,
-                  "id_str" : "374175668",
-                  "indices" : [ 14, 25 ],
-                  "name" : "sofie mikhaylova",
-                  "screen_name" : "sofiesucks"
-               }
-            ]
-         },
-         "favorite_count" : 0,
-         "favorited" : false,
-         "geo" : null,
-         "id" : 410831769261596672,
-         "id_str" : "410831769261596672",
-         "in_reply_to_screen_name" : "derekrootboy",
-         "in_reply_to_status_id" : 410830916550807552,
-         "in_reply_to_status_id_str" : "410830916550807552",
-         "in_reply_to_user_id" : 35585695,
-         "in_reply_to_user_id_str" : "35585695",
-         "lang" : "en",
-         "metadata" : {
-            "iso_language_code" : "en",
-            "result_type" : "recent"
-         },
-         "place" : null,
-         "retweet_count" : 0,
-         "retweeted" : false,
-         "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-         "text" : "@derekrootboy @sofiesucks Be afraid. Never waken a sleeping cat when its holding your face with both paws.",
-         "truncated" : false,
-         "user" : {
-            "contributors_enabled" : false,
-            "created_at" : "Sat Jan 19 12:01:07 +0000 2013",
-            "default_profile" : true,
-            "default_profile_image" : false,
-            "description" : "All my views are correct. Other people's probably less so.",
-            "entities" : {
-               "description" : {
-                  "urls" : []
-               },
-               "url" : {
-                  "urls" : [
-                     {
-                        "display_url" : "partickdriving.co.uk",
-                        "expanded_url" : "http://www.partickdriving.co.uk",
-                        "indices" : [ 0, 22 ],
-                        "url" : "http://t.co/VdABlR8ytL"
-                     }
-                  ]
-               }
-            },
-            "favourites_count" : 483,
-            "follow_request_sent" : false,
-            "followers_count" : 711,
-            "following" : false,
-            "friends_count" : 1237,
-            "geo_enabled" : true,
-            "id" : 1103513982,
-            "id_str" : "1103513982",
-            "is_translator" : false,
-            "lang" : "en",
-            "listed_count" : 4,
-            "location" : "Glasgow",
-            "name" : "Gordon Ross ADI",
-            "notifications" : false,
-            "profile_background_color" : "C0DEED",
-            "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile" : false,
-            "profile_banner_url" : "https://pbs.twimg.com/profile_banners/1103513982/1386685152",
-            "profile_image_url" : "http://pbs.twimg.com/profile_images/378800000852189035/000747b7e1737a9184b357356fd3171b_normal.jpeg",
-            "profile_image_url_https" : "https://pbs.twimg.com/profile_images/378800000852189035/000747b7e1737a9184b357356fd3171b_normal.jpeg",
-            "profile_link_color" : "0084B4",
-            "profile_sidebar_border_color" : "C0DEED",
-            "profile_sidebar_fill_color" : "DDEEF6",
-            "profile_text_color" : "333333",
-            "profile_use_background_image" : true,
-            "protected" : false,
-            "screen_name" : "PartickDriver",
-            "statuses_count" : 8334,
-            "time_zone" : null,
-            "url" : "http://t.co/VdABlR8ytL",
-            "utc_offset" : null,
+            "utc_offset" : -36000,
             "verified" : false
          }
       }
