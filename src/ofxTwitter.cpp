@@ -119,21 +119,50 @@ void ofxTwitter::startSearch(ofxTwitterSearch search) {
 }
 
 //--------------------------------------------------------------
-void ofxTwitter::postStatus(string msg) {
+void ofxTwitter::updateStatus(string msg, string imgdata) {
     
-    // Post status API info.
+    // Update status API info.
     // https://dev.twitter.com/docs/api/1.1/post/statuses/update
     // https://dev.twitter.com/docs/api/1.1/post/statuses/update_with_media
     
     if(oauth.isAuthorized()) {
-        string query = "/1.1/statuses/update.json";
+        string query;
         dataRequested = "";
-        dataRequested = oauth.post(query,"status="+ofToString(msg));
+        if(imgdata == "") {
+            query = "/1.1/statuses/update.json";
+            dataRequested = oauth.post(query,"status="+msg);
+        } else {
+            query = "/1.1/statuses/update_with_media.json";
+            dataRequested = oauth.post(query,"status="+msg+"&media[]="+imgdata);
+        }
         ofAddListener(ofEvents().update,this,&ofxTwitter::newStatusResponse);
     } else {
         ofLogError("ofxTwitter::postStatus") << "App not authorized.";
     }
     
+}
+
+void ofxTwitter::postStatus(string msg) {
+    
+    updateStatus(msg);
+    
+}
+
+void ofxTwitter::postStatus(string msg, ofImage img) {
+    
+    ofBuffer buffer;
+    ofSaveImage(img.getPixelsRef(), buffer, OF_IMAGE_FORMAT_JPEG, OF_IMAGE_QUALITY_BEST);
+    
+    string imgurl = ofToDataPath("buses.jpg",true);
+    cout << imgurl << endl;
+    
+    // Convert the binary image data to string using base64 encoding
+    stringstream ss;
+    Poco::Base64Encoder b64enc(ss);
+    b64enc << buffer;
+    
+    updateStatus(msg, ss.str());
+
 }
 
 void ofxTwitter::newStatusResponse(ofEventArgs& args) {
@@ -146,10 +175,8 @@ void ofxTwitter::newStatusResponse(ofEventArgs& args) {
         cout << result.getRawString() << endl;
         
         if (parsingSuccessful) {
-            //if(bDiskCacheActive) result.save("cache.json",true);
+            //TODO: Check for Twitter sending back errors propertly.
             ofLogNotice("ofxTwitter::newStatusResponse") << "Status published.";
-            
-            //parseResponse(result);
         } else {
             ofLogError("ofxTwitter::newResponse") << "Failed to publish new status." << endl;
         }

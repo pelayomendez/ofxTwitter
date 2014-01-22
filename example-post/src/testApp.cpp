@@ -7,12 +7,17 @@ void testApp::setup(){
     ofSetFrameRate(30);
     ofSetLogLevel(OF_LOG_VERBOSE);
     
-    string const CONSUMER_KEY = "";
-    string const CONSUMER_SECRET = "";
+    string const CONSUMER_KEY = "VyZSL4qYqiiolN9P6uJgg";
+    string const CONSUMER_SECRET = "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY";
     
     twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
 
+    
     actualTweet = 0;
+
+    // Test image
+    
+    testImage.loadImage("buses.jpg");
     
 }
 
@@ -30,6 +35,7 @@ void testApp::draw(){
     string info;
     info += "ofxTwitter post example:";
     info += "\nPress 'q' post a 'test' status";
+    info += "\nPress i' post a 'test' status with an image";
     ofDrawBitmapString(info, ofPoint(20,20));
     
     twitterClient.printDebugInfo();
@@ -46,6 +52,10 @@ void testApp::keyReleased(int key){
     
     if(key == 'q') {
         twitterClient.postStatus("test");
+    }
+    
+    if(key == 'i') {
+        twitterClient.postStatus("test", testImage);
     }
     
 }

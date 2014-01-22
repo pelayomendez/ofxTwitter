@@ -22,10 +22,9 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
         ofxTwitter twitterClient;
-        ofxTwitterTweet tweet;
+        //ofxTwitterTweet tweet;
         int actualTweet;
-        bool reloadTweet;
-    
-        ofImage userImage;
+
+        ofImage testImage;
     
 };

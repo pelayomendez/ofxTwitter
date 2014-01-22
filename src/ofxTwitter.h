@@ -31,6 +31,8 @@
 // ofxTwitter
 #include "ofxTwitterTweet.h"
 #include "ofxTwitterSearch.h"
+// Poco
+#include "Poco/Base64Encoder.h"
 
 class ofxTwitter {
 
@@ -52,6 +54,7 @@ class ofxTwitter {
         void parseResponse(ofxJSONElement result);
     
         void postStatus(string msg);
+        void postStatus(string msg, ofImage img);
         void newStatusResponse(ofEventArgs& args);
     
         void setAutoLoadImages(bool newLoadUserProfileImageUrl, bool newLoadUserProfileBannerUrl);
@@ -74,5 +77,7 @@ class ofxTwitter {
         bool bLoadUserBannerImageOnMemory;
     
         vector<ofxTwitterTweet> data;
+    
+        void updateStatus(string msg, string imgdata = "");
 	
 };
