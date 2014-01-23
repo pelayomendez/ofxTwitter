@@ -12,12 +12,7 @@ void testApp::setup(){
     
     twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
 
-    
     actualTweet = 0;
-
-    // Test image
-    
-    testImage.loadImage("buses.jpg");
     
 }
 
@@ -55,7 +50,7 @@ void testApp::keyReleased(int key){
     }
     
     if(key == 'i') {
-        twitterClient.postStatus("test", testImage);
+        twitterClient.postStatus("test", "buses.jpg");
     }
     
 }

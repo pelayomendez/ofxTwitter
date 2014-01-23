@@ -25,6 +25,6 @@ class testApp : public ofBaseApp{
         //ofxTwitterTweet tweet;
         int actualTweet;
 
-        ofImage testImage;
+        //ofImage testImage;
     
 };

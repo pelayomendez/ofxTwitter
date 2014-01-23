@@ -54,7 +54,7 @@ class ofxTwitter {
         void parseResponse(ofxJSONElement result);
     
         void postStatus(string msg);
-        void postStatus(string msg, ofImage img);
+        void postStatus(string msg, string imgfile);
         void newStatusResponse(ofEventArgs& args);
     
         void setAutoLoadImages(bool newLoadUserProfileImageUrl, bool newLoadUserProfileBannerUrl);
@@ -78,6 +78,6 @@ class ofxTwitter {
     
         vector<ofxTwitterTweet> data;
     
-        void updateStatus(string msg, string imgdata = "");
+        void updateStatus(string msg, string imgpath = "");
 	
 };

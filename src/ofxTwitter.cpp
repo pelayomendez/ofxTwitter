@@ -119,7 +119,7 @@ void ofxTwitter::startSearch(ofxTwitterSearch search) {
 }
 
 //--------------------------------------------------------------
-void ofxTwitter::updateStatus(string msg, string imgdata) {
+void ofxTwitter::updateStatus(string msg, string imgpath) {
     
     // Update status API info.
     // https://dev.twitter.com/docs/api/1.1/post/statuses/update
@@ -128,12 +128,12 @@ void ofxTwitter::updateStatus(string msg, string imgdata) {
     if(oauth.isAuthorized()) {
         string query;
         dataRequested = "";
-        if(imgdata == "") {
+        if(imgpath == "") {
             query = "/1.1/statuses/update.json";
             dataRequested = oauth.post(query,"status="+msg);
         } else {
             query = "/1.1/statuses/update_with_media.json";
-            dataRequested = oauth.post(query,"status="+msg+"&media[]="+imgdata);
+            dataRequested = oauth.postfile_multipartdata(query,"status="+msg,imgpath);
         }
         ofAddListener(ofEvents().update,this,&ofxTwitter::newStatusResponse);
     } else {
@@ -148,21 +148,11 @@ void ofxTwitter::postStatus(string msg) {
     
 }
 
-void ofxTwitter::postStatus(string msg, ofImage img) {
+void ofxTwitter::postStatus(string msg, string imgfile) {
     
-    ofBuffer buffer;
-    ofSaveImage(img.getPixelsRef(), buffer, OF_IMAGE_FORMAT_JPEG, OF_IMAGE_QUALITY_BEST);
+    string imgurl = ofToDataPath(imgfile,true);
+    updateStatus(msg, imgurl);
     
-    string imgurl = ofToDataPath("buses.jpg",true);
-    cout << imgurl << endl;
-    
-    // Convert the binary image data to string using base64 encoding
-    stringstream ss;
-    Poco::Base64Encoder b64enc(ss);
-    b64enc << buffer;
-    
-    updateStatus(msg, ss.str());
-
 }
 
 void ofxTwitter::newStatusResponse(ofEventArgs& args) {
