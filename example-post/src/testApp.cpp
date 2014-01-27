@@ -46,11 +46,11 @@ void testApp::keyPressed(int key){
 void testApp::keyReleased(int key){
     
     if(key == 'q') {
-        twitterClient.postStatus("test");
+        twitterClient.postStatus("test status");
     }
     
     if(key == 'i') {
-        twitterClient.postStatus("test", "buses.jpg");
+        twitterClient.postStatus("test image", "buses.jpg");
     }
     
 }

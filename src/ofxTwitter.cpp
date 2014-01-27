@@ -133,7 +133,7 @@ void ofxTwitter::updateStatus(string msg, string imgpath) {
             dataRequested = oauth.post(query,"status="+msg);
         } else {
             query = "/1.1/statuses/update_with_media.json";
-            dataRequested = oauth.postfile_multipartdata(query,"status="+msg,imgpath);
+            dataRequested = oauth.postfile_multipartdata(query,"status="+msg,"media[]",imgpath);
         }
         ofAddListener(ofEvents().update,this,&ofxTwitter::newStatusResponse);
     } else {
