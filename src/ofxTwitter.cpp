@@ -134,7 +134,6 @@ void ofxTwitter::updateStatus(string msg, string imgpath) {
         } else {
             query = "/1.1/statuses/update_with_media.json";
             dataRequested = oauth.postfile_multipartdata(query,"status="+msg,"media[]",imgpath);
-            //dataRequested = oauth.postfile_multipartdata(query,"status="+msg,imgpath);
         }
         ofAddListener(ofEvents().update,this,&ofxTwitter::newStatusResponse);
     } else {
@@ -249,7 +248,6 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
             tweet.language = trends[i]["language"].asString();
             tweet.text = trends[i]["text"].asString();
 
-           // if(trends[i]["geo"] != NULL) {
             if(trends[i]["geo"] != Json::Value::null) {
                 tweet.geo = trends[i]["geo"]["type"].asString();
                 tweet.coordinates.x = trends[i]["geo"]["coordinates"][0].asFloat();
@@ -279,13 +277,13 @@ void ofxTwitter::parseResponse(ofxJSONElement result) {
             tweet.user.geo_enabled = author["geo_enabled"].asBool();
 
             tweet.user.profile_image_url = author["profile_image_url"].asString();
-            //if(author["profile_image_url"] != NULL && bLoadUserProfileImageOnMemory) {
+
             if(author["profile_image_url"] != Json::Value::null && bLoadUserProfileImageOnMemory) {
                 ofLoadURLAsync(tweet.user.profile_image_url, "profile_"+tweet.user.id_str);
             }
 
             tweet.user.profile_banner_url = author["profile_banner_url"].asString();
-            //if(author["profile_banner_url"] != NULL && bLoadUserBannerImageOnMemory) {
+
             if(author["profile_banner_url"] != Json::Value::null && bLoadUserBannerImageOnMemory) {
                 ofLoadURLAsync(tweet.user.profile_banner_url, "banner_"+tweet.user.id_str);
             }
