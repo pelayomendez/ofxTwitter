@@ -80,7 +80,15 @@ void ofxTwitter::startQuery(string keywords, int count) {
 
 }
 
-void ofxTwitter::startSearch(ofxTwitterSearch search) {
+void ofxTwitter::startSearch() {
+
+    search.geocode = ofPoint(0,0);
+    search.geocode_radius = 1;
+    search.bUseMiles = false;
+    search.count = 15;
+    search.since_id = -1;
+    search.max_id = -1;
+    search.include_entities = true;
 
     if(oauth.isAuthorized()) {
         string query;

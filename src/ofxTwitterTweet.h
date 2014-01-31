@@ -17,34 +17,35 @@
 #include "ofMain.h"
 
 struct ofxTwitterTweetAuthor {
-    
+
     string id_str;
     string uri;
-    
+
     string name;
 	string screen_name;
     string description;
     string location;
     string lang;
     string url;
-    
+
     bool default_profile;
     bool default_profile_image;
     bool geo_enabled;
-    
+
 	string profile_image_url;
     ofImage profile_image;
-    bool profile_image_url_loaded = false;
-    
+    //bool profile_image_url_loaded = false;
+    bool profile_image_url_loaded ;
     string profile_banner_url;
     ofImage profile_banner;
-    bool profile_banner_url_loaded = false;
-    
+    //bool profile_banner_url_loaded = false;
+    bool profile_banner_url_loaded ;
     string profile_background_image_url;
     string profile_background_color;
     bool profile_background_tile;
     bool profile_use_background_image;
-     
+
+
 };
 
 struct ofxTwitterTweet {
@@ -57,18 +58,18 @@ struct ofxTwitterTweet {
     ofPoint coordinates;
     string source;
     int retweet_count;
-    
+
     bool truncated;
-    
+
 	ofxTwitterTweetAuthor user;
-    
+
     ofxTwitterTweet() { }
 	ofxTwitterTweet(string defaultString)	: text(defaultString) { }
-    
+
 	void print() {
-        
+
 		string str;
-        
+
         str +=  "\n";
         str +=  "\n--- Tweet ---";
 		str += "\nid_str: " + id_str;
@@ -88,11 +89,14 @@ struct ofxTwitterTweet {
         str +=  "\nuser:location: " + user.location;
         str +=  "\nuser:lang: " + user.lang;
         str +=  "\nuser:url:" + user.url;
-        
+
 		cout << str;
 
 	}
-    
+
+//user.profile_image_url_loaded(false);
+//user.profile_banner_url_loaded = false;
+
     bool isProfileImageLoaded() {
         if (user.profile_image.isAllocated() && user.profile_image_url_loaded) {
             return true;
@@ -100,7 +104,7 @@ struct ofxTwitterTweet {
             return false;
         }
     }
-    
+
     bool isBannerImageLoaded() {
         if (user.profile_banner.isAllocated() && user.profile_banner_url_loaded) {
             return true;
@@ -108,5 +112,5 @@ struct ofxTwitterTweet {
             return false;
         }
     }
-	
+
 };
