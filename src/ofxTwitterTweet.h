@@ -34,11 +34,11 @@ struct ofxTwitterTweetAuthor {
 
 	string profile_image_url;
     ofImage profile_image;
-    //bool profile_image_url_loaded = false;
+    //static const bool profile_image_url_loaded = false;
     bool profile_image_url_loaded ;
     string profile_banner_url;
     ofImage profile_banner;
-    //bool profile_banner_url_loaded = false;
+    //static const bool profile_banner_url_loaded = false;
     bool profile_banner_url_loaded ;
     string profile_background_image_url;
     string profile_background_color;
@@ -94,8 +94,6 @@ struct ofxTwitterTweet {
 
 	}
 
-//user.profile_image_url_loaded(false);
-//user.profile_banner_url_loaded = false;
 
     bool isProfileImageLoaded() {
         if (user.profile_image.isAllocated() && user.profile_image_url_loaded) {

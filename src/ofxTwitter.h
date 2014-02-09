@@ -79,6 +79,7 @@ class ofxTwitter {
         vector<ofxTwitterTweet> data;
 
         ofxTwitterSearch search;
+        ofxTwitterTweetAuthor author;
 
         void updateStatus(string msg, string imgpath = "");
 

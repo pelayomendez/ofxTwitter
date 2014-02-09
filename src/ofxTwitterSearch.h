@@ -40,5 +40,5 @@ struct ofxTwitterSearch {
     bool include_entities ;
     //string callback;
 
-} twitterSearch;
+};
 

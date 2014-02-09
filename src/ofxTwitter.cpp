@@ -29,8 +29,17 @@ ofxTwitter::ofxTwitter():
 bDiskCacheActive(false),
 bLoadUserProfileImageOnMemory(false),
 bLoadUserBannerImageOnMemory(false)
-{
 
+{
+    author.profile_image_url_loaded = false;
+    author.profile_banner_url_loaded = false;
+    search.geocode = ofPoint(0,0);
+    search.geocode_radius = 1;
+    search.bUseMiles = false;
+    search.count = 15;
+    search.since_id = -1;
+    search.max_id = -1;
+    search.include_entities = true;
 }
 
 //--------------------------------------------------------------
@@ -81,14 +90,6 @@ void ofxTwitter::startQuery(string keywords, int count) {
 }
 
 void ofxTwitter::startSearch() {
-
-    search.geocode = ofPoint(0,0);
-    search.geocode_radius = 1;
-    search.bUseMiles = false;
-    search.count = 15;
-    search.since_id = -1;
-    search.max_id = -1;
-    search.include_entities = true;
 
     if(oauth.isAuthorized()) {
         string query;
@@ -371,6 +372,8 @@ void ofxTwitter::printDebugInfo() {
     ofPopStyle();
 
 }
+
+
 
 
 
