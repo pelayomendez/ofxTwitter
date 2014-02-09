@@ -14,7 +14,7 @@
  *  Edited by welovecode 14/06/12
  *  Added cache support for saving/load xml cache file.
  *  Added POST query method.
- * 
+ *
  *  Edited by Pelayo MŽndez on 09/12/13
  *  Migrated to Twitter API v1.1. https://dev.twitter.com/docs/api/1.1/overview
  *  Using Christopher Baker ofxOAuth adddon https://github.com/bakercp/ofxOAuth
@@ -37,47 +37,50 @@
 class ofxTwitter {
 
     public:
-    
+
         ofxTwitter();
         ~ofxTwitter();
-    
+
         void authorize(const string& consumerKey, const string& consumerSecret);
         bool isAuthorized();
-    
+
         void loadCacheFile();
         void setDiskCache(bool newSaveCache);
         bool diskCacheIsActive();
-    
+
         void startQuery(string keywords, int count = 15);
-        void startSearch(ofxTwitterSearch search);
+        void startSearch();
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
-    
+
         void postStatus(string msg);
         void postStatus(string msg, string imgfile);
         void newStatusResponse(ofEventArgs& args);
-    
+
         void setAutoLoadImages(bool newLoadUserProfileImageUrl, bool newLoadUserProfileBannerUrl);
         void urlResponse(ofHttpResponse & response);
         void appExits(ofEventArgs& args);
-    
+
         ofxTwitterTweet getTweetByIndex(int index);
         int getTotalLoadedTweets() { return data.size(); }
-    
+
         void printDebugInfo();
 
     private:
-	
+
         ofxOAuth oauth;
-    
+
         string dataRequested;
 
         bool bDiskCacheActive;
         bool bLoadUserProfileImageOnMemory;
         bool bLoadUserBannerImageOnMemory;
-    
+
         vector<ofxTwitterTweet> data;
-    
+
+        ofxTwitterSearch search;
+        ofxTwitterTweetAuthor author;
+
         void updateStatus(string msg, string imgpath = "");
-	
+
 };
