@@ -50,7 +50,13 @@ void testApp::keyReleased(int key){
     }
     
     if(key == 'i') {
-        twitterClient.postStatus("test image", "buses.jpg");
+        
+        // Supported Formats PNG, JPG, GIF
+        // (JPG is recompressed lossy by Twitter server)
+        
+        twitterClient.postStatus("test image", "buses.png");
+        //twitterClient.postStatus("test image", "buses.jpg");
+        
     }
     
 }

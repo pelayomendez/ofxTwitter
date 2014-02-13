@@ -157,18 +157,44 @@ void ofxTwitter::postStatus(string msg, string imgfile) {
 
 void ofxTwitter::newStatusResponse(ofEventArgs& args) {
     
-    
     if(dataRequested != "") {
         
         ofxJSONElement result;
         bool parsingSuccessful = result.parse(dataRequested);
-        cout << result.getRawString() << endl;
-        
+        //cout << result.getRawString() << endl;
+
+        bool postSuccessful = parsingSuccessful;
         if (parsingSuccessful) {
-            //TODO: Check for Twitter sending back errors propertly.
+            if(result.isMember("errors")) {
+                postSuccessful = false;
+                ofxJSONElement errors = result["errors"];
+                for(int i = 0; i < errors.size(); i++) {
+                     ofxJSONElement error = errors[i];
+                     ofLogError("ofxTwitter::newStatusResponse") << "error code: " << errors[i]["code"].asInt() << " message: " << error["message"].asString();
+                }
+            }
+        }
+        
+        if(result.isMember("entities")) {
+            ofxJSONElement entities = result["entities"];
+            if(entities.isMember("media")) {
+                ofxJSONElement media = entities["media"];
+                ofLogVerbose("ofxTwitter::newStatusResponse") << "Uploaded media info:";
+                ofLogVerbose("ofxTwitter::newStatusResponse") << "type: " << media[0]["type"].asString();
+                ofLogVerbose("ofxTwitter::newStatusResponse") << "url: " << media[0]["url"].asString();
+                ofxJSONElement l = media[0]["sizes"]["large"];
+                ofxJSONElement m = media[0]["sizes"]["medium"];
+                ofxJSONElement s = media[0]["sizes"]["small"];
+                ofxJSONElement t = media[0]["sizes"]["thumb"];
+                ofLogVerbose("ofxTwitter::newStatusResponse") << "sizes(wxh) Large: " << l["w"].asInt() << "x" <<l["h"].asInt()
+                << " Medium: " << m["w"].asInt() << "x" <<m["h"].asInt()<< " Small: " << s["w"].asInt() << "x" <<s["h"].asInt()<< " Thumb: " << t["w"].asInt() << "x" <<t["h"].asInt();
+            }
+        }
+        
+        if (postSuccessful) {
             ofLogNotice("ofxTwitter::newStatusResponse") << "Status published.";
         } else {
-            ofLogError("ofxTwitter::newResponse") << "Failed to publish new status." << endl;
+            ofLogError("ofxTwitter::newStatusResponse") << "Failed to publish new status." << endl;
         }
         
         dataRequested = "";
