@@ -34,16 +34,23 @@ struct ofxTwitterTweetAuthor {
     
 	string profile_image_url;
     ofImage profile_image;
-    bool profile_image_url_loaded = false;
+    bool profile_image_url_loaded;
     
     string profile_banner_url;
     ofImage profile_banner;
-    bool profile_banner_url_loaded = false;
+    bool profile_banner_url_loaded;
     
     string profile_background_image_url;
     string profile_background_color;
     bool profile_background_tile;
     bool profile_use_background_image;
+    
+    ofxTwitterTweetAuthor() {
+        
+        profile_image_url_loaded = false;
+        profile_banner_url_loaded = false;
+        
+    }
      
 };
 
@@ -54,7 +61,7 @@ struct ofxTwitterTweet {
 	string language;
     string text;
     string geo;
-    ofPoint coordinates;
+    ofVec2f coordinates;
     string source;
     int retweet_count;
     
@@ -62,8 +69,10 @@ struct ofxTwitterTweet {
     
 	ofxTwitterTweetAuthor user;
     
-    ofxTwitterTweet() { }
-	ofxTwitterTweet(string defaultString)	: text(defaultString) { }
+    ofxTwitterTweet() {}
+	ofxTwitterTweet(string defaultString)	: text(defaultString) {}
+    
+
     
 	void print() {
         
