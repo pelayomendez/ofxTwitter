@@ -7,8 +7,8 @@ void testApp::setup(){
     ofSetFrameRate(30);
     ofSetLogLevel(OF_LOG_VERBOSE);
     
-    string const CONSUMER_KEY = "";
-    string const CONSUMER_SECRET = "";
+    string const CONSUMER_KEY = "VyZSL4qYqiiolN9P6uJgg";
+    string const CONSUMER_SECRET = "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY";
     
     twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
 
@@ -31,6 +31,7 @@ void testApp::draw(){
     info += "ofxTwitter post example:";
     info += "\nPress 'q' post a 'test' status";
     info += "\nPress i' post a 'test' status with an image";
+    info += "\nPress h' to obtain info about media_upload service and image size support";
     ofDrawBitmapString(info, ofPoint(20,20));
     
     twitterClient.printDebugInfo();
@@ -51,12 +52,14 @@ void testApp::keyReleased(int key){
     
     if(key == 'i') {
         
-        // Supported Formats PNG, JPG, GIF
-        // (JPG is recompressed lossy by Twitter server)
-        
         twitterClient.postStatus("test image", "buses.png");
         //twitterClient.postStatus("test image", "buses.jpg");
+        //twitterClient.postStatus("test image", "buses.gif");
         
+    }
+    
+    if(key == 'h') {
+        twitterClient.config.printPhotoSizesInfo();
     }
     
 }

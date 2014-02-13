@@ -9,8 +9,8 @@ void testApp::setup(){
     twitterClient.setDiskCache(true);
     twitterClient.setAutoLoadImages(true, false); // Loads images into memory as ofImage;
     
-    string const CONSUMER_KEY = "VyZSL4qYqiiolN9P6uJgg";
-    string const CONSUMER_SECRET = "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY";
+    string const CONSUMER_KEY = "";
+    string const CONSUMER_SECRET = "";
     
     twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
 

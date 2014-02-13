@@ -45,12 +45,12 @@ class ofxTwitter {
         void authorize(const string& consumerKey, const string& consumerSecret);
         bool isAuthorized();
     
+        ofxTwitterConfig config; // TODO: Handle this in private.
+    
         void loadCacheFile();
         void setDiskCache(bool newSaveCache);
         bool diskCacheIsActive();
-    
-    
-    
+
         //void startQuery(string keywords, int count = 15);
         void startSearch(ofxTwitterSearch search);
         void newResponse(ofEventArgs& args);
@@ -68,12 +68,11 @@ class ofxTwitter {
         int getTotalLoadedTweets() { return data.size(); }
     
         void printDebugInfo();
-
+    
     private:
 	
         ofxOAuth oauth;
-    
-        ofxTwitterConfig config;
+
         void checkHelpConfigurationFile();
         void updateHelpConfiguration();
         void onHelpConfigurationResponse(ofEventArgs& args);

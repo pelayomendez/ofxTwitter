@@ -264,7 +264,7 @@ void ofxTwitter::updateStatus(string msg, string imgpath) {
         }
         ofAddListener(ofEvents().update,this,&ofxTwitter::newStatusResponse);
     } else {
-        ofLogError("ofxTwitter::postStatus") << "App not authorized.";
+        ofLogError("ofxTwitter::updateStatus") << "App not authorized.";
     }
     
 }
@@ -277,8 +277,23 @@ void ofxTwitter::postStatus(string msg) {
 
 void ofxTwitter::postStatus(string msg, string imgfile) {
     
-    string imgurl = ofToDataPath(imgfile,true);
-    updateStatus(msg, imgurl);
+    // Supported Formats PNG, JPG, GIF
+    // (JPG is recompressed lossy by Twitter server)
+    // (GIF is reformated as PNG)
+    // (PNG will keep its quality)
+    ofFile f(imgfile);
+    if(f.getExtension() != "jpg" and f.getExtension() != "png" and f.getExtension() != "gif") {
+         ofLogError("ofxTwitter::postStatus") << "Invalid file type.";
+    } else {
+        if(f.getExtension() == "jpg") {
+            ofLogWarning("ofxTwitter::postStatus") << "The JPG image will be recompressed lossy by Twitter server.";
+        }
+        if(f.getExtension() == "gif") {
+            ofLogWarning("ofxTwitter::postStatus") << "The GIF image will be reformated as png.";
+        }
+        string imgurl = ofToDataPath(imgfile,true);
+        updateStatus(msg, imgurl);
+    }
     
 }
 
