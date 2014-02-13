@@ -55,7 +55,9 @@ void ofxTwitter::authorize(const string& consumerKey, const string& consumerSecr
     
     ofRegisterURLNotification(this);
     ofAddListener(ofEvents().exit,this,&ofxTwitter::appExits);
-	
+    
+    checkHelpConfigurationFile();
+    
 }
 
 //--------------------------------------------------------------
@@ -63,6 +65,129 @@ bool ofxTwitter::isAuthorized() {
     
     return oauth.isAuthorized();
 
+}
+
+// GET help/configuration
+// https://dev.twitter.com/docs/api/1/get/help/configuration
+// Returns the current configuration used by Twitter including twitter.com slugs which are not usernames,
+// maximum photo resolutions, and t.co URL lengths.
+//--------------------------------------------------------------
+
+void ofxTwitter::checkHelpConfigurationFile() {
+    
+    ofFile file(ofToDataPath("ofxTwitter_configuration.json"));
+    bool configFileNeedsUpdate = false;
+    if(file.exists()) {
+        Poco::File &filepoco = file.getPocoFile();
+        Poco::Timestamp tfile = filepoco.getLastModified();
+        time_t timer;
+        time(&timer);
+        double seconds;
+        seconds = difftime(timer,tfile.epochTime());
+        if(seconds < 86400) {
+            configFileNeedsUpdate = false;
+        } else {
+            configFileNeedsUpdate = true;
+        }
+    } else {
+        configFileNeedsUpdate = true;
+    }
+    
+    if(!configFileNeedsUpdate) {
+        ofLogNotice("ofxTwitter::authorize") << "Config up to date.";
+        parseConfigurationFile();
+    } else {
+        updateHelpConfiguration();
+    }
+
+}
+
+void ofxTwitter::updateHelpConfiguration() {
+    
+    if(oauth.isAuthorized()) {
+        string query = "/1.1/help/configuration.json";
+        dataRequested = "";
+        dataRequested = oauth.get(query);
+        ofAddListener(ofEvents().update,this,&ofxTwitter::onHelpConfigurationResponse);
+    } else {
+        ofLogError("ofxTwitter::updateHelpConfiguration") << "App not authorized.";
+    }
+    
+}
+
+void ofxTwitter::onHelpConfigurationResponse(ofEventArgs& args) {
+    
+    if(dataRequested != "") {
+        
+        ofxJSONElement result;
+        bool parsingSuccessful = result.parse(dataRequested);
+        
+        // TODO: Common method for error checking:
+        bool getSuccessful = parsingSuccessful;
+        if (parsingSuccessful) {
+            if(result.isMember("errors")) {
+                getSuccessful = false;
+                ofxJSONElement errors = result["errors"];
+                for(int i = 0; i < errors.size(); i++) {
+                    ofxJSONElement error = errors[i];
+                    ofLogError("ofxTwitter::onHelpConfigurationResponse") << "error code: " << errors[i]["code"].asInt() << " message: " << error["message"].asString();
+                }
+            }
+        }
+        
+        if (getSuccessful) {
+            result.save("ofxTwitter_configuration.json",true);
+            ofLogNotice("ofxTwitter::onHelpConfigurationResponse") << "Config updated.";
+            parseConfigurationFile();
+        } else {
+            ofLogError("ofxTwitter::onHelpConfigurationResponse") << "Failed to update config file." << endl;
+        }
+        
+        dataRequested = "";
+        ofRemoveListener(ofEvents().update,this,&ofxTwitter::newResponse);
+        
+    }
+    
+}
+
+void ofxTwitter::parseConfigurationFile() {
+    
+    ofxJSONElement result;
+    bool parsingSuccessful = result.openLocal("ofxTwitter_configuration.json");
+    if (parsingSuccessful) {
+        
+        config.characters_reserved_per_media = result["characters_reserved_per_media"].asInt();
+        config.max_media_per_upload = result["max_media_per_upload"].asInt();
+        ofxJSONElement non_username_paths = result["non_username_paths"];
+        for(int i = 0; i < non_username_paths.size(); i++) {
+            config.non_username_paths.push_back(non_username_paths[i].asString());
+        }
+        config.photo_size_limit = result["photo_size_limit"].asInt();
+        
+        ofxJSONElement photo_sizes_l = result["photo_sizes"]["large"];
+        ofxTwitterPhotoSizes pl;
+        pl.name = "large"; pl.w = photo_sizes_l["w"].asInt(); pl.h = photo_sizes_l["h"].asInt(); pl.resize = photo_sizes_l["resize"].asString();
+        config.photo_sizes.push_back(pl);
+        
+        photo_sizes_l = result["photo_sizes"]["medium"];
+        pl.name = "medium"; pl.w = photo_sizes_l["w"].asInt(); pl.h = photo_sizes_l["h"].asInt(); pl.resize = photo_sizes_l["resize"].asString();
+        config.photo_sizes.push_back(pl);
+        
+        photo_sizes_l = result["photo_sizes"]["small"];
+        pl.name = "small"; pl.w = photo_sizes_l["w"].asInt(); pl.h = photo_sizes_l["h"].asInt(); pl.resize = photo_sizes_l["resize"].asString();
+        config.photo_sizes.push_back(pl);
+        
+        photo_sizes_l = result["photo_sizes"]["thumb"];
+        pl.name = "thumb"; pl.w = photo_sizes_l["w"].asInt(); pl.h = photo_sizes_l["h"].asInt(); pl.resize = photo_sizes_l["resize"].asString();
+        config.photo_sizes.push_back(pl);
+        
+        config.short_url_length = result["short_url_length"].asInt();
+        config.short_url_length_https = result["short_url_length_https"].asInt();
+        
+    } else {
+        ofLogError("ofxTwitter::parseConfigurationFile") << "Failed to load JSON";
+    }
+    
 }
 
 //--------------------------------------------------------------
@@ -205,7 +330,6 @@ void ofxTwitter::newStatusResponse(ofEventArgs& args) {
     }
 	
 }
-
 
 //--------------------------------------------------------------
 void ofxTwitter::loadCacheFile() {

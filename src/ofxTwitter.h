@@ -29,6 +29,7 @@
 #include "ofxOAuth.h"
 #include "ofxJSONElement.h"
 // ofxTwitter
+#include "ofxTwitterConfig.h"
 #include "ofxTwitterTweet.h"
 #include "ofxTwitterSearch.h"
 // Poco
@@ -47,6 +48,8 @@ class ofxTwitter {
         void loadCacheFile();
         void setDiskCache(bool newSaveCache);
         bool diskCacheIsActive();
+    
+    
     
         //void startQuery(string keywords, int count = 15);
         void startSearch(ofxTwitterSearch search);
@@ -69,6 +72,12 @@ class ofxTwitter {
     private:
 	
         ofxOAuth oauth;
+    
+        ofxTwitterConfig config;
+        void checkHelpConfigurationFile();
+        void updateHelpConfiguration();
+        void onHelpConfigurationResponse(ofEventArgs& args);
+        void parseConfigurationFile();
     
         string dataRequested;
 

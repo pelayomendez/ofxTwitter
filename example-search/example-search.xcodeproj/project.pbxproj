@@ -82,6 +82,7 @@
 		36DCA30BBD213346B313140F /* typecheck-gcc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "typecheck-gcc.h"; path = "../../ofxOAuth/libs/libcurl/include/curl/typecheck-gcc.h"; sourceTree = SOURCE_ROOT; };
 		3B869EDFC4EA231621749621 /* json_batchallocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = json_batchallocator.h; path = ../../ofxJSON/libs/jsoncpp/src/json_batchallocator.h; sourceTree = SOURCE_ROOT; };
 		3EFA7F0918ACFBAA00212A38 /* ofxTwitterSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxTwitterSearch.h; path = ../src/ofxTwitterSearch.h; sourceTree = "<group>"; };
+		3EFA7F0D18AD137900212A38 /* ofxTwitterConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofxTwitterConfig.h; path = ../src/ofxTwitterConfig.h; sourceTree = "<group>"; };
 		4223FD7CA89046EB33E92E0E /* mprintf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = mprintf.h; path = ../../ofxOAuth/libs/libcurl/include/curl/mprintf.h; sourceTree = SOURCE_ROOT; };
 		4E49BEFE99E0E9ADA3F82118 /* oauth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = oauth.h; path = ../../ofxOAuth/libs/liboauth/include/oauth.h; sourceTree = SOURCE_ROOT; };
 		50DF87D612C5AAE17AAFA6C0 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxXmlSettings.cpp; path = ../../ofxXmlSettings/src/ofxXmlSettings.cpp; sourceTree = SOURCE_ROOT; };
@@ -297,6 +298,7 @@
 			children = (
 				59C0386F68D8BD0605ED64E0 /* ofxTwitter.h */,
 				F66C082F38A46DC7354B8863 /* ofxTwitter.cpp */,
+				3EFA7F0D18AD137900212A38 /* ofxTwitterConfig.h */,
 				3EFA7F0918ACFBAA00212A38 /* ofxTwitterSearch.h */,
 				6686D93C5674C6E0E46AE0C2 /* ofxTwitterTweet.h */,
 			);
