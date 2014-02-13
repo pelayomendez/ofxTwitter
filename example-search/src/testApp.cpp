@@ -9,8 +9,8 @@ void testApp::setup(){
     twitterClient.setDiskCache(true);
     twitterClient.setAutoLoadImages(true, false); // Loads images into memory as ofImage;
     
-    string const CONSUMER_KEY = "";
-    string const CONSUMER_SECRET = "";
+    string const CONSUMER_KEY = "VyZSL4qYqiiolN9P6uJgg";
+    string const CONSUMER_SECRET = "uYwllm7aTxTVzvbG7MEJDcJjrRLPADJzAeY2PIQCY";
     
     twitterClient.authorize(CONSUMER_KEY, CONSUMER_SECRET);
 
@@ -75,6 +75,7 @@ void testApp::draw(){
     string info;
     info += "ofxTwitter query example:";
     info += "\nPress 'q' to get tweets containing 'cat'";
+    info += "\nPress 's' to get tweets containing 'cat' with more advanced options";
     info += "\nPress 'l' to load previous query from disk if avilable";
     info += "\nPress UP/DOWN to navigate tweets";
     ofDrawBitmapString(info, ofPoint(20,20));
@@ -92,7 +93,22 @@ void testApp::keyPressed(int key){
 void testApp::keyReleased(int key){
     
     if(key == 'q') {
-        twitterClient.startQuery("cat");
+        // Simple Query. You can find tweets containing that word.
+        ofxTwitterSearch search;
+        search.query = "cat";
+        twitterClient.startSearch(search);
+    }
+    
+    if(key == 's') {
+        // Complex search. You can specify more params.
+        ofxTwitterSearch search;
+        search.query = "cat";
+        search.count = 10;
+        search.geocode = ofVec2f(41.3850640,2.1734030);
+        search.geocode_radius = 2;
+        search.bUseMiles = false;
+        search.lang = "es";
+        twitterClient.startSearch(search);
     }
     
     if(key == 'l') {

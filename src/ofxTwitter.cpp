@@ -66,6 +66,7 @@ bool ofxTwitter::isAuthorized() {
 }
 
 //--------------------------------------------------------------
+/*
 void ofxTwitter::startQuery(string keywords, int count) {
     
     if(oauth.isAuthorized()) {
@@ -79,6 +80,7 @@ void ofxTwitter::startQuery(string keywords, int count) {
     }
     
 }
+*/
 
 void ofxTwitter::startSearch(ofxTwitterSearch search) {
     
@@ -240,13 +242,26 @@ void ofxTwitter::newResponse(ofEventArgs& args) {
     
         ofxJSONElement result;
         bool parsingSuccessful = result.parse(dataRequested);
+        
+        bool getSuccessful = parsingSuccessful;
         if (parsingSuccessful) {
+            if(result.isMember("errors")) {
+                getSuccessful = false;
+                ofxJSONElement errors = result["errors"];
+                for(int i = 0; i < errors.size(); i++) {
+                    ofxJSONElement error = errors[i];
+                    ofLogError("ofxTwitter::newResponse") << "error code: " << errors[i]["code"].asInt() << " message: " << error["message"].asString();
+                }
+            }
+        }
+        
+        if (getSuccessful) {
             if(bDiskCacheActive) result.save("cache.json",true);
-            ofLogNotice("ofxTwitter::newResponse") << "Tweets JSON parsed.";
+            ofLogNotice("ofxTwitter::newResponse") << "Tweets received.";
             //cout << result.getRawString() << endl;
             parseResponse(result);
         } else {
-            ofLogError("ofxTwitter::newResponse") << "Failed to parse JSON" << endl;
+            ofLogError("ofxTwitter::newResponse") << "Failed to get tweets" << endl;
         }
         
         dataRequested = "";

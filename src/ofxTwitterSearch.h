@@ -12,25 +12,29 @@
 
 struct ofxTwitterSearch {
     
-    string query;
-    // required
-    ofPoint geocode = ofPoint(0,0);
-    // x. latitude / y. longitude
-    bool bUseMiles = false;
-    int geocode_radius = 1;
-    string lang;
-    // ISO 639-1 http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-    string locale;
-    // only 'ja' is efective here
-    string result_type;
-    // valid values: mixed, recent, popular
-    int count = 15;
-    // default 15 . maximun 100
-    string until;
-    // YYYY-MM-DD ej:2012-09-01
-    int since_id = -1;
-    int max_id = -1;
-    bool include_entities = true;
-    //string callback; 
+    string query; // required
+    ofVec2f geocode; // x. latitude / y. longitude
+    bool bUseMiles;
+    int geocode_radius;
+    string lang; // ISO 639-1 http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+    string locale; // only 'ja' is efective here
+    string result_type;  // valid values: mixed, recent, popular
+    int count; // default 15 . maximun 100
+    string until; // YYYY-MM-DD ej:2012-09-01
+    int since_id;
+    int max_id;
+    bool include_entities;
+    
+    ofxTwitterSearch()
+    {
+        geocode = ofVec2f(0,0);
+        bUseMiles = false;
+        geocode_radius = 1;
+        count = 15;
+        since_id = -1;
+        max_id = -1;
+        include_entities = true;
+        
+    }
     
 };

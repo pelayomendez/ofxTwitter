@@ -48,7 +48,7 @@ class ofxTwitter {
         void setDiskCache(bool newSaveCache);
         bool diskCacheIsActive();
     
-        void startQuery(string keywords, int count = 15);
+        //void startQuery(string keywords, int count = 15);
         void startSearch(ofxTwitterSearch search);
         void newResponse(ofEventArgs& args);
         void parseResponse(ofxJSONElement result);
