@@ -18,13 +18,15 @@ Don´t forget to specify a callback url on the twitter side, any URL will work i
 
 Dependencies
 ------------
-* Uses Christopher Baker [ofxOAuth](https://github.com/bakercp/ofxOAuth) addon (*Right now you'll need to use [this branch of ofxOAuth to make the addon work](https://github.com/pelayomendez/ofxOAuth/tree/feature-postmultipart/formdata)*)
+* Uses Christopher Baker [ofxOAuth](https://github.com/bakercp/ofxOAuth) addon (*Right now you'll need to use [this branch of ofxOAuth](https://github.com/pelayomendez/ofxOAuth/tree/feature-postmultipart/formdata) to make the addon work*)
 * ofxXmlSettings is also needed for ofxOAuth
 * Uses Jeff Crouse [ofxJSON](https://github.com/jefftimesten/ofxJSON) for parsing Twitter REST API JSON data as XML is not supported anymore by the API.
 
 Compatibility
 ------------
-Tested with OF 0.8 in OSX 10.9
+Curent version has been tested with:<br/>
+OSX 10.9 OF 0.8 XCode<br/>
+Linux OF 0.8 ([@kalwalt](https://github.com/kalwalt))
 
 Known issues
 ------------
