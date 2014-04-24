@@ -14,7 +14,9 @@ Installation
 ------------
 Before using the examples you must create your app and obtain your "CONSUMER_KEY", "CONSUMER_SECRET" at [https://dev.twitter.com/apps](https://dev.twitter.com/apps) Afterwards edit testApp.cpp on the example you want to test adding that information on the setup().
 
-Don´t forget to specify a callback url on the twitter side, any URL will work it will work as a boolean. Also you´ll have to adjust the application access depending on the type of access does your application needs.
+Don´t forget to specify a callback url on the Twitter side, any URL will work it will work as a boolean. Also you´ll have to adjust the application access depending on the type of access your application needs.
+
+After launching the example for the first time you´ll be taken through Twitter authorization process. A credentials.xml file will be created automatically in the data directory once you have authorized your app for the first time, containing the information needed to automatically authorize the application from then on.
 
 Dependencies
 ------------
