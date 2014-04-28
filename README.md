@@ -4,7 +4,6 @@ OpenFrameworks addon for developing Twitter based projects.
 
 Introduction
 ------------
-
 The original addon was created by Edric Stanley on 2010 and was adapted from code by [Paul Shen](http://in.somniac.me/2010/01/openframeworks-http-requests-xml-parser/).
 Afterwards [Andrew Vergara](https://github.com/drewvergara/ofxTwitter) updated the addon to use the most recent version of [ofxHttpUtils](https://github.com/arturoc/ofxHttpUtils).
 
@@ -20,9 +19,9 @@ After launching the example for the first time you´ll be taken through Twitter 
 
 Dependencies
 ------------
-* Uses Christopher Baker [ofxOAuth](https://github.com/bakercp/ofxOAuth) addon (*Right now you'll need to use [this branch of ofxOAuth](https://github.com/pelayomendez/ofxOAuth/tree/feature-postmultipart/formdata) to make the addon work*)
-* ofxXmlSettings is also needed for ofxOAuth
-* Uses Jeff Crouse [ofxJSON](https://github.com/jefftimesten/ofxJSON) for parsing Twitter REST API JSON data as XML is not supported anymore by the API.
+* ofxXmlSettings
+* Christopher Baker's [ofxOAuth](https://github.com/bakercp/ofxOAuth) addon.
+* Jeff Crouse's [ofxJSON](https://github.com/jefftimesten/ofxJSON) for parsing Twitter REST API JSON data as XML is not supported anymore by 1.1 API.
 
 Compatibility
 ------------
@@ -36,7 +35,7 @@ WIP
 
 Version history
 ------------
-WIP
+1.0 : 28/04/2014 . Twitter search / Post status and Images.
 
 Licence
 -------
