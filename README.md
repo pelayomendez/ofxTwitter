@@ -22,7 +22,8 @@ Dependencies
 * ofxXmlSettings
 * Jeff Crouse's [ofxJSON](https://github.com/jefftimesten/ofxJSON) for parsing Twitter REST API JSON data as XML is not supported anymore by 1.1 API.
 * Christopher Baker's [ofxOAuth](https://github.com/bakercp/ofxOAuth) addon.
-It seems right now post don't work with latest version of ofxOauth so maybe you'll need to use this [branch](https://github.com/pelayomendez/ofxOAuth/tree/feature-postmultipart/formdata).
+
+It seems right now posting to Twitter dosen't work with latest version of ofxOauth so maybe you'll need to use this [branch](https://github.com/pelayomendez/ofxOAuth/tree/feature-postmultipart/formdata).
 
 Compatibility
 ------------
